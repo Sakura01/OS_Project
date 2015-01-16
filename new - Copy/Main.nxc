@@ -82,7 +82,7 @@ byte getObjColor()
 bool isNotField()
 {
      byte output=getObjColor();
-     return (output!= 17 && output!= 0);
+     return (output==COLORWALL);
 }
 
 bool checkandthrow()
@@ -102,11 +102,30 @@ bool checkandthrow()
 }
 
 
-sub moveTowardObj()
+bool moveTowardObj()
 {
     OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SPEED);
-    until (SensorUS (ULTRASONIC) <= THRESHOLD);
-    Off(motors);
+    bool meetWall=false;
+    while (true)
+    {
+          ClearSensor(ULTRASONIC);
+          meetWall=isNotField();
+          if((SensorUS (ULTRASONIC) <= THRESHOLD) || (meetWall))
+          {
+            Off(motors);
+            break;
+          }
+     
+    }
+    if(meetWall)
+    {
+                return false;
+    }
+    else
+    {
+        return true;
+    }
+
 }
 
 sub changeDirection()
@@ -166,15 +185,19 @@ task reading(){
                if(SensorUS (ULTRASONIC) <= WALLDIST)
                {
                          PlaySound(SOUND_UP);
-                         moveTowardObj();
-                         bool grab=checkandthrow();
-
+                         Off(motors);
+                         bool grab=moveTowardObj();
+                         if(grab)
+                         {
+                              grab=checkandthrow();
+                         }
                          //if it is not a ball then rotate back and start scanning right
                          if(!grab)
                          {
                                 //turn away from the object
                                 
-                                //turnAway();
+                                //turnAway(500);
+                                //Off(motors);
                                 moveBwd(1000);
 
                                 if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward

@@ -8,13 +8,15 @@
 #define  TOUCH          IN_4
 
 // Definition of the speeds
-#define SCANNING_SPEED 20
+#define SCANNING_SPEED 25
 #define MOVMENT_SPEED 40
 
 // Definition of Threshold
 #define THRESHOLD 7
 #define WALLDIST 40
 
+#define COLORLINE
+#define COLORAREA
 
 // The moving motors
 byte motors[] = {OUT_A,OUT_C};
@@ -34,13 +36,13 @@ sub close()
      stopRotor();
 
 }
-sub open()
+
+sub open(int angle)
 {
-      RotateMotor (GMotor, 100, -180);
+      RotateMotor (GMotor, 100, -angle);
       stopRotor();
 
 }
-
 //Functions in Main
 
 bool checkandthrow();

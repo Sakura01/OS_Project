@@ -15,6 +15,7 @@
 #define THRESHOLD 7
 #define WALLDIST 40
 
+#define COLORWALL 14
 
 // The moving motors
 byte motors[] = {OUT_A,OUT_C};
@@ -50,7 +51,7 @@ int getDegreeDiff(int current, int old);
 
 sub changeDirection();
 sub backtoOrigin();
-sub moveTowardObj();
+bool moveTowardObj();
 
 sub moveFwd(int moveTime);
 sub moveBwd(int moveTime);

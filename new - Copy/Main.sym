@@ -1,299 +1,308 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0reading	6	1	0	4	29
-1	__DU0reading	5	1	4	4	6
-2	__D0reverseDirection	6	1	8	4	8
-3	__D0PlaySound	6	1	12	4	48
+0	__D0PlaySound	6	1	0	4	48
+1	__D0reading	6	1	4	4	29
+2	__DU0reading	5	1	8	4	8
+3	__D0open	6	1	12	4	2
 4	__D0moveFwd	6	1	16	4	2
-5	__D0moveTowardObj	6	1	20	4	8
-6	__D0open	6	1	24	4	2
-7	__DU0reverseDirection	5	1	28	4	2
-8	__D0throwBall	6	1	32	4	4
-9	__D0SetSensorLowspeed_inline_init	6	1	36	4	9
-10	__DU0SetSensorLowspeed_inline_init	5	1	40	4	6
-11	__DU0scanningArenaRight	5	1	44	4	2
-12	__D0scanningArenaLeft	6	1	48	4	6
-13	__DU0scanningArenaLeft	5	1	52	4	2
-14	__D0scanningArenaRight	6	1	56	4	6
-15	__RLSBmutex2	9	0	60	4	2
+5	__D0moveTowardObj	6	1	20	4	12
+6	__DU0moveTowardObj	5	1	24	4	8
+7	__D0reverseDirection	6	1	28	4	8
+8	__DU0scanningArenaRight	5	1	32	4	2
+9	__D0throwBall	6	1	36	4	4
+10	__D0SetSensorLowspeed_inline_init	6	1	40	4	9
+11	__D0scanningArenaRight	6	1	44	4	6
+12	__DU0reverseDirection	5	1	48	4	2
+13	__D0scanningArenaLeft	6	1	52	4	6
+14	__DU0scanningArenaLeft	5	1	56	4	2
+15	__D0moveBwd	6	1	60	4	2
 16	__SPTArgsMutex	9	0	64	4	14
 17	__D0backtoOrigin	6	1	68	4	13
-18	__RLSBmutex1	9	0	72	4	6
-19	__TextOutMutex	9	0	76	4	12
+18	__D0checkandthrow	6	1	72	4	8
+19	__RLSBmutex2	9	0	76	4	2
 20	__PointOutMutex	9	0	80	4	2
 21	__RLSBmutex0	9	0	84	4	4
-22	__D0checkandthrow	6	1	88	4	8
-23	__DU0getObjColor	5	1	92	4	3
+22	__RLSBmutex1	9	0	88	4	6
+23	__DU0checkandthrow	5	1	92	4	3
 24	__D0init	6	1	96	4	7
-25	__D0moveBwd	6	1	100	4	2
-26	__D0getObjColor	6	1	104	4	1
-27	__DU0checkandthrow	5	1	108	4	4
+25	__D0isNotField	6	1	100	4	2
+26	__DU0isNotField	5	1	104	4	2
+27	__DU0getObjColor	5	1	108	4	4
 28	__D0close	6	1	112	4	2
 29	__D0getDegreeDiff	6	1	116	4	7
-30	__Wait_7qG2_ms_7qG2_000_inline_stopRotor	5	1	120	4	2
-31	moveMutex	9	0	124	4	8
-32	__Wait_7qG2_ms_7qG2_000_inline_init	5	1	128	4	2
-33	__signed_stack_001throwBall	6	1	132	4	4
-34	__signed_stack_003PlaySound	6	1	136	4	14
-35	__signed_stack_001reading	6	1	140	4	16
-36	__signed_stack_002reading	6	1	144	4	12
-37	__Wait_7qG2_ms_7qG2_000_inline_throwBall	5	1	148	4	4
-38	__Wait_7qG2_ms_7qG2_000_inline_reading	5	1	152	4	2
-39	__Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft	5	1	156	4	2
-40	__Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight	5	1	160	4	2
-41	__Wait_7qG2_ms_7qG2_000_inline_reverseDirection	5	1	164	4	2
-42	__Wait_7qG2_ms_7qG2_000_inline_checkandthrow	5	1	168	4	2
-43	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	172	4	2
-44	__Wait_7qG2_ms_7qG2_000_inline_moveBwd	5	1	176	4	2
-45	__signed_stack_001close	6	1	180	4	2
-46	__signed_stack_002close	6	1	184	4	2
-47	__signed_stack_003close	6	1	188	4	2
-48	__unsigned_stack_002checkandthrow	5	1	192	4	2
-49	__signed_stack_001backtoOrigin	6	1	196	4	2
-50	__signed_stack_001checkandthrow	6	1	200	4	2
-51	__unsigned_stack_001checkandthrow	5	1	204	4	2
-52	__signed_stack_004close	6	1	208	4	2
-53	__signed_stack_001open	6	1	212	4	2
-54	__signed_stack_001PlaySound	6	1	216	4	38
-55	__signed_stack_002PlaySound	6	1	220	4	14
-56	__signed_stack_001moveTowardObj	6	1	224	4	4
-57	__signed_stack_001getDegreeDiff	6	1	228	4	2
-58	__signed_stack_001moveBwd	6	1	232	4	2
+30	__D0getObjColor	6	1	120	4	1
+31	__DU0SetSensorLowspeed_inline_init	5	1	124	4	6
+32	__Wait_7qG2_ms_7qG2_000_inline_stopRotor	5	1	128	4	2
+33	moveMutex	9	0	132	4	8
+34	__Wait_7qG2_ms_7qG2_000_inline_init	5	1	136	4	2
+35	__signed_stack_001throwBall	6	1	140	4	4
+36	__signed_stack_003PlaySound	6	1	144	4	14
+37	__signed_stack_001reading	6	1	148	4	16
+38	__signed_stack_002reading	6	1	152	4	12
+39	__Wait_7qG2_ms_7qG2_000_inline_throwBall	5	1	156	4	4
+40	__Wait_7qG2_ms_7qG2_000_inline_reading	5	1	160	4	2
+41	__Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft	5	1	164	4	2
+42	__Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight	5	1	168	4	2
+43	__Wait_7qG2_ms_7qG2_000_inline_reverseDirection	5	1	172	4	2
+44	__Wait_7qG2_ms_7qG2_000_inline_checkandthrow	5	1	176	4	2
+45	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	180	4	2
+46	__Wait_7qG2_ms_7qG2_000_inline_moveBwd	5	1	184	4	2
+47	__signed_stack_002PlaySound	6	1	188	4	14
+48	__signed_stack_001close	6	1	192	4	2
+49	__signed_stack_002close	6	1	196	4	2
+50	__signed_stack_003close	6	1	200	4	2
+51	__unsigned_stack_002checkandthrow	5	1	204	4	2
+52	__signed_stack_001backtoOrigin	6	1	208	4	2
+53	__signed_stack_001checkandthrow	6	1	212	4	2
+54	__unsigned_stack_001checkandthrow	5	1	216	4	2
+55	__signed_stack_004close	6	1	220	4	2
+56	__signed_stack_001moveTowardObj	6	1	224	4	6
+57	__signed_stack_001open	6	1	228	4	2
+58	__signed_stack_001PlaySound	6	1	232	4	38
 59	__signed_stack_001moveFwd	6	1	236	4	2
-60	__CLSRMutex2	9	0	240	4	2
-61	__CLSWMutex0	9	0	244	4	2
-62	__CLSRMutex0	9	0	248	4	2
-63	__CLSCSMutex1	9	0	252	4	2
-64	__CLSCSMutex0	9	0	256	4	2
-65	__rotate_angle6	6	1	260	4	6
-66	__CLSCSMutex2	9	0	264	4	2
-67	__rotate_theAngle6	5	1	268	4	2
-68	__CLSWMutex1	9	0	272	4	2
-69	__CLSWMutex2	9	0	276	4	2
-70	__rotateMutex0	9	0	280	4	4
-71	__OnRevMutex	9	0	284	4	12
-72	__rotateMutex2	9	0	288	4	4
-73	__CLSRMutex1	9	0	292	4	2
-74	__rotateMutex1	9	0	296	4	4
-75	__constVal200	4	0	300	2	3
-76	__constVal150	4	0	302	2	1
-77	__PlaySound_7qG2_aCode_7qG2_000	4	1	304	2	7
-78	__rotate_RotCount6	4	1	306	2	4
-79	__rotate_OldRotCount6	4	1	308	2	2
-80	__PlaySound_7qG2_i_7qG2_001	4	1	310	2	15
-81	ownGoal	4	1	312	2	4
-82	relBearing	4	1	314	2	5
-83	__reverseDirection_7qG2_moveTime_7qG2_000	4	1	316	2	2
-84	__constVal523	4	0	318	2	3
-85	__getDegreeDiff_7qG2_diff_7qG2_000	4	1	320	2	5
-86	currentCompass	4	1	322	2	4
-87	__getDegreeDiff_7qG2_current_7qG2_000	4	1	324	2	2
-88	__open_7qG2_angle_7qG2_000	4	1	326	2	4
-89	__constVal500	4	0	328	2	1
-90	__moveBwd_7qG2_moveTime_7qG2_000	4	1	330	2	2
-91	__moveFwd_7qG2_moveTime_7qG2_000	4	1	332	2	3
-92	__getDegreeDiff_7qG2_old_7qG2_000	4	1	334	2	2
-93	__constVal360	4	0	336	2	1
-94	__RLSBResult1	2	1	338	1	7
-95	__open_return	1	1	339	1	5
-96	__constVal96	2	0	340	1	22
-97	__constVal63	2	0	341	1	20
-98	__close_return	1	1	342	1	4
-99	____ReadLSBytes1_return	1	1	343	1	5
-100	scanningRight	1	1	344	1	9
-101	__RLSBytesCount0	1	1	345	1	8
-102	__RLSBResult0	2	1	346	1	7
-103	__constVal15	2	0	347	1	7
-104	__RLSBIterations0	1	1	348	1	4
-105	scanningLeft	1	0	349	1	3
-106	__RLSBytesCount1	1	1	350	1	15
-107	__rotate_sync6	1	1	351	1	3
-108	__rotate_firstPort6	1	1	352	1	5
-109	__PlaySound_return	1	1	353	1	3
-110	__rotate_theUF6	1	1	354	1	6
-111	__rotate_turnpct6	2	1	355	1	4
-112	__rotate_stop6	1	1	356	1	3
-113	LMotor	1	0	357	1	4
-114	GMotor	1	0	358	1	3
-115	__stopRotor_return	1	1	359	1	5
-116	____ReadLSBytes2_return	1	1	360	1	3
-117	__RLSBIterations1	1	1	361	1	4
-118	RMotor	1	1	362	1	4
-119	__getObjColor_7qG2_output_7qG2_000	1	1	363	1	3
-120	__checkandthrow_return	1	1	364	1	5
-121	__checkandthrow_7qG2_output_7qG2_000	1	1	365	1	2
-122	__reverseDirection_return	1	1	366	1	3
-123	__throwBall_return	1	1	367	1	3
-124	__getObjColor_return	1	1	368	1	4
-125	__moveBwd_return	1	1	369	1	3
-126	__OnRev_Tmp	2	1	370	1	12
-127	__ClearSensor_7qG2_port_7qG2_000_inline_reading	1	1	371	1	2
-128	__moveTowardObj_return	1	1	372	1	3
-129	__changeDirection_return	1	1	373	1	4
-130	__moveFwd_return	1	1	374	1	4
-131	__backtoOrigin_return	1	1	375	1	5
-132	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init	1	1	376	1	6
-133	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	377	1	6
-134	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	378	1	6
-135	__rotate_power6	1	1	379	1	5
-136	____initialize_global_data_return	1	1	380	1	3
-137	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_init	1	1	381	1	15
-138	__SetSensorTouch_7qG2_port_7qG2_000_inline_init	1	1	382	1	4
-139	__getDegreeDiff_return	1	1	383	1	4
-140	____ReadLSBytes0_return	1	1	384	1	4
-141	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	385	1	6
-142	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	386	1	6
-143	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	387	1	3
-144	__constVal4	2	0	388	1	4
-145	__constVal6	2	0	389	1	1
-146	__zfreading	1	1	390	1	14
-147	__ResetSensorPort	1	1	391	1	6
-148	__constVal5	2	0	392	1	1
-149	__zfreverseDirection	1	1	393	1	2
-150	____RotateMotor6_sign_tmp	2	1	394	1	4
-151	____RotateMotor6_return	1	1	395	1	3
-152	__zfscanningArenaLeft	1	1	396	1	4
-153	__constVal3	2	0	397	1	17
-154	____RotateMotorVar_return	1	1	398	1	4
-155	__zfPlaySound	1	1	399	1	27
-156	__constVal100	2	0	400	1	2
-157	__zfcheckandthrow	1	1	401	1	7
-158	__zfbacktoOrigin	1	1	402	1	3
-159	__constVal7	2	0	403	1	5
-160	__PFTmp	1	1	404	1	1
-161	__zfgetDegreeDiff	1	1	405	1	3
-162	____ResetSensorSubroutine_return	1	1	406	1	6
-163	__ResetSensorTmp	1	1	407	1	2
-164	__zfmoveTowardObj	1	1	408	1	5
-165	__constVal2	2	0	409	1	5
-166	__RLSBIterations2	1	1	410	1	4
-167	__rotate_theOM6	1	1	411	1	7
-168	__rotate_rs6	1	1	412	1	10
-169	__RLSBResult2	2	1	413	1	8
-170	__RLSBytesCount2	1	1	414	1	7
-171	__rotate_thePower6	2	1	415	1	4
-172	__rotate_theRS6	1	1	416	1	3
-173	__rotate_theRM6	1	1	417	1	4
-174	__rotate_theRVP6	1	1	418	1	3
-175	__rotate_theRVD6	1	1	419	1	3
-176	__rotate_theRVI6	1	1	420	1	3
-177	__zfscanningArenaRight	1	1	421	1	4
-178	__zfSetSensorLowspeed_inline_init	1	1	422	1	6
-179	__constVal0	2	1	423	1	69
-180	__constVal1	2	0	424	1	19
-181	__constVal50	2	0	425	1	2
-182	__rotate_theTurnPct6	2	1	426	1	4
-183	__constVal32	2	0	427	1	66
-184	__CLSWArgs1	8	0	4	12	5
-185	__CLSWArgs1.Result	2	1	428	1	5
-186	__CLSWArgs1.Port	1	1	429	1	5
-187	__CLSWArgs1.Buffer	7	0	430	4	5
-188	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-189	__CLSWArgs1.ReturnLen	1	1	432	1	5
-190	__CLSCSArgs2	8	0	3	4	4
-191	__CLSCSArgs2.Result	2	1	436	1	4
-192	__CLSCSArgs2.Port	1	1	437	1	4
-193	__CLSCSArgs2.BytesReady	1	1	438	1	4
-194	__CLSRArgs0	8	0	4	12	5
-195	__CLSRArgs0.Result	2	1	440	1	5
-196	__CLSRArgs0.Port	1	1	441	1	5
-197	__CLSRArgs0.Buffer	7	0	442	4	5
-198	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-199	__CLSRArgs0.BufferLen	1	1	444	1	5
-200	__CLSCSArgs1	8	0	3	4	4
-201	__CLSCSArgs1.Result	2	1	448	1	4
-202	__CLSCSArgs1.Port	1	1	449	1	4
-203	__CLSCSArgs1.BytesReady	1	1	450	1	4
-204	__SPTArgs	8	0	5	8	42
-205	__SPTArgs.Result	2	1	452	1	42
-206	__SPTArgs.Frequency	3	1	454	2	42
-207	__SPTArgs.Duration	3	1	456	2	42
-208	__SPTArgs.Loop	1	1	458	1	42
-209	__SPTArgs.Volume	1	1	459	1	42
-210	__PointOutArgs	8	0	3	12	4
-211	__PointOutArgs.Result	2	1	460	1	4
-212	__PointOutArgs.Location	8	0	2	4	4
-213	__PointOutArgs.Location.X	4	1	464	2	4
-214	__PointOutArgs.Location.Y	4	1	466	2	4
-215	__PointOutArgs.Options	5	1	468	4	4
-216	__CLSRArgs1	8	0	4	12	5
-217	__CLSRArgs1.Result	2	1	472	1	5
-218	__CLSRArgs1.Port	1	1	473	1	5
-219	__CLSRArgs1.Buffer	7	0	474	4	5
-220	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-221	__CLSRArgs1.BufferLen	1	1	476	1	5
-222	__TextOutArgs	8	0	4	16	36
-223	__TextOutArgs.Result	2	1	480	1	36
-224	__TextOutArgs.Location	8	0	2	4	36
-225	__TextOutArgs.Location.X	4	1	484	2	36
-226	__TextOutArgs.Location.Y	4	1	486	2	36
-227	__TextOutArgs.Text	7	0	488	4	36
-228	__TextOutArgs.Text.Text_type	1	0	0	1	0
-229	__TextOutArgs.Options	5	1	492	4	36
-230	__CLSRArgs2	8	0	4	12	5
-231	__CLSRArgs2.Result	2	1	496	1	5
-232	__CLSRArgs2.Port	1	1	497	1	5
-233	__CLSRArgs2.Buffer	7	0	498	4	5
-234	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
-235	__CLSRArgs2.BufferLen	1	1	500	1	5
-236	__CLSCSArgs0	8	0	3	4	4
-237	__CLSCSArgs0.Result	2	1	504	1	4
-238	__CLSCSArgs0.Port	1	1	505	1	4
-239	__CLSCSArgs0.BytesReady	1	1	506	1	4
-240	__CLSWArgs0	8	0	4	12	5
-241	__CLSWArgs0.Result	2	1	508	1	5
-242	__CLSWArgs0.Port	1	1	509	1	5
-243	__CLSWArgs0.Buffer	7	0	510	4	5
-244	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-245	__CLSWArgs0.ReturnLen	1	1	512	1	5
-246	__CLSWArgs2	8	0	4	12	5
-247	__CLSWArgs2.Result	2	1	516	1	5
-248	__CLSWArgs2.Port	1	1	517	1	5
-249	__CLSWArgs2.Buffer	7	0	518	4	5
-250	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
-251	__CLSWArgs2.ReturnLen	1	1	520	1	5
-252	__OUT_AB	7	0	522	4	1
-253	__OUT_AB.__OUT_AB_type	1	0	0	1	0
-254	__constStr0011	7	0	524	4	1
-255	__constStr0011.__constStr0011_type	1	1	0	1	0
-256	__OUT_AC	7	0	526	4	4
-257	__OUT_AC.__OUT_AC_type	1	0	0	1	0
-258	__OUT_BC	7	0	528	4	1
-259	__OUT_BC.__OUT_BC_type	1	0	0	1	0
-260	__OUT_ABC	7	0	530	4	1
-261	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
-262	__constStr0009	7	0	532	4	1
-263	__constStr0009.__constStr0009_type	1	1	0	1	0
-264	__constStr0010	7	0	534	4	1
-265	__constStr0010.__constStr0010_type	1	1	0	1	0
-266	__strbufreading	7	0	536	4	6
-267	__strbufreading.__strbufreading_type	1	0	0	1	0
-268	motors	7	0	538	4	8
-269	motors.motors_type	1	0	0	1	0
-270	__RLSLastGoodRead0	7	0	540	4	2
-271	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-272	__RLSLastGoodRead1	7	0	542	4	2
-273	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
-274	__RLSReadBuf0	7	0	544	4	10
-275	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-276	__RLSBbufLSWrite1	7	0	546	4	6
-277	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-278	__rotate_ports6	7	0	548	4	13
-279	__rotate_ports6.__rotate_ports6_type	1	0	0	1	0
-280	__RLSReadBuf2	7	0	550	4	8
-281	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
-282	__RLSLastGoodRead2	7	0	552	4	2
-283	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
-284	__RLSReadBuf1	7	0	554	4	15
-285	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+60	__signed_stack_001getDegreeDiff	6	1	240	4	2
+61	__unsigned_stack_001isNotField	5	1	244	4	2
+62	__signed_stack_001moveBwd	6	1	248	4	2
+63	__rotate_angle6	6	1	252	4	6
+64	__CLSWMutex2	9	0	256	4	2
+65	__CLSCSMutex2	9	0	260	4	2
+66	__rotateMutex0	9	0	264	4	4
+67	__rotateMutex1	9	0	268	4	4
+68	__rotateMutex2	9	0	272	4	4
+69	__CLSRMutex0	9	0	276	4	2
+70	__CLSWMutex0	9	0	280	4	2
+71	__CLSCSMutex0	9	0	284	4	2
+72	__CLSRMutex1	9	0	288	4	2
+73	__CLSWMutex1	9	0	292	4	2
+74	__CLSCSMutex1	9	0	296	4	2
+75	__CLSRMutex2	9	0	300	4	2
+76	__TextOutMutex	9	0	304	4	12
+77	__rotate_theAngle6	5	1	308	4	2
+78	__OnRevMutex	9	0	312	4	12
+79	__constVal523	4	0	316	2	3
+80	__open_7qG2_angle_7qG2_000	4	1	318	2	4
+81	__rotate_OldRotCount6	4	1	320	2	2
+82	__constVal200	4	0	322	2	3
+83	__rotate_RotCount6	4	1	324	2	4
+84	__reverseDirection_7qG2_moveTime_7qG2_000	4	1	326	2	2
+85	__getDegreeDiff_7qG2_current_7qG2_000	4	1	328	2	2
+86	ownGoal	4	1	330	2	4
+87	relBearing	4	1	332	2	5
+88	__moveFwd_7qG2_moveTime_7qG2_000	4	1	334	2	3
+89	__getDegreeDiff_7qG2_old_7qG2_000	4	1	336	2	2
+90	__moveBwd_7qG2_moveTime_7qG2_000	4	1	338	2	2
+91	currentCompass	4	1	340	2	4
+92	__constVal500	4	0	342	2	1
+93	__getDegreeDiff_7qG2_diff_7qG2_000	4	1	344	2	5
+94	__constVal360	4	0	346	2	1
+95	__PlaySound_7qG2_aCode_7qG2_000	4	1	348	2	7
+96	__constVal150	4	0	350	2	1
+97	__PlaySound_7qG2_i_7qG2_001	4	1	352	2	15
+98	__PlaySound_return	1	1	354	1	3
+99	__rotate_theUF6	1	1	355	1	6
+100	__stopRotor_return	1	1	356	1	5
+101	__rotate_theRM6	1	1	357	1	4
+102	__rotate_sync6	1	1	358	1	3
+103	__rotate_stop6	1	1	359	1	3
+104	__rotate_theRS6	1	1	360	1	3
+105	__rotate_firstPort6	1	1	361	1	5
+106	__rotate_theOM6	1	1	362	1	7
+107	__open_return	1	1	363	1	5
+108	__constVal63	2	0	364	1	21
+109	__close_return	1	1	365	1	4
+110	LMotor	1	0	366	1	4
+111	__constVal96	2	0	367	1	23
+112	__rotate_turnpct6	2	1	368	1	4
+113	RMotor	1	1	369	1	4
+114	GMotor	1	0	370	1	3
+115	__checkandthrow_return	1	1	371	1	5
+116	__checkandthrow_7qG2_output_7qG2_000	1	1	372	1	2
+117	__moveTowardObj_return	1	1	373	1	5
+118	__isNotField_return	1	1	374	1	4
+119	__throwBall_return	1	1	375	1	3
+120	__getObjColor_return	1	1	376	1	5
+121	__getObjColor_7qG2_output_7qG2_000	1	1	377	1	3
+122	__moveTowardObj_7qG2_meetWall_7qG2_000	1	1	378	1	4
+123	__OnRev_Tmp	2	1	379	1	12
+124	__ClearSensor_7qG2_port_7qG2_000_inline_reading	1	1	380	1	2
+125	__reading_7qG2_grab_7qG2_003	1	1	381	1	4
+126	__moveBwd_return	1	1	382	1	3
+127	__ClearSensor_7qG2_port_7qG2_000_inline_moveTowardObj	1	1	383	1	2
+128	__changeDirection_return	1	1	384	1	4
+129	__moveFwd_return	1	1	385	1	4
+130	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_init	1	1	386	1	15
+131	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init	1	1	387	1	6
+132	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	388	1	6
+133	____initialize_global_data_return	1	1	389	1	3
+134	scanningLeft	1	0	390	1	3
+135	scanningRight	1	1	391	1	9
+136	__rotate_power6	1	1	392	1	5
+137	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	393	1	6
+138	__getDegreeDiff_return	1	1	394	1	4
+139	__backtoOrigin_return	1	1	395	1	5
+140	__reverseDirection_return	1	1	396	1	3
+141	__SetSensorTouch_7qG2_port_7qG2_000_inline_init	1	1	397	1	4
+142	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	398	1	6
+143	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	399	1	6
+144	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	400	1	3
+145	__rotate_theRVP6	1	1	401	1	3
+146	__constVal7	2	0	402	1	5
+147	__zfbacktoOrigin	1	1	403	1	3
+148	__zfcheckandthrow	1	1	404	1	7
+149	__constVal2	2	0	405	1	5
+150	__constVal100	2	0	406	1	2
+151	__PFTmp	1	1	407	1	1
+152	____ResetSensorSubroutine_return	1	1	408	1	6
+153	__zfPlaySound	1	1	409	1	27
+154	__ResetSensorTmp	1	1	410	1	2
+155	__zfgetDegreeDiff	1	1	411	1	3
+156	__zfisNotField	1	1	412	1	2
+157	__zfmoveTowardObj	1	1	413	1	11
+158	__RLSBIterations2	1	1	414	1	4
+159	__RLSBIterations0	1	1	415	1	4
+160	__constVal15	2	0	416	1	7
+161	____ReadLSBytes1_return	1	1	417	1	5
+162	____ReadLSBytes0_return	1	1	418	1	4
+163	__RLSBResult0	2	1	419	1	7
+164	__RLSBytesCount0	1	1	420	1	8
+165	____ReadLSBytes2_return	1	1	421	1	3
+166	__RLSBResult2	2	1	422	1	8
+167	__RLSBytesCount2	1	1	423	1	7
+168	__RLSBResult1	2	1	424	1	7
+169	__RLSBytesCount1	1	1	425	1	15
+170	__RLSBIterations1	1	1	426	1	4
+171	____RotateMotor6_return	1	1	427	1	3
+172	__constVal50	2	0	428	1	2
+173	__constVal0	2	1	429	1	74
+174	__zfscanningArenaRight	1	1	430	1	4
+175	__zfscanningArenaLeft	1	1	431	1	4
+176	____RotateMotorVar_return	1	1	432	1	4
+177	____RotateMotor6_sign_tmp	2	1	433	1	4
+178	__zfSetSensorLowspeed_inline_init	1	1	434	1	6
+179	__rotate_rs6	1	1	435	1	10
+180	__rotate_theRVD6	1	1	436	1	3
+181	__rotate_theRVI6	1	1	437	1	3
+182	__rotate_thePower6	2	1	438	1	4
+183	__constVal1	2	0	439	1	19
+184	__constVal32	2	0	440	1	69
+185	__rotate_theTurnPct6	2	1	441	1	4
+186	__constVal5	2	0	442	1	1
+187	__constVal6	2	0	443	1	1
+188	__constVal4	2	0	444	1	4
+189	__zfreverseDirection	1	1	445	1	2
+190	__constVal3	2	0	446	1	18
+191	__zfreading	1	1	447	1	16
+192	__ResetSensorPort	1	1	448	1	6
+193	__TextOutArgs	8	0	4	16	36
+194	__TextOutArgs.Result	2	1	452	1	36
+195	__TextOutArgs.Location	8	0	2	4	36
+196	__TextOutArgs.Location.X	4	1	456	2	36
+197	__TextOutArgs.Location.Y	4	1	458	2	36
+198	__TextOutArgs.Text	7	0	460	4	36
+199	__TextOutArgs.Text.Text_type	1	0	0	1	0
+200	__TextOutArgs.Options	5	1	464	4	36
+201	__CLSRArgs0	8	0	4	12	5
+202	__CLSRArgs0.Result	2	1	468	1	5
+203	__CLSRArgs0.Port	1	1	469	1	5
+204	__CLSRArgs0.Buffer	7	0	470	4	5
+205	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+206	__CLSRArgs0.BufferLen	1	1	472	1	5
+207	__CLSCSArgs0	8	0	3	4	4
+208	__CLSCSArgs0.Result	2	1	476	1	4
+209	__CLSCSArgs0.Port	1	1	477	1	4
+210	__CLSCSArgs0.BytesReady	1	1	478	1	4
+211	__PointOutArgs	8	0	3	12	4
+212	__PointOutArgs.Result	2	1	480	1	4
+213	__PointOutArgs.Location	8	0	2	4	4
+214	__PointOutArgs.Location.X	4	1	484	2	4
+215	__PointOutArgs.Location.Y	4	1	486	2	4
+216	__PointOutArgs.Options	5	1	488	4	4
+217	__CLSWArgs0	8	0	4	12	5
+218	__CLSWArgs0.Result	2	1	492	1	5
+219	__CLSWArgs0.Port	1	1	493	1	5
+220	__CLSWArgs0.Buffer	7	0	494	4	5
+221	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+222	__CLSWArgs0.ReturnLen	1	1	496	1	5
+223	__CLSCSArgs1	8	0	3	4	4
+224	__CLSCSArgs1.Result	2	1	500	1	4
+225	__CLSCSArgs1.Port	1	1	501	1	4
+226	__CLSCSArgs1.BytesReady	1	1	502	1	4
+227	__SPTArgs	8	0	5	8	42
+228	__SPTArgs.Result	2	1	504	1	42
+229	__SPTArgs.Frequency	3	1	506	2	42
+230	__SPTArgs.Duration	3	1	508	2	42
+231	__SPTArgs.Loop	1	1	510	1	42
+232	__SPTArgs.Volume	1	1	511	1	42
+233	__CLSRArgs1	8	0	4	12	5
+234	__CLSRArgs1.Result	2	1	512	1	5
+235	__CLSRArgs1.Port	1	1	513	1	5
+236	__CLSRArgs1.Buffer	7	0	514	4	5
+237	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+238	__CLSRArgs1.BufferLen	1	1	516	1	5
+239	__CLSCSArgs2	8	0	3	4	4
+240	__CLSCSArgs2.Result	2	1	520	1	4
+241	__CLSCSArgs2.Port	1	1	521	1	4
+242	__CLSCSArgs2.BytesReady	1	1	522	1	4
+243	__CLSWArgs1	8	0	4	12	5
+244	__CLSWArgs1.Result	2	1	524	1	5
+245	__CLSWArgs1.Port	1	1	525	1	5
+246	__CLSWArgs1.Buffer	7	0	526	4	5
+247	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+248	__CLSWArgs1.ReturnLen	1	1	528	1	5
+249	__CLSRArgs2	8	0	4	12	5
+250	__CLSRArgs2.Result	2	1	532	1	5
+251	__CLSRArgs2.Port	1	1	533	1	5
+252	__CLSRArgs2.Buffer	7	0	534	4	5
+253	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+254	__CLSRArgs2.BufferLen	1	1	536	1	5
+255	__CLSWArgs2	8	0	4	12	5
+256	__CLSWArgs2.Result	2	1	540	1	5
+257	__CLSWArgs2.Port	1	1	541	1	5
+258	__CLSWArgs2.Buffer	7	0	542	4	5
+259	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+260	__CLSWArgs2.ReturnLen	1	1	544	1	5
+261	__OUT_AB	7	0	546	4	1
+262	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+263	__constStr0009	7	0	548	4	1
+264	__constStr0009.__constStr0009_type	1	1	0	1	0
+265	__OUT_BC	7	0	550	4	1
+266	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+267	__RLSBbufLSWrite1	7	0	552	4	6
+268	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+269	__constStr0011	7	0	554	4	1
+270	__constStr0011.__constStr0011_type	1	1	0	1	0
+271	__constStr0010	7	0	556	4	1
+272	__constStr0010.__constStr0010_type	1	1	0	1	0
+273	__OUT_AC	7	0	558	4	4
+274	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+275	__OUT_ABC	7	0	560	4	1
+276	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
+277	__RLSReadBuf2	7	0	562	4	8
+278	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+279	__RLSLastGoodRead2	7	0	564	4	2
+280	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+281	__strbufreading	7	0	566	4	6
+282	__strbufreading.__strbufreading_type	1	0	0	1	0
+283	motors	7	0	568	4	9
+284	motors.motors_type	1	0	0	1	0
+285	__RLSReadBuf1	7	0	570	4	15
+286	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+287	__RLSReadBuf0	7	0	572	4	10
+288	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+289	__RLSLastGoodRead0	7	0	574	4	2
+290	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+291	__rotate_ports6	7	0	576	4	13
+292	__rotate_ports6.__rotate_ports6_type	1	0	0	1	0
+293	__RLSLastGoodRead1	7	0	578	4	2
+294	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	10	0	#line 10 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+0	10	0	#line 10 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 0	11	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	10	2	#line 10 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-0	11	2	#line 11 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+0	10	2	#line 10 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+0	11	2	#line 11 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 0	12	2		exitto init
-0	11	4	#line 11 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+0	11	4	#line 11 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 0	12	4		exit -1, -1
 1	4794	0		brtst 4, __rotate_Done6, __rotate_angle6
 1	4795	3		set ____RotateMotor6_sign_tmp, 0
@@ -358,44 +367,44 @@ Clump	Line	PC	Source
 4	5672	0		acquire __CLSWMutex0
 4	5672	1		set __CLSWArgs0.Port, 0
 4	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
-4	5672	7		mov __CLSWArgs0.Buffer, __RLSReadBuf0
-4	5672	9		syscall 21, __CLSWArgs0
-4	5672	12		mov __RLSBResult0, __CLSWArgs0.Result
-4	5672	15		release __CLSWMutex0
-4	5673	16	#line 5673 "NXTDefs.h"
-4	5674	16		brtst 4, __RLSBReturn0, __RLSBytesCount0
-4	5675	19		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
-4	5676	23		brtst 5, __RLSBError0, __RLSBResult0
-4	5677	26		set __RLSBIterations0, 4
-4	5679	29	#pragma macro 23
-4	5679	29		acquire __CLSCSMutex0
-4	5679	30		set __CLSCSArgs0.Port, 0
-4	5679	33		syscall 23, __CLSCSArgs0
-4	5679	36		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
-4	5679	39		mov __RLSBResult0, __CLSCSArgs0.Result
-4	5679	42		release __CLSCSMutex0
-4	5679	43	#line 5679 "NXTDefs.h"
-4	5680	43		sub __RLSBIterations0, __RLSBIterations0, __constVal1
-4	5681	47		brtst 2, __RLSBError0, __RLSBIterations0
-4	5682	50		brtst 0, __RLSBError0, __RLSBResult0
-4	5683	53		brtst 4, __RLSBReadyToRead0, __RLSBResult0
-4	5685	56		wait2 NA, __constVal15
-4	5686	59		jmp __RLSBDoCheckStatus0
-4	5689	61	#pragma macro 25
-4	5689	61		acquire __CLSRMutex0
-4	5689	62		set __CLSRArgs0.Port, 0
-4	5689	65		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
-4	5689	67		syscall 22, __CLSRArgs0
-4	5689	70		mov __RLSReadBuf0, __CLSRArgs0.Buffer
-4	5689	72		mov __RLSBResult0, __CLSRArgs0.Result
-4	5689	74		release __CLSRMutex0
-4	5689	75	#line 5689 "NXTDefs.h"
-4	5690	75		brtst 5, __RLSBError0, __RLSBResult0
-4	5691	78		mov __RLSLastGoodRead0, __RLSReadBuf0
-4	5692	80		jmp __RLSBDone0
-4	5694	82		mov __RLSReadBuf0, __RLSLastGoodRead0
-4	5696	84		arrsize __RLSBytesCount0, __RLSReadBuf0
-4	5698	87		subret ____ReadLSBytes0_return
+4	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+4	5672	8		syscall 21, __CLSWArgs0
+4	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+4	5672	13		release __CLSWMutex0
+4	5673	14	#line 5673 "NXTDefs.h"
+4	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+4	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+4	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+4	5677	24		set __RLSBIterations0, 4
+4	5679	27	#pragma macro 23
+4	5679	27		acquire __CLSCSMutex0
+4	5679	28		set __CLSCSArgs0.Port, 0
+4	5679	31		syscall 23, __CLSCSArgs0
+4	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+4	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+4	5679	38		release __CLSCSMutex0
+4	5679	39	#line 5679 "NXTDefs.h"
+4	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+4	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+4	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+4	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+4	5685	52		wait2 NA, __constVal15
+4	5686	55		jmp __RLSBDoCheckStatus0
+4	5689	57	#pragma macro 25
+4	5689	57		acquire __CLSRMutex0
+4	5689	58		set __CLSRArgs0.Port, 0
+4	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+4	5689	63		syscall 22, __CLSRArgs0
+4	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+4	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+4	5689	70		release __CLSRMutex0
+4	5689	71	#line 5689 "NXTDefs.h"
+4	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+4	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+4	5692	76		jmp __RLSBDone0
+4	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+4	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+4	5698	83		subret ____ReadLSBytes0_return
 5	5710	0	#pragma macro 25
 5	5710	0		acquire __CLSWMutex1
 5	5710	1		set __CLSWArgs1.Port, 1
@@ -874,96 +883,96 @@ Clump	Line	PC	Source
 7	6560	441	#line 6560 "NXCDefs.h"
 7	6560	441	#line 6560 "NXCDefs.h"
 7	6561	441		subret __PlaySound_return
-8	27	0	#line 27 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-8	28	0		set __Wait_7qG2_ms_7qG2_000_inline_stopRotor, 100
-8	27	3	#line 27 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
+8	28	0	#line 28 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+8	29	0		set __Wait_7qG2_ms_7qG2_000_inline_stopRotor, 100
+8	28	3	#line 28 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
 8	7921	3	#line 7921 "NXCDefs.h"
 8	7922	3		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_stopRotor
 8	7921	6	#line 7921 "NXCDefs.h"
-8	28	6	#line 28 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-8	29	6	#line 29 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-8	30	6	#pragma macro 7
-8	30	6		setout GMotor, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	5423	29	#line 5423 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-8	29	29	#line 29 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-8	30	29	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-8	31	29		subret __stopRotor_return
-9	32	0	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	33	0		set __signed_stack_001close, 70
-9	32	3	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	32	3	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	33	3		set __signed_stack_002close, 180
-9	32	6	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	32	6	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	33	6		set __signed_stack_003close, 0
-9	32	9	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	32	9	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	33	9		set __signed_stack_004close, 0
-9	32	12	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	32	12	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	33	12		set __D0close, 1
-9	33	15	#line 33 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	34	15	#pragma macro 22
-9	34	15		acquire __rotateMutex0
-9	34	16		acquire __rotateMutex1
-9	34	17		acquire __rotateMutex2
-9	34	18		arrbuild __rotate_ports6, GMotor
-9	34	22		mov __rotate_power6, __signed_stack_001close
-9	34	24		mov __rotate_angle6, __signed_stack_002close
-9	34	26		mov __rotate_turnpct6, __signed_stack_003close
-9	34	28		mov __rotate_sync6, __signed_stack_004close
-9	34	30		mov __rotate_stop6, __D0close
-9	34	32		mov __rotate_theRVP6, __constVal32
-9	34	34		mov __rotate_theRVI6, __constVal0
-9	34	36		mov __rotate_theRVD6, __constVal96
-9	34	38		subcall __RotateMotorVar, ____RotateMotorVar_return
-9	34	41		release __rotateMutex2
-9	34	42		release __rotateMutex1
-9	34	43		release __rotateMutex0
-9	5459	44	#line 5459 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	33	44	#line 33 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	35	44	#line 35 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	36	44		subcall stopRotor, __stopRotor_return
-9	35	46	#line 35 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	37	46	#line 37 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-9	38	46		subret __close_return
-10	39	0	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	40	0		set __signed_stack_001open, 100
-10	39	3	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	39	3	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	39	3	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	39	3	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	39	3	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	40	3		sub __D0open, __constVal0, __open_7qG2_angle_7qG2_000
-10	40	7	#line 40 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	41	7	#pragma macro 22
-10	41	7		acquire __rotateMutex0
-10	41	8		acquire __rotateMutex1
-10	41	9		acquire __rotateMutex2
-10	41	10		arrbuild __rotate_ports6, GMotor
-10	41	14		mov __rotate_power6, __signed_stack_001open
-10	41	16		mov __rotate_angle6, __D0open
-10	41	18		mov __rotate_turnpct6, __constVal0
-10	41	20		mov __rotate_sync6, __constVal0
-10	41	22		mov __rotate_stop6, __constVal1
-10	41	24		mov __rotate_theRVP6, __constVal32
-10	41	26		mov __rotate_theRVI6, __constVal0
-10	41	28		mov __rotate_theRVD6, __constVal96
-10	41	30		subcall __RotateMotorVar, ____RotateMotorVar_return
-10	41	33		release __rotateMutex2
-10	41	34		release __rotateMutex1
-10	41	35		release __rotateMutex0
-10	5490	36	#line 5490 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	40	36	#line 40 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	42	36	#line 42 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	43	36		subcall stopRotor, __stopRotor_return
-10	42	38	#line 42 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	45	38	#line 45 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc"
-10	46	38		subret __open_return
-11	16	0	#line 16 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+8	29	6	#line 29 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+8	30	6	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+8	31	6	#pragma macro 7
+8	31	6		setout GMotor, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	5471	29	#line 5471 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+8	30	29	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+8	31	29	#line 31 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+8	32	29		subret __stopRotor_return
+9	33	0	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	34	0		set __signed_stack_001close, 70
+9	33	3	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	33	3	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	34	3		set __signed_stack_002close, 180
+9	33	6	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	33	6	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	34	6		set __signed_stack_003close, 0
+9	33	9	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	33	9	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	34	9		set __signed_stack_004close, 0
+9	33	12	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	33	12	#line 33 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	34	12		set __D0close, 1
+9	34	15	#line 34 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	35	15	#pragma macro 22
+9	35	15		acquire __rotateMutex0
+9	35	16		acquire __rotateMutex1
+9	35	17		acquire __rotateMutex2
+9	35	18		arrbuild __rotate_ports6, GMotor
+9	35	22		mov __rotate_power6, __signed_stack_001close
+9	35	24		mov __rotate_angle6, __signed_stack_002close
+9	35	26		mov __rotate_turnpct6, __signed_stack_003close
+9	35	28		mov __rotate_sync6, __signed_stack_004close
+9	35	30		mov __rotate_stop6, __D0close
+9	35	32		mov __rotate_theRVP6, __constVal32
+9	35	34		mov __rotate_theRVI6, __constVal0
+9	35	36		mov __rotate_theRVD6, __constVal96
+9	35	38		subcall __RotateMotorVar, ____RotateMotorVar_return
+9	35	41		release __rotateMutex2
+9	35	42		release __rotateMutex1
+9	35	43		release __rotateMutex0
+9	5507	44	#line 5507 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	34	44	#line 34 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	36	44	#line 36 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	37	44		subcall stopRotor, __stopRotor_return
+9	36	46	#line 36 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	38	46	#line 38 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+9	39	46		subret __close_return
+10	40	0	#line 40 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	41	0		set __signed_stack_001open, 100
+10	40	3	#line 40 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	40	3	#line 40 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	40	3	#line 40 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	40	3	#line 40 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	40	3	#line 40 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	41	3		sub __D0open, __constVal0, __open_7qG2_angle_7qG2_000
+10	41	7	#line 41 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	42	7	#pragma macro 22
+10	42	7		acquire __rotateMutex0
+10	42	8		acquire __rotateMutex1
+10	42	9		acquire __rotateMutex2
+10	42	10		arrbuild __rotate_ports6, GMotor
+10	42	14		mov __rotate_power6, __signed_stack_001open
+10	42	16		mov __rotate_angle6, __D0open
+10	42	18		mov __rotate_turnpct6, __constVal0
+10	42	20		mov __rotate_sync6, __constVal0
+10	42	22		mov __rotate_stop6, __constVal1
+10	42	24		mov __rotate_theRVP6, __constVal32
+10	42	26		mov __rotate_theRVI6, __constVal0
+10	42	28		mov __rotate_theRVD6, __constVal96
+10	42	30		subcall __RotateMotorVar, ____RotateMotorVar_return
+10	42	33		release __rotateMutex2
+10	42	34		release __rotateMutex1
+10	42	35		release __rotateMutex0
+10	5538	36	#line 5538 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	41	36	#line 41 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	43	36	#line 43 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	44	36		subcall stopRotor, __stopRotor_return
+10	43	38	#line 43 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	46	38	#line 46 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc"
+10	47	38		subret __open_return
+11	16	0	#line 16 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	17	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init, 2
-11	16	3	#line 16 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	17	3	#line 17 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	16	3	#line 16 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	17	3	#line 17 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	18	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init, __constVal1
 11	3758	5	#line 3758 "NXCDefs.h"
 11	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
@@ -1003,14 +1012,14 @@ Clump	Line	PC	Source
 11	3695	40	#pragma macro 4
 11	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
 11	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-11	5651	45	#line 5651 "NXCDefs.h"
+11	5699	45	#line 5699 "NXCDefs.h"
 11	3694	45	#line 3694 "NXCDefs.h"
 11	3761	45	#line 3761 "NXCDefs.h"
-11	17	45	#line 17 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	17	45	#line 17 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	17	45	#line 17 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	17	45	#line 17 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	18	45		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init, 1
-11	17	48	#line 17 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	18	48	#line 18 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	17	48	#line 17 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	18	48	#line 18 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	19	48		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init, __constVal1
 11	3758	50	#line 3758 "NXCDefs.h"
 11	3759	50		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
@@ -1050,14 +1059,14 @@ Clump	Line	PC	Source
 11	3695	85	#pragma macro 4
 11	3695	85		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
 11	3695	87		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-11	5718	90	#line 5718 "NXCDefs.h"
+11	5766	90	#line 5766 "NXCDefs.h"
 11	3694	90	#line 3694 "NXCDefs.h"
 11	3761	90	#line 3761 "NXCDefs.h"
-11	18	90	#line 18 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	18	90	#line 18 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	18	90	#line 18 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	18	90	#line 18 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	19	90		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init, 0
-11	18	93	#line 18 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	19	93	#line 19 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	18	93	#line 18 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	19	93	#line 19 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	20	93		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init, __constVal1
 11	3758	95	#line 3758 "NXCDefs.h"
 11	3759	95		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
@@ -1097,904 +1106,996 @@ Clump	Line	PC	Source
 11	3695	130	#pragma macro 4
 11	3695	130		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
 11	3695	132		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-11	5785	135	#line 5785 "NXCDefs.h"
+11	5833	135	#line 5833 "NXCDefs.h"
 11	3694	135	#line 3694 "NXCDefs.h"
 11	3761	135	#line 3761 "NXCDefs.h"
-11	19	135	#line 19 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	19	135	#line 19 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	19	135	#line 19 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	19	135	#line 19 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	20	135		set __SetSensorTouch_7qG2_port_7qG2_000_inline_init, 3
-11	19	138	#line 19 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	19	138	#line 19 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	3718	138	#line 3718 "NXCDefs.h"
 11	3719	138	#pragma macro 6
 11	3719	138		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_init, 0
 11	3719	142		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_init, 1
 11	3719	146		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_init
 11	3719	148		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-11	5800	151	#line 5800 "NXCDefs.h"
+11	5848	151	#line 5848 "NXCDefs.h"
 11	3718	151	#line 3718 "NXCDefs.h"
-11	21	151	#line 21 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	21	151	#line 21 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	21	151	#line 21 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	21	151	#line 21 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 11	22	151	#pragma macro 30
 11	22	151		acquire __RLSBmutex1
 11	22	152		mov __RLSReadBuf1, __RLSBbufLSWrite1
 11	22	154		set __RLSBytesCount1, 2
 11	22	157		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-11	22	159		index __D0init, __RLSReadBuf1, 65535
-11	22	163		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
-11	22	167		add __D0init, __D0init, __D0init
-11	22	171		add __D0init, __D0init, __RLSBytesCount1
-11	22	175		release __RLSBmutex1
-11	5804	176	#line 5804 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	21	176	#line 21 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	22	176		mov ownGoal, __D0init
-11	21	178	#line 21 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	21	178	#line 21 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	22	178	#line 22 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	23	178		set __Wait_7qG2_ms_7qG2_000_inline_init, 100
-11	22	181	#line 22 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	7921	181	#line 7921 "NXCDefs.h"
-11	7922	181		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
-11	7921	184	#line 7921 "NXCDefs.h"
-11	24	184	#line 24 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	25	184	#line 25 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	25	184	#line 25 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-11	26	184		exit 0, 2
-12	28	0	#line 28 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	28	0	#line 28 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	28	0	#line 28 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	28	0	#line 28 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+11	22	160		index __D0init, __RLSReadBuf1, 65535
+11	22	164		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
+11	22	168		add __D0init, __D0init, __D0init
+11	22	172		add __D0init, __D0init, __RLSBytesCount1
+11	22	176		release __RLSBmutex1
+11	5852	177	#line 5852 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	21	177	#line 21 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	22	177		mov ownGoal, __D0init
+11	21	179	#line 21 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	21	179	#line 21 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	22	179	#line 22 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	23	179		set __Wait_7qG2_ms_7qG2_000_inline_init, 100
+11	22	182	#line 22 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	7921	182	#line 7921 "NXCDefs.h"
+11	7922	182		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+11	7921	185	#line 7921 "NXCDefs.h"
+11	24	185	#line 24 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	25	185	#line 25 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	25	185	#line 25 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+11	26	185		exit 0, 2
+12	28	0	#line 28 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	28	0	#line 28 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	28	0	#line 28 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	28	0	#line 28 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 12	29	0		sub __D0getDegreeDiff, __getDegreeDiff_7qG2_current_7qG2_000, __getDegreeDiff_7qG2_old_7qG2_000
-12	29	4	#line 29 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+12	29	4	#line 29 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 12	30	4		abs __getDegreeDiff_7qG2_diff_7qG2_000, __D0getDegreeDiff
-12	29	7	#line 29 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	29	7	#line 29 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+12	29	7	#line 29 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	29	7	#line 29 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 12	30	7		mov __signed_stack_001getDegreeDiff, __getDegreeDiff_7qG2_diff_7qG2_000
-12	29	9	#line 29 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	30	9	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+12	29	9	#line 29 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	30	9	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 12	31	9		set __D0getDegreeDiff, 180
-12	30	12	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+12	30	12	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 12	31	12		cmp 1, __zfgetDegreeDiff, __signed_stack_001getDegreeDiff, __D0getDegreeDiff
-12	30	16	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+12	30	16	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 12	31	16		mov __D0getDegreeDiff, __zfgetDegreeDiff
-12	30	19	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	31	19		brtst 4, __NXC_Label_523, __zfgetDegreeDiff
-12	30	22	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	30	22	#line 30 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	31	22	#line 31 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	31	22	#line 31 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	32	22		sub __getDegreeDiff_7qG2_diff_7qG2_000, __constVal360, __getDegreeDiff_7qG2_diff_7qG2_000
-12	31	26	#line 31 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	31	26	#line 31 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	31	26	#line 31 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	32	26	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	33	26		mov __D0getDegreeDiff, __getDegreeDiff_7qG2_diff_7qG2_000
-12	32	28	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	33	28		subret __getDegreeDiff_return
-12	32	30	#line 32 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	34	30	#line 34 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-12	35	30		subret __getDegreeDiff_return
-13	36	0	#line 36 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+12	30	18	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	31	18		brtst 4, __NXC_Label_523, __zfgetDegreeDiff
+12	30	21	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	30	21	#line 30 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	31	21	#line 31 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	31	21	#line 31 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	32	21		sub __getDegreeDiff_7qG2_diff_7qG2_000, __constVal360, __getDegreeDiff_7qG2_diff_7qG2_000
+12	31	25	#line 31 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	31	25	#line 31 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	31	25	#line 31 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	32	25	#line 32 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	33	25		mov __D0getDegreeDiff, __getDegreeDiff_7qG2_diff_7qG2_000
+12	32	27	#line 32 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	33	27		subret __getDegreeDiff_return
+12	32	29	#line 32 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	34	29	#line 34 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+12	35	29		subret __getDegreeDiff_return
+13	36	0	#line 36 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	37	0		mov __signed_stack_001backtoOrigin, relBearing
-13	36	2	#line 36 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	37	2	#line 37 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	36	2	#line 36 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	37	2	#line 37 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	38	2		set __D0backtoOrigin, 5
-13	37	5	#line 37 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	37	5	#line 37 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	38	5		cmp 1, __zfbacktoOrigin, __signed_stack_001backtoOrigin, __D0backtoOrigin
-13	37	9	#line 37 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	37	9	#line 37 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	38	9		mov __D0backtoOrigin, __zfbacktoOrigin
-13	38	12	#line 38 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	38	12	#line 38 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	39	12		brtst 4, __NXC_Label_529, __zfbacktoOrigin
-13	38	15	#line 38 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	38	15	#line 38 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	39	15		set __reverseDirection_7qG2_moveTime_7qG2_000, 100
-13	38	18	#line 38 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	39	18	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	38	18	#line 38 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	39	18	#line 39 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	40	18		subcall reverseDirection, __reverseDirection_return
-13	39	20	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	39	20	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	39	20	#line 39 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	39	20	#line 39 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 13	40	20	#pragma macro 30
 13	40	20		acquire __RLSBmutex1
 13	40	21		mov __RLSReadBuf1, __RLSBbufLSWrite1
 13	40	23		set __RLSBytesCount1, 2
 13	40	26		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-13	40	28		index __D0backtoOrigin, __RLSReadBuf1, 65535
-13	40	32		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
-13	40	36		add __D0backtoOrigin, __D0backtoOrigin, __D0backtoOrigin
-13	40	40		add __D0backtoOrigin, __D0backtoOrigin, __RLSBytesCount1
-13	40	44		release __RLSBmutex1
-13	5917	45	#line 5917 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	39	45	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	40	45		mov currentCompass, __D0backtoOrigin
-13	39	47	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	39	47	#line 39 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	41	47	#line 41 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	41	47	#line 41 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	41	47	#line 41 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	41	47	#line 41 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	42	47		sub __D0backtoOrigin, __D0backtoOrigin, ownGoal
-13	42	51	#line 42 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	43	51		abs relBearing, __D0backtoOrigin
-13	42	54	#line 42 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	42	54	#line 42 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	43	54	#line 43 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	44	54		jmp __NXC_Label_528
-13	43	56	#line 43 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	44	56	#line 44 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	45	56	#pragma macro 7
-13	45	56		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-13	5946	79	#line 5946 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	44	79	#line 44 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	45	79	#line 45 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-13	46	79		subret __backtoOrigin_return
-14	61	0	#line 61 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+13	40	29		index __D0backtoOrigin, __RLSReadBuf1, 65535
+13	40	33		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
+13	40	37		add __D0backtoOrigin, __D0backtoOrigin, __D0backtoOrigin
+13	40	41		add __D0backtoOrigin, __D0backtoOrigin, __RLSBytesCount1
+13	40	45		release __RLSBmutex1
+13	5965	46	#line 5965 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	39	46	#line 39 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	40	46		mov currentCompass, __D0backtoOrigin
+13	39	48	#line 39 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	39	48	#line 39 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	41	48	#line 41 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	41	48	#line 41 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	41	48	#line 41 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	41	48	#line 41 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	42	48		sub __D0backtoOrigin, __D0backtoOrigin, ownGoal
+13	42	52	#line 42 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	43	52		abs relBearing, __D0backtoOrigin
+13	42	55	#line 42 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	42	55	#line 42 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	43	55	#line 43 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	44	55		jmp __NXC_Label_528
+13	43	57	#line 43 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	44	57	#line 44 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	45	57	#pragma macro 7
+13	45	57		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	5994	80	#line 5994 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	44	80	#line 44 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	45	80	#line 45 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+13	46	80		subret __backtoOrigin_return
+14	61	0	#line 61 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	62	0		set __signed_stack_001throwBall, 60
-14	61	3	#line 61 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	61	3	#line 61 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	61	3	#line 61 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	61	3	#line 61 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	62	3		set __D0throwBall, 1
-14	62	6	#line 62 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	62	6	#line 62 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	63	6	#pragma macro 10
 14	63	6		acquire __OnRevMutex
 14	63	7		neg __OnRev_Tmp, __signed_stack_001throwBall
 14	63	10		setout motors, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0throwBall, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 14	63	33		release __OnRevMutex
-14	6032	34	#line 6032 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	62	34	#line 62 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	62	34	#line 62 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	6080	34	#line 6080 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	62	34	#line 62 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	62	34	#line 62 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	63	34		set __Wait_7qG2_ms_7qG2_000_inline_throwBall, 1200
-14	62	37	#line 62 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	62	37	#line 62 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	7921	37	#line 7921 "NXCDefs.h"
 14	7922	37		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_throwBall
 14	7921	40	#line 7921 "NXCDefs.h"
-14	63	40	#line 63 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	64	40	#line 64 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	63	40	#line 63 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	64	40	#line 64 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	65	40	#pragma macro 7
 14	65	40		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	6049	63	#line 6049 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	64	63	#line 64 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	65	63	#line 65 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	6097	63	#line 6097 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	64	63	#line 64 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	65	63	#line 65 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	66	63		subcall close, __close_return
-14	65	65	#line 65 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	65	65	#line 65 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	65	65	#line 65 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	65	65	#line 65 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	66	65		set __signed_stack_001throwBall, 100
-14	65	68	#line 65 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	65	68	#line 65 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	65	68	#line 65 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	65	68	#line 65 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	66	68		set __D0throwBall, 1
-14	66	71	#line 66 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	66	71	#line 66 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	67	71	#pragma macro 7
 14	67	71		setout motors, 2, __signed_stack_001throwBall, 1, __constVal7, 8, __constVal2, 7, __D0throwBall, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	6065	94	#line 6065 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	66	94	#line 66 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	66	94	#line 66 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	6113	94	#line 6113 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	66	94	#line 66 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	66	94	#line 66 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	67	94		set __Wait_7qG2_ms_7qG2_000_inline_throwBall, 900
-14	66	97	#line 66 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	66	97	#line 66 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	7921	97	#line 7921 "NXCDefs.h"
 14	7922	97		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_throwBall
 14	7921	100	#line 7921 "NXCDefs.h"
-14	67	100	#line 67 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	67	100	#line 67 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	67	100	#line 67 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	67	100	#line 67 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	68	100		set __open_7qG2_angle_7qG2_000, 180
-14	67	103	#line 67 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	68	103	#line 68 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	67	103	#line 67 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	68	103	#line 68 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	69	103		subcall open, __open_return
-14	68	105	#line 68 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	69	105	#line 69 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	68	105	#line 68 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	69	105	#line 69 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	70	105	#pragma macro 7
 14	70	105		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	6087	128	#line 6087 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	69	128	#line 69 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	70	128	#line 70 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	6135	128	#line 6135 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	69	128	#line 69 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	70	128	#line 70 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	71	128		subcall stopRotor, __stopRotor_return
-14	70	130	#line 70 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-14	72	130	#line 72 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+14	70	130	#line 70 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+14	72	130	#line 72 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 14	73	130		subret __throwBall_return
-15	77	0	#line 77 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+15	77	0	#line 77 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 15	78	0		set __getObjColor_7qG2_output_7qG2_000, 0
-15	77	3	#line 77 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	77	3	#line 77 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+15	77	3	#line 77 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	77	3	#line 77 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 15	78	3	#pragma macro 32
 15	78	3		acquire __RLSBmutex2
 15	78	4		mov __RLSReadBuf2, __RLSBbufLSWrite1
 15	78	6		set __RLSBytesCount2, 4
 15	78	9		subcall __ReadLSBytes2, ____ReadLSBytes2_return
-15	78	11		tst 4, __D0getObjColor, __RLSBResult2
-15	78	14		index __getObjColor_7qG2_output_7qG2_000, __RLSReadBuf2, 65535
-15	78	18		release __RLSBmutex2
-15	6120	19	#line 6120 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	77	19	#line 77 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	77	19	#line 77 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	80	19	#line 80 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	81	19		mov __DU0getObjColor, __getObjColor_7qG2_output_7qG2_000
-15	80	21	#line 80 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	81	21		subret __getObjColor_return
-15	80	23	#line 80 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	82	23	#line 82 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-15	83	23		subret __getObjColor_return
-16	91	0	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	0		subcall getObjColor, __getObjColor_return
-16	91	2	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	2		mov __checkandthrow_7qG2_output_7qG2_000, __DU0getObjColor
-16	91	4	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	91	4	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	4		mov __unsigned_stack_001checkandthrow, __DU0getObjColor
-16	91	6	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	91	6	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	6		set __D0checkandthrow, 9
-16	91	9	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	9		cmp 4, __zfcheckandthrow, __unsigned_stack_001checkandthrow, __D0checkandthrow
-16	91	13	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	13		mov __D0checkandthrow, __zfcheckandthrow
-16	91	16	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	16		brtst 5, __NXC_Label_582, __zfcheckandthrow
-16	91	19	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	19		mov __signed_stack_001checkandthrow, __D0checkandthrow
-16	91	21	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	21		mov __unsigned_stack_002checkandthrow, __checkandthrow_7qG2_output_7qG2_000
-16	91	23	#line 91 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	23	#line 92 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	93	23		set __D0checkandthrow, 2
-16	92	26	#line 92 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	93	26		cmp 4, __zfcheckandthrow, __unsigned_stack_002checkandthrow, __D0checkandthrow
-16	92	30	#line 92 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	92	30	#line 92 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	93	30		or __D0checkandthrow, __signed_stack_001checkandthrow, __zfcheckandthrow
-16	93	34	#line 93 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	94	34		tst 5, __zfcheckandthrow, __D0checkandthrow
-16	93	37	#line 93 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	94	37		brtst 4, __NXC_Label_585, __zfcheckandthrow
-16	94	40	#line 94 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	95	40		subcall close, __close_return
-16	94	42	#line 94 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	95	42	#line 95 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	96	42		subcall backtoOrigin, __backtoOrigin_return
-16	95	44	#line 95 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	95	44	#line 95 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	96	44		set __open_7qG2_angle_7qG2_000, 15
-16	95	47	#line 95 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	96	47	#line 96 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	97	47		subcall open, __open_return
-16	96	49	#line 96 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	96	49	#line 96 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	97	49		set __Wait_7qG2_ms_7qG2_000_inline_checkandthrow, 800
-16	96	52	#line 96 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	7921	52	#line 7921 "NXCDefs.h"
-16	7922	52		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_checkandthrow
-16	7921	55	#line 7921 "NXCDefs.h"
-16	97	55	#line 97 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	97	55	#line 97 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	98	55		set __open_7qG2_angle_7qG2_000, 165
-16	97	58	#line 97 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	98	58	#line 98 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	99	58		subcall open, __open_return
-16	98	60	#line 98 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	99	60	#line 99 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	100	60		subcall throwBall, __throwBall_return
-16	99	62	#line 99 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	100	62	#line 100 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	101	62		set __DU0checkandthrow, 1
-16	100	65	#line 100 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	100	65	#line 100 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	101	65		subret __checkandthrow_return
-16	100	67	#line 100 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	101	67	#line 101 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	102	67	#line 102 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	103	67		set __DU0checkandthrow, 0
-16	102	70	#line 102 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	102	70	#line 102 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	103	70		subret __checkandthrow_return
-16	102	72	#line 102 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	105	72	#line 105 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-16	106	72		subret __checkandthrow_return
-17	107	0	#line 107 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	108	0		set __signed_stack_001moveTowardObj, 40
-17	107	3	#line 107 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	107	3	#line 107 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	108	3		set __D0moveTowardObj, 1
-17	108	6	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	6	#pragma macro 7
-17	109	6		setout __OUT_AC, 2, __signed_stack_001moveTowardObj, 1, __constVal7, 8, __constVal2, 7, __D0moveTowardObj, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-17	6309	29	#line 6309 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	108	29	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	108	29	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	29	#pragma macro 26
-17	109	29		acquire __RLSBmutex0
-17	109	30		mov __RLSReadBuf0, __RLSBbufLSWrite1
-17	109	32		set __RLSBytesCount0, 1
-17	109	35		wait2 NA, __constVal15
-17	109	38		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-17	109	41		index __D0moveTowardObj, __RLSReadBuf0, 65535
-17	109	45		release __RLSBmutex0
-17	6313	46	#line 6313 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	108	46	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	46		mov __signed_stack_001moveTowardObj, __D0moveTowardObj
-17	108	48	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	48		set __D0moveTowardObj, 7
-17	108	51	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	51		cmp 2, __zfmoveTowardObj, __signed_stack_001moveTowardObj, __D0moveTowardObj
-17	108	55	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	108	55	#line 108 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	55		not __D0moveTowardObj, __zfmoveTowardObj
-17	109	58	#line 109 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	110	58		tst 5, __zfmoveTowardObj, __D0moveTowardObj
-17	109	61	#line 109 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	110	61		brtst 4, __NXC_Label_601, __zfmoveTowardObj
-17	109	64	#line 109 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	109	64	#line 109 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	110	64		jmp __NXC_Label_600
-17	109	66	#line 109 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	110	66	#line 110 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	111	66	#pragma macro 7
-17	111	66		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-17	6338	89	#line 6338 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	110	89	#line 110 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	112	89	#line 112 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-17	113	89		subret __moveTowardObj_return
-18	115	0	#line 115 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	116	0		mov scanningLeft, scanningRight
-18	115	2	#line 115 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	115	2	#line 115 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	116	2	#line 116 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	116	2	#line 116 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	117	2		not scanningRight, scanningRight
-18	116	5	#line 116 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	116	5	#line 116 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	118	5	#line 118 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-18	119	5		subret __changeDirection_return
-19	120	0	#line 120 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	121	0		set __signed_stack_001moveFwd, 40
-19	120	3	#line 120 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	120	3	#line 120 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	121	3		set __D0moveFwd, 2
-19	121	6	#line 121 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	122	6	#pragma macro 7
-19	122	6		setout __OUT_AC, 2, __signed_stack_001moveFwd, 1, __constVal7, 8, __constVal2, 7, __D0moveFwd, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-19	6377	29	#line 6377 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	121	29	#line 121 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	121	29	#line 121 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	122	29		mov __Wait_7qG2_ms_7qG2_000_inline_moveFwd, __moveFwd_7qG2_moveTime_7qG2_000
-19	121	31	#line 121 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	7921	31	#line 7921 "NXCDefs.h"
-19	7922	31		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_moveFwd
-19	7921	34	#line 7921 "NXCDefs.h"
-19	122	34	#line 122 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	123	34	#line 123 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	124	34	#pragma macro 7
-19	124	34		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-19	6394	57	#line 6394 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	123	57	#line 123 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	124	57	#line 124 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-19	125	57		subret __moveFwd_return
-20	126	0	#line 126 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	127	0		set __signed_stack_001moveBwd, 40
-20	126	3	#line 126 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	126	3	#line 126 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	127	3		set __D0moveBwd, 2
-20	127	6	#line 127 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	128	6	#pragma macro 10
-20	128	6		acquire __OnRevMutex
-20	128	7		neg __OnRev_Tmp, __signed_stack_001moveBwd
-20	128	10		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0moveBwd, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-20	128	33		release __OnRevMutex
-20	6412	34	#line 6412 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	127	34	#line 127 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	127	34	#line 127 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	128	34		mov __Wait_7qG2_ms_7qG2_000_inline_moveBwd, __moveBwd_7qG2_moveTime_7qG2_000
-20	127	36	#line 127 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	7921	36	#line 7921 "NXCDefs.h"
-20	7922	36		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_moveBwd
-20	7921	39	#line 7921 "NXCDefs.h"
-20	128	39	#line 128 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	129	39	#line 129 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	130	39	#pragma macro 7
-20	130	39		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-20	6429	62	#line 6429 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	129	62	#line 129 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	130	62	#line 130 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-20	131	62		subret __moveBwd_return
-21	133	0	#line 133 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	134	0		mov __DU0reverseDirection, scanningRight
-21	134	2	#line 134 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	135	2		tst 5, __zfreverseDirection, __DU0reverseDirection
-21	134	5	#line 134 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	135	5		brtst 4, __NXC_Label_624, __zfreverseDirection
-21	134	8	#line 134 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	135	8		set __D0reverseDirection, 25
-21	135	11	#line 135 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	136	11	#pragma macro 7
-21	136	11		setout RMotor, 2, __D0reverseDirection, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-21	6449	34	#line 6449 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	135	34	#line 135 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	135	34	#line 135 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	136	34		set __D0reverseDirection, 25
-21	136	37	#line 136 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	137	37	#pragma macro 10
-21	137	37		acquire __OnRevMutex
-21	137	38		neg __OnRev_Tmp, __D0reverseDirection
-21	137	41		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-21	137	64		release __OnRevMutex
-21	6456	65	#line 6456 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	136	65	#line 136 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	139	65	#line 139 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	140	65		jmp __NXC_Label_629
-21	139	67	#line 139 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	140	67		set __D0reverseDirection, 25
-21	140	70	#line 140 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	141	70	#pragma macro 7
-21	141	70		setout LMotor, 2, __D0reverseDirection, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-21	6466	93	#line 6466 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	140	93	#line 140 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	140	93	#line 140 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	141	93		set __D0reverseDirection, 25
-21	141	96	#line 141 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	142	96	#pragma macro 10
-21	142	96		acquire __OnRevMutex
-21	142	97		neg __OnRev_Tmp, __D0reverseDirection
-21	142	100		setout RMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-21	142	123		release __OnRevMutex
-21	6473	124	#line 6473 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	141	124	#line 141 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	142	124	#line 142 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	142	124	#line 142 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	143	124		mov __Wait_7qG2_ms_7qG2_000_inline_reverseDirection, __reverseDirection_7qG2_moveTime_7qG2_000
-21	142	126	#line 142 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	7921	126	#line 7921 "NXCDefs.h"
-21	7922	126		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_reverseDirection
-21	7921	129	#line 7921 "NXCDefs.h"
-21	143	129	#line 143 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	144	129	#line 144 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-21	145	129		subret __reverseDirection_return
-22	145	0	#line 145 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	146	0		set __D0reading, 1
-22	147	3	#line 147 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	148	3		tst 5, __zfreading, __D0reading
-22	147	6	#line 147 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	148	6		brtst 4, __NXC_Label_637, __zfreading
-22	149	9	#line 149 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	150	9		acquire moveMutex
-22	149	10	#line 149 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	149	10	#line 149 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	150	10	#pragma macro 30
-22	150	10		acquire __RLSBmutex1
-22	150	11		mov __RLSReadBuf1, __RLSBbufLSWrite1
-22	150	13		set __RLSBytesCount1, 2
-22	150	16		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-22	150	18		index __D0reading, __RLSReadBuf1, 65535
-22	150	22		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
-22	150	26		add __D0reading, __D0reading, __D0reading
-22	150	30		add __D0reading, __D0reading, __RLSBytesCount1
-22	150	34		release __RLSBmutex1
-22	6509	35	#line 6509 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	149	35	#line 149 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	150	35		mov currentCompass, __D0reading
-22	149	37	#line 149 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	149	37	#line 149 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	6069	37	#line 6069 "NXCDefs.h"
-22	6070	37	#pragma macro 6
-22	6070	37		acquire __PointOutMutex
-22	6070	38		mov __PointOutArgs.Location.X, __constVal200
-22	6070	41		mov __PointOutArgs.Location.Y, __constVal200
-22	6070	44		mov __PointOutArgs.Options, __constVal1
-22	6070	46		syscall 14, __PointOutArgs
-22	6070	49		release __PointOutMutex
-22	6517	50	#line 6517 "NXCDefs.h"
-22	6069	50	#line 6069 "NXCDefs.h"
-22	152	50	#line 152 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	152	50	#line 152 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	153	50		set __signed_stack_001reading, 10
-22	152	53	#line 152 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	152	53	#line 152 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	153	53		set __signed_stack_002reading, 56
-22	152	56	#line 152 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	152	56	#line 152 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	153	56		strcat __strbufreading, __constStr0009
-22	153	60	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	60		acquire __TextOutMutex
-22	153	61	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	61		mov __TextOutArgs.Location.X, __signed_stack_001reading
-22	153	64	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	64		mov __TextOutArgs.Location.Y, __signed_stack_002reading
-22	153	67	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	67		set __TextOutArgs.Options, 0
-22	153	70	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	70		mov __TextOutArgs.Text, __strbufreading
-22	153	72	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	72		syscall 13, __TextOutArgs
-22	153	75	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	75		mov __D0reading, __TextOutArgs.Result
-22	153	78	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	78		release __TextOutMutex
-22	153	79	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	153	79	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	79		set __signed_stack_001reading, 10
-22	153	82	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	153	82	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	82		set __signed_stack_002reading, 48
-22	153	85	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	153	85	#line 153 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	154	85		mov __D0reading, ownGoal
-22	155	87	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	87		acquire __TextOutMutex
-22	155	88	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	88		mov __TextOutArgs.Location.X, __signed_stack_001reading
-22	155	91	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	91		mov __TextOutArgs.Location.Y, __signed_stack_002reading
-22	155	94	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	94		set __TextOutArgs.Options, 0
-22	155	97	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	97		numtostr __TextOutArgs.Text, __D0reading
-22	155	100	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	100		syscall 13, __TextOutArgs
-22	155	103	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	103		mov __D0reading, __TextOutArgs.Result
-22	155	106	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	106		release __TextOutMutex
-22	155	107	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	155	107	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	107		set __signed_stack_001reading, 10
-22	155	110	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	155	110	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	110		set __signed_stack_002reading, 40
-22	155	113	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	155	113	#line 155 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	113		strcat __strbufreading, __constStr0010
-22	156	117	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	117		acquire __TextOutMutex
-22	156	118	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	118		mov __TextOutArgs.Location.X, __signed_stack_001reading
-22	156	121	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	121		mov __TextOutArgs.Location.Y, __signed_stack_002reading
-22	156	124	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	124		set __TextOutArgs.Options, 0
-22	156	127	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	127		mov __TextOutArgs.Text, __strbufreading
-22	156	129	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	129		syscall 13, __TextOutArgs
-22	156	132	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	132		mov __D0reading, __TextOutArgs.Result
-22	156	135	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	135		release __TextOutMutex
-22	156	136	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	136	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	136		set __signed_stack_001reading, 10
-22	156	139	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	139	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	139		set __signed_stack_002reading, 32
-22	156	142	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	156	142	#line 156 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	157	142		mov __D0reading, currentCompass
-22	158	144	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	144		acquire __TextOutMutex
-22	158	145	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	145		mov __TextOutArgs.Location.X, __signed_stack_001reading
-22	158	148	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	148		mov __TextOutArgs.Location.Y, __signed_stack_002reading
-22	158	151	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	151		set __TextOutArgs.Options, 0
-22	158	154	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	154		numtostr __TextOutArgs.Text, __D0reading
-22	158	157	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	157		syscall 13, __TextOutArgs
-22	158	160	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	160		mov __D0reading, __TextOutArgs.Result
-22	158	163	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	163		release __TextOutMutex
-22	158	164	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	158	164	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	164		mov __getDegreeDiff_7qG2_current_7qG2_000, currentCompass
-22	158	166	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	158	166	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	166		mov __getDegreeDiff_7qG2_old_7qG2_000, ownGoal
-22	158	168	#line 158 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	168	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	168		subcall getDegreeDiff, __getDegreeDiff_return
-22	159	170	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	170		mov relBearing, __D0getDegreeDiff
-22	159	172	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	172	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	172	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	172		set __signed_stack_001reading, 10
-22	159	175	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	175	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	175		set __signed_stack_002reading, 24
-22	159	178	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	159	178	#line 159 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	178		strcat __strbufreading, __constStr0011
-22	160	182	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	182		acquire __TextOutMutex
-22	160	183	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	183		mov __TextOutArgs.Location.X, __signed_stack_001reading
-22	160	186	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	186		mov __TextOutArgs.Location.Y, __signed_stack_002reading
-22	160	189	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	189		set __TextOutArgs.Options, 0
-22	160	192	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	192		mov __TextOutArgs.Text, __strbufreading
-22	160	194	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	194		syscall 13, __TextOutArgs
-22	160	197	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	197		mov __D0reading, __TextOutArgs.Result
-22	160	200	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	200		release __TextOutMutex
-22	160	201	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	201	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	201		set __signed_stack_001reading, 10
-22	160	204	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	204	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	204		set __signed_stack_002reading, 16
-22	160	207	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	160	207	#line 160 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	161	207		mov __D0reading, relBearing
-22	162	209	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	209		acquire __TextOutMutex
-22	162	210	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	210		mov __TextOutArgs.Location.X, __signed_stack_001reading
-22	162	213	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	213		mov __TextOutArgs.Location.Y, __signed_stack_002reading
-22	162	216	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	216		set __TextOutArgs.Options, 0
-22	162	219	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	219		numtostr __TextOutArgs.Text, __D0reading
-22	162	222	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	222		syscall 13, __TextOutArgs
-22	162	225	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	225		mov __D0reading, __TextOutArgs.Result
-22	162	228	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	228		release __TextOutMutex
-22	162	229	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	162	229	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	229		mov __signed_stack_001reading, relBearing
-22	162	231	#line 162 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	163	231	#line 163 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	164	231		set __D0reading, 75
-22	163	234	#line 163 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	164	234		cmp 0, __zfreading, __signed_stack_001reading, __D0reading
-22	163	238	#line 163 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	164	238		mov __D0reading, __zfreading
-22	165	241	#line 165 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	166	241		brtst 4, __NXC_Label_680, __zfreading
-22	165	244	#line 165 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	166	244		set __ClearSensor_7qG2_port_7qG2_000_inline_reading, 0
-22	165	247	#line 165 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	3684	247	#line 3684 "NXCDefs.h"
-22	3685	247		setin __constVal0, __ClearSensor_7qG2_port_7qG2_000_inline_reading, 4
-22	3684	251	#line 3684 "NXCDefs.h"
-22	166	251	#line 166 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	166	251	#line 166 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	167	251	#pragma macro 26
-22	167	251		acquire __RLSBmutex0
-22	167	252		mov __RLSReadBuf0, __RLSBbufLSWrite1
-22	167	254		set __RLSBytesCount0, 1
-22	167	257		wait2 NA, __constVal15
-22	167	260		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-22	167	263		index __D0reading, __RLSReadBuf0, 65535
-22	167	267		release __RLSBmutex0
-22	6762	268	#line 6762 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	166	268	#line 166 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	167	268		mov __signed_stack_001reading, __D0reading
-22	167	270	#line 167 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	168	270		set __D0reading, 40
-22	167	273	#line 167 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	168	273		cmp 2, __zfreading, __signed_stack_001reading, __D0reading
-22	167	277	#line 167 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	168	277		mov __D0reading, __zfreading
-22	168	280	#line 168 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	169	280		brtst 4, __NXC_Label_685, __zfreading
-22	168	283	#line 168 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	169	283		set __PlaySound_7qG2_aCode_7qG2_000, 3
-22	168	286	#line 168 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	170	286	#line 170 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	171	286		subcall PlaySound, __PlaySound_return
-22	170	288	#line 170 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	171	288	#line 171 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	172	288		subcall moveTowardObj, __moveTowardObj_return
-22	171	290	#line 171 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	174	290	#line 174 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	175	290		subcall checkandthrow, __checkandthrow_return
-22	174	292	#line 174 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	174	292	#line 174 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	175	292	#line 175 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	175	292	#line 175 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	176	292		not __DU0reading, __DU0checkandthrow
-22	179	295	#line 179 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	180	295		tst 5, __zfreading, __DU0reading
-22	179	298	#line 179 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	180	298		brtst 4, __NXC_Label_692, __zfreading
-22	179	301	#line 179 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	180	301		set __moveBwd_7qG2_moveTime_7qG2_000, 1000
-22	179	304	#line 179 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	181	304	#line 181 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	182	304		subcall moveBwd, __moveBwd_return
-22	181	306	#line 181 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	182	306	#line 182 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	183	306		mov __DU0reading, scanningRight
-22	184	308	#line 184 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	185	308		tst 5, __zfreading, __DU0reading
-22	184	311	#line 184 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	185	311		brtst 4, __NXC_Label_697, __zfreading
-22	185	314	#line 185 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	186	314		subcall backtoOrigin, __backtoOrigin_return
-22	185	316	#line 185 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	185	316	#line 185 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	186	316		set __moveFwd_7qG2_moveTime_7qG2_000, 1000
-22	185	319	#line 185 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	186	319	#line 186 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	187	319		subcall moveFwd, __moveFwd_return
-22	186	321	#line 186 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	189	321	#line 189 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	190	321	#line 190 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	191	321		subcall changeDirection, __changeDirection_return
-22	190	323	#line 190 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	193	323	#line 193 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	194	323	#line 194 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	196	323	#line 196 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	197	323		jmp __NXC_Label_700
-22	197	325	#line 197 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	198	325		mov __DU0reading, scanningRight
-22	199	327	#line 199 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	200	327		tst 5, __zfreading, __DU0reading
-22	199	330	#line 199 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	200	330		brtst 4, __NXC_Label_703, __zfreading
-22	200	333	#line 200 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	201	333		subcall backtoOrigin, __backtoOrigin_return
-22	200	335	#line 200 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	200	335	#line 200 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	201	335		set __moveFwd_7qG2_moveTime_7qG2_000, 1000
-22	200	338	#line 200 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	201	338	#line 201 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	202	338		subcall moveFwd, __moveFwd_return
-22	201	340	#line 201 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	202	340	#line 202 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	204	340	#line 204 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	205	340		subcall changeDirection, __changeDirection_return
-22	204	342	#line 204 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	205	342	#line 205 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	206	342		release moveMutex
-22	205	343	#line 205 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	205	343	#line 205 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	206	343		set __Wait_7qG2_ms_7qG2_000_inline_reading, 1000
-22	205	346	#line 205 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	7921	346	#line 7921 "NXCDefs.h"
-22	7922	346		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_reading
-22	7921	349	#line 7921 "NXCDefs.h"
-22	206	349	#line 206 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	207	349	#line 207 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	208	349		acquire moveMutex
-22	207	350	#line 207 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	209	350	#line 209 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	210	350	#line 210 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	211	350		release moveMutex
-22	210	351	#line 210 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	213	351	#line 213 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	214	351		jmp __NXC_Label_636
-22	213	353	#line 213 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-22	214	353		exit -1, -1
-23	216	0	#line 216 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	217	0		set __D0scanningArenaLeft, 1
-23	217	3	#line 217 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	218	3		tst 5, __zfscanningArenaLeft, __D0scanningArenaLeft
-23	217	6	#line 217 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	218	6		brtst 4, __NXC_Label_709, __zfscanningArenaLeft
-23	217	9	#line 217 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	217	9	#line 217 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	218	9		not __DU0scanningArenaLeft, scanningLeft
-23	218	12	#line 218 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	219	12		tst 5, __zfscanningArenaLeft, __DU0scanningArenaLeft
-23	218	15	#line 218 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	219	15		brtst 4, __NXC_Label_713, __zfscanningArenaLeft
-23	218	18	#line 218 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	218	18	#line 218 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	219	18		jmp __NXC_Label_712
-23	218	20	#line 218 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	220	20	#line 220 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	221	20		acquire moveMutex
-23	220	21	#line 220 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	220	21	#line 220 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	221	21		set __D0scanningArenaLeft, 25
-23	221	24	#line 221 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	222	24	#pragma macro 10
-23	222	24		acquire __OnRevMutex
-23	222	25		neg __OnRev_Tmp, __D0scanningArenaLeft
-23	222	28		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-23	222	51		release __OnRevMutex
-23	6942	52	#line 6942 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	221	52	#line 221 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	221	52	#line 221 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	222	52		set __D0scanningArenaLeft, 25
-23	222	55	#line 222 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	223	55	#pragma macro 7
-23	223	55		setout RMotor, 2, __D0scanningArenaLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-23	6949	78	#line 6949 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	222	78	#line 222 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	222	78	#line 222 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	223	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft, 100
-23	222	81	#line 222 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	7921	81	#line 7921 "NXCDefs.h"
-23	7922	81		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft
-23	7921	84	#line 7921 "NXCDefs.h"
-23	224	84	#line 224 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	225	84	#line 225 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	226	84		release moveMutex
-23	225	85	#line 225 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	228	85	#line 228 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	229	85		jmp __NXC_Label_708
-23	228	87	#line 228 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-23	229	87		exit -1, -1
-24	231	0	#line 231 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	232	0		set __D0scanningArenaRight, 1
-24	232	3	#line 232 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	233	3		tst 5, __zfscanningArenaRight, __D0scanningArenaRight
-24	232	6	#line 232 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	233	6		brtst 4, __NXC_Label_725, __zfscanningArenaRight
-24	232	9	#line 232 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	232	9	#line 232 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	233	9		not __DU0scanningArenaRight, scanningRight
-24	233	12	#line 233 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	234	12		tst 5, __zfscanningArenaRight, __DU0scanningArenaRight
-24	233	15	#line 233 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	234	15		brtst 4, __NXC_Label_729, __zfscanningArenaRight
-24	233	18	#line 233 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	233	18	#line 233 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	234	18		jmp __NXC_Label_728
-24	233	20	#line 233 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	235	20	#line 235 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	236	20		acquire moveMutex
-24	235	21	#line 235 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	235	21	#line 235 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	236	21		set __D0scanningArenaRight, 25
-24	236	24	#line 236 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	237	24	#pragma macro 10
-24	237	24		acquire __OnRevMutex
-24	237	25		neg __OnRev_Tmp, __D0scanningArenaRight
-24	237	28		setout RMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-24	237	51		release __OnRevMutex
-24	7010	52	#line 7010 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	236	52	#line 236 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	236	52	#line 236 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	237	52		set __D0scanningArenaRight, 25
-24	237	55	#line 237 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	238	55	#pragma macro 7
-24	238	55		setout LMotor, 2, __D0scanningArenaRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-24	7017	78	#line 7017 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	237	78	#line 237 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	237	78	#line 237 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	238	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight, 100
-24	237	81	#line 237 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
+15	78	12		tst 4, __D0getObjColor, __RLSBResult2
+15	78	15		index __getObjColor_7qG2_output_7qG2_000, __RLSReadBuf2, 65535
+15	78	19		release __RLSBmutex2
+15	6168	20	#line 6168 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	77	20	#line 77 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	77	20	#line 77 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	79	20	#line 79 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	80	20		mov __DU0getObjColor, __getObjColor_7qG2_output_7qG2_000
+15	79	22	#line 79 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	80	22		subret __getObjColor_return
+15	79	24	#line 79 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	81	24	#line 81 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+15	82	24		subret __getObjColor_return
+16	84	0	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	85	0		subcall getObjColor, __getObjColor_return
+16	84	2	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	84	2	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	84	2	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	85	2		mov __unsigned_stack_001isNotField, __DU0getObjColor
+16	84	4	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	84	4	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	85	4		set __D0isNotField, 14
+16	84	7	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	85	7		cmp 4, __zfisNotField, __unsigned_stack_001isNotField, __D0isNotField
+16	84	11	#line 84 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	85	11		mov __DU0isNotField, __zfisNotField
+16	85	14	#line 85 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	85	14	#line 85 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	86	14		subret __isNotField_return
+16	85	16	#line 85 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	87	16	#line 87 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+16	88	16		subret __isNotField_return
+17	90	0	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	0		subcall getObjColor, __getObjColor_return
+17	90	2	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	2		mov __checkandthrow_7qG2_output_7qG2_000, __DU0getObjColor
+17	90	4	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	90	4	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	4		mov __unsigned_stack_001checkandthrow, __DU0getObjColor
+17	90	6	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	90	6	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	6		set __D0checkandthrow, 9
+17	90	9	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	9		cmp 4, __zfcheckandthrow, __unsigned_stack_001checkandthrow, __D0checkandthrow
+17	90	13	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	13		mov __D0checkandthrow, __zfcheckandthrow
+17	90	16	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	16		brtst 5, __NXC_Label_582, __zfcheckandthrow
+17	90	19	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	19		mov __signed_stack_001checkandthrow, __D0checkandthrow
+17	90	21	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	21		mov __unsigned_stack_002checkandthrow, __checkandthrow_7qG2_output_7qG2_000
+17	90	23	#line 90 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	23	#line 91 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	92	23		set __D0checkandthrow, 2
+17	91	26	#line 91 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	92	26		cmp 4, __zfcheckandthrow, __unsigned_stack_002checkandthrow, __D0checkandthrow
+17	91	30	#line 91 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	91	30	#line 91 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	92	30		or __D0checkandthrow, __signed_stack_001checkandthrow, __zfcheckandthrow
+17	92	34	#line 92 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	93	34		tst 5, __zfcheckandthrow, __D0checkandthrow
+17	92	37	#line 92 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	93	37		brtst 4, __NXC_Label_585, __zfcheckandthrow
+17	93	40	#line 93 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	94	40		subcall close, __close_return
+17	93	42	#line 93 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	94	42	#line 94 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	95	42		subcall backtoOrigin, __backtoOrigin_return
+17	94	44	#line 94 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	94	44	#line 94 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	95	44		set __open_7qG2_angle_7qG2_000, 15
+17	94	47	#line 94 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	95	47	#line 95 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	96	47		subcall open, __open_return
+17	95	49	#line 95 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	95	49	#line 95 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	96	49		set __Wait_7qG2_ms_7qG2_000_inline_checkandthrow, 800
+17	95	52	#line 95 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	7921	52	#line 7921 "NXCDefs.h"
+17	7922	52		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_checkandthrow
+17	7921	55	#line 7921 "NXCDefs.h"
+17	96	55	#line 96 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	96	55	#line 96 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	97	55		set __open_7qG2_angle_7qG2_000, 165
+17	96	58	#line 96 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	97	58	#line 97 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	98	58		subcall open, __open_return
+17	97	60	#line 97 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	98	60	#line 98 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	99	60		subcall throwBall, __throwBall_return
+17	98	62	#line 98 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	99	62	#line 99 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	100	62		set __DU0checkandthrow, 1
+17	99	65	#line 99 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	99	65	#line 99 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	100	65		subret __checkandthrow_return
+17	99	67	#line 99 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	100	67	#line 100 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	101	67	#line 101 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	102	67		set __DU0checkandthrow, 0
+17	101	70	#line 101 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	101	70	#line 101 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	102	70		subret __checkandthrow_return
+17	101	72	#line 101 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	104	72	#line 104 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+17	105	72		subret __checkandthrow_return
+18	106	0	#line 106 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	107	0		set __signed_stack_001moveTowardObj, 40
+18	106	3	#line 106 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	106	3	#line 106 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	107	3		set __D0moveTowardObj, 1
+18	107	6	#line 107 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	108	6	#pragma macro 7
+18	108	6		setout __OUT_AC, 2, __signed_stack_001moveTowardObj, 1, __constVal7, 8, __constVal2, 7, __D0moveTowardObj, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	6341	29	#line 6341 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	107	29	#line 107 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	108	29	#line 108 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	109	29		set __moveTowardObj_7qG2_meetWall_7qG2_000, 0
+18	108	32	#line 108 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	109	32	#line 109 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	110	32		set __D0moveTowardObj, 1
+18	110	35	#line 110 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	111	35		tst 5, __zfmoveTowardObj, __D0moveTowardObj
+18	110	38	#line 110 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	111	38		brtst 4, __NXC_Label_603, __zfmoveTowardObj
+18	110	41	#line 110 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	111	41		set __ClearSensor_7qG2_port_7qG2_000_inline_moveTowardObj, 0
+18	110	44	#line 110 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	3684	44	#line 3684 "NXCDefs.h"
+18	3685	44		setin __constVal0, __ClearSensor_7qG2_port_7qG2_000_inline_moveTowardObj, 4
+18	3684	48	#line 3684 "NXCDefs.h"
+18	111	48	#line 111 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	112	48	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	48		subcall isNotField, __isNotField_return
+18	112	50	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	50		mov __moveTowardObj_7qG2_meetWall_7qG2_000, __DU0isNotField
+18	112	52	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	112	52	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	112	52	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	52	#pragma macro 26
+18	113	52		acquire __RLSBmutex0
+18	113	53		mov __RLSReadBuf0, __RLSBbufLSWrite1
+18	113	55		set __RLSBytesCount0, 1
+18	113	58		wait2 NA, __constVal15
+18	113	61		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+18	113	64		index __D0moveTowardObj, __RLSReadBuf0, 65535
+18	113	68		release __RLSBmutex0
+18	6386	69	#line 6386 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	112	69	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	69		mov __signed_stack_001moveTowardObj, __D0moveTowardObj
+18	112	71	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	71		set __D0moveTowardObj, 7
+18	112	74	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	74		cmp 2, __zfmoveTowardObj, __signed_stack_001moveTowardObj, __D0moveTowardObj
+18	112	78	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	78		mov __D0moveTowardObj, __zfmoveTowardObj
+18	112	81	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	81		brtst 5, __NXC_Label_610, __zfmoveTowardObj
+18	112	84	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	84		mov __signed_stack_001moveTowardObj, __D0moveTowardObj
+18	112	86	#line 112 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	86		mov __DU0moveTowardObj, __moveTowardObj_7qG2_meetWall_7qG2_000
+18	113	88	#line 113 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	114	88		tst 5, __zfmoveTowardObj, __DU0moveTowardObj
+18	113	91	#line 113 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	113	91	#line 113 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	114	91		or __D0moveTowardObj, __signed_stack_001moveTowardObj, __zfmoveTowardObj
+18	114	95	#line 114 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	115	95		tst 5, __zfmoveTowardObj, __D0moveTowardObj
+18	114	98	#line 114 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	115	98		brtst 4, __NXC_Label_617, __zfmoveTowardObj
+18	115	101	#line 115 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	116	101	#pragma macro 7
+18	116	101		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	6419	124	#line 6419 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	115	124	#line 115 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	116	124	#line 116 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	117	124		jmp __NXC_Label_603
+18	116	126	#line 116 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	119	126	#line 119 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	119	126	#line 119 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	120	126		jmp __NXC_Label_602
+18	119	128	#line 119 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	120	128	#line 120 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	121	128		mov __DU0moveTowardObj, __moveTowardObj_7qG2_meetWall_7qG2_000
+18	121	130	#line 121 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	122	130		tst 5, __zfmoveTowardObj, __DU0moveTowardObj
+18	121	133	#line 121 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	122	133		brtst 4, __NXC_Label_620, __zfmoveTowardObj
+18	122	136	#line 122 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	123	136		set __DU0moveTowardObj, 0
+18	122	139	#line 122 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	122	139	#line 122 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	123	139		subret __moveTowardObj_return
+18	122	141	#line 122 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	125	141	#line 125 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	126	141		jmp __NXC_Label_623
+18	126	143	#line 126 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	127	143		set __DU0moveTowardObj, 1
+18	126	146	#line 126 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	126	146	#line 126 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	127	146		subret __moveTowardObj_return
+18	126	148	#line 126 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	130	148	#line 130 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	130	148	#line 130 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+18	131	148		subret __moveTowardObj_return
+19	133	0	#line 133 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	134	0		mov scanningLeft, scanningRight
+19	133	2	#line 133 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	133	2	#line 133 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	134	2	#line 134 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	134	2	#line 134 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	135	2		not scanningRight, scanningRight
+19	134	5	#line 134 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	134	5	#line 134 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	136	5	#line 136 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+19	137	5		subret __changeDirection_return
+20	138	0	#line 138 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	139	0		set __signed_stack_001moveFwd, 40
+20	138	3	#line 138 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	138	3	#line 138 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	139	3		set __D0moveFwd, 2
+20	139	6	#line 139 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	140	6	#pragma macro 7
+20	140	6		setout __OUT_AC, 2, __signed_stack_001moveFwd, 1, __constVal7, 8, __constVal2, 7, __D0moveFwd, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+20	6498	29	#line 6498 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	139	29	#line 139 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	139	29	#line 139 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	140	29		mov __Wait_7qG2_ms_7qG2_000_inline_moveFwd, __moveFwd_7qG2_moveTime_7qG2_000
+20	139	31	#line 139 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	7921	31	#line 7921 "NXCDefs.h"
+20	7922	31		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_moveFwd
+20	7921	34	#line 7921 "NXCDefs.h"
+20	140	34	#line 140 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	141	34	#line 141 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	142	34	#pragma macro 7
+20	142	34		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+20	6515	57	#line 6515 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	141	57	#line 141 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	142	57	#line 142 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+20	143	57		subret __moveFwd_return
+21	144	0	#line 144 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	145	0		set __signed_stack_001moveBwd, 40
+21	144	3	#line 144 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	144	3	#line 144 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	145	3		set __D0moveBwd, 2
+21	145	6	#line 145 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	146	6	#pragma macro 10
+21	146	6		acquire __OnRevMutex
+21	146	7		neg __OnRev_Tmp, __signed_stack_001moveBwd
+21	146	10		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0moveBwd, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+21	146	33		release __OnRevMutex
+21	6533	34	#line 6533 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	145	34	#line 145 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	145	34	#line 145 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	146	34		mov __Wait_7qG2_ms_7qG2_000_inline_moveBwd, __moveBwd_7qG2_moveTime_7qG2_000
+21	145	36	#line 145 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	7921	36	#line 7921 "NXCDefs.h"
+21	7922	36		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_moveBwd
+21	7921	39	#line 7921 "NXCDefs.h"
+21	146	39	#line 146 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	147	39	#line 147 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	148	39	#pragma macro 7
+21	148	39		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+21	6550	62	#line 6550 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	147	62	#line 147 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	148	62	#line 148 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+21	149	62		subret __moveBwd_return
+22	151	0	#line 151 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	152	0		mov __DU0reverseDirection, scanningRight
+22	152	2	#line 152 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	153	2		tst 5, __zfreverseDirection, __DU0reverseDirection
+22	152	5	#line 152 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	153	5		brtst 4, __NXC_Label_644, __zfreverseDirection
+22	152	8	#line 152 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	153	8		set __D0reverseDirection, 25
+22	153	11	#line 153 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	154	11	#pragma macro 7
+22	154	11		setout RMotor, 2, __D0reverseDirection, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+22	6570	34	#line 6570 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	153	34	#line 153 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	153	34	#line 153 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	154	34		set __D0reverseDirection, 25
+22	154	37	#line 154 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	155	37	#pragma macro 10
+22	155	37		acquire __OnRevMutex
+22	155	38		neg __OnRev_Tmp, __D0reverseDirection
+22	155	41		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+22	155	64		release __OnRevMutex
+22	6577	65	#line 6577 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	154	65	#line 154 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	157	65	#line 157 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	158	65		jmp __NXC_Label_649
+22	157	67	#line 157 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	158	67		set __D0reverseDirection, 25
+22	158	70	#line 158 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	159	70	#pragma macro 7
+22	159	70		setout LMotor, 2, __D0reverseDirection, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+22	6587	93	#line 6587 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	158	93	#line 158 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	158	93	#line 158 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	159	93		set __D0reverseDirection, 25
+22	159	96	#line 159 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	160	96	#pragma macro 10
+22	160	96		acquire __OnRevMutex
+22	160	97		neg __OnRev_Tmp, __D0reverseDirection
+22	160	100		setout RMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+22	160	123		release __OnRevMutex
+22	6594	124	#line 6594 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	159	124	#line 159 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	160	124	#line 160 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	160	124	#line 160 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	161	124		mov __Wait_7qG2_ms_7qG2_000_inline_reverseDirection, __reverseDirection_7qG2_moveTime_7qG2_000
+22	160	126	#line 160 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	7921	126	#line 7921 "NXCDefs.h"
+22	7922	126		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_reverseDirection
+22	7921	129	#line 7921 "NXCDefs.h"
+22	161	129	#line 161 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	162	129	#line 162 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+22	163	129		subret __reverseDirection_return
+23	163	0	#line 163 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	164	0		set __D0reading, 1
+23	165	3	#line 165 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	166	3		tst 5, __zfreading, __D0reading
+23	165	6	#line 165 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	166	6		brtst 4, __NXC_Label_657, __zfreading
+23	167	9	#line 167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	168	9		acquire moveMutex
+23	167	10	#line 167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	167	10	#line 167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	168	10	#pragma macro 30
+23	168	10		acquire __RLSBmutex1
+23	168	11		mov __RLSReadBuf1, __RLSBbufLSWrite1
+23	168	13		set __RLSBytesCount1, 2
+23	168	16		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+23	168	19		index __D0reading, __RLSReadBuf1, 65535
+23	168	23		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
+23	168	27		add __D0reading, __D0reading, __D0reading
+23	168	31		add __D0reading, __D0reading, __RLSBytesCount1
+23	168	35		release __RLSBmutex1
+23	6630	36	#line 6630 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	167	36	#line 167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	168	36		mov currentCompass, __D0reading
+23	167	38	#line 167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	167	38	#line 167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	6069	38	#line 6069 "NXCDefs.h"
+23	6070	38	#pragma macro 6
+23	6070	38		acquire __PointOutMutex
+23	6070	39		mov __PointOutArgs.Location.X, __constVal200
+23	6070	42		mov __PointOutArgs.Location.Y, __constVal200
+23	6070	45		mov __PointOutArgs.Options, __constVal1
+23	6070	47		syscall 14, __PointOutArgs
+23	6070	50		release __PointOutMutex
+23	6638	51	#line 6638 "NXCDefs.h"
+23	6069	51	#line 6069 "NXCDefs.h"
+23	170	51	#line 170 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	170	51	#line 170 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	171	51		set __signed_stack_001reading, 10
+23	170	54	#line 170 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	170	54	#line 170 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	171	54		set __signed_stack_002reading, 56
+23	170	57	#line 170 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	170	57	#line 170 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	171	57		strcat __strbufreading, __constStr0009
+23	171	61	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	61		acquire __TextOutMutex
+23	171	62	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	62		mov __TextOutArgs.Location.X, __signed_stack_001reading
+23	171	65	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	65		mov __TextOutArgs.Location.Y, __signed_stack_002reading
+23	171	68	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	68		set __TextOutArgs.Options, 0
+23	171	71	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	71		mov __TextOutArgs.Text, __strbufreading
+23	171	73	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	73		syscall 13, __TextOutArgs
+23	171	76	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	76		mov __D0reading, __TextOutArgs.Result
+23	171	79	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	79		release __TextOutMutex
+23	171	80	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	171	80	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	80		set __signed_stack_001reading, 10
+23	171	83	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	171	83	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	83		set __signed_stack_002reading, 48
+23	171	86	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	171	86	#line 171 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	172	86		mov __D0reading, ownGoal
+23	173	88	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	88		acquire __TextOutMutex
+23	173	89	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	89		mov __TextOutArgs.Location.X, __signed_stack_001reading
+23	173	92	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	92		mov __TextOutArgs.Location.Y, __signed_stack_002reading
+23	173	95	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	95		set __TextOutArgs.Options, 0
+23	173	98	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	98		numtostr __TextOutArgs.Text, __D0reading
+23	173	101	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	101		syscall 13, __TextOutArgs
+23	173	104	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	104		mov __D0reading, __TextOutArgs.Result
+23	173	107	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	107		release __TextOutMutex
+23	173	108	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	173	108	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	108		set __signed_stack_001reading, 10
+23	173	111	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	173	111	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	111		set __signed_stack_002reading, 40
+23	173	114	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	173	114	#line 173 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	114		strcat __strbufreading, __constStr0010
+23	174	118	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	118		acquire __TextOutMutex
+23	174	119	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	119		mov __TextOutArgs.Location.X, __signed_stack_001reading
+23	174	122	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	122		mov __TextOutArgs.Location.Y, __signed_stack_002reading
+23	174	125	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	125		set __TextOutArgs.Options, 0
+23	174	128	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	128		mov __TextOutArgs.Text, __strbufreading
+23	174	130	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	130		syscall 13, __TextOutArgs
+23	174	133	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	133		mov __D0reading, __TextOutArgs.Result
+23	174	136	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	136		release __TextOutMutex
+23	174	137	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	137	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	137		set __signed_stack_001reading, 10
+23	174	140	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	140	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	140		set __signed_stack_002reading, 32
+23	174	143	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	174	143	#line 174 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	175	143		mov __D0reading, currentCompass
+23	176	145	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	145		acquire __TextOutMutex
+23	176	146	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	146		mov __TextOutArgs.Location.X, __signed_stack_001reading
+23	176	149	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	149		mov __TextOutArgs.Location.Y, __signed_stack_002reading
+23	176	152	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	152		set __TextOutArgs.Options, 0
+23	176	155	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	155		numtostr __TextOutArgs.Text, __D0reading
+23	176	158	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	158		syscall 13, __TextOutArgs
+23	176	161	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	161		mov __D0reading, __TextOutArgs.Result
+23	176	164	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	164		release __TextOutMutex
+23	176	165	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	176	165	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	165		mov __getDegreeDiff_7qG2_current_7qG2_000, currentCompass
+23	176	167	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	176	167	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	167		mov __getDegreeDiff_7qG2_old_7qG2_000, ownGoal
+23	176	169	#line 176 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	169	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	169		subcall getDegreeDiff, __getDegreeDiff_return
+23	177	171	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	171		mov relBearing, __D0getDegreeDiff
+23	177	173	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	173	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	173	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	173		set __signed_stack_001reading, 10
+23	177	176	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	176	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	176		set __signed_stack_002reading, 24
+23	177	179	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	177	179	#line 177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	179		strcat __strbufreading, __constStr0011
+23	178	183	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	183		acquire __TextOutMutex
+23	178	184	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	184		mov __TextOutArgs.Location.X, __signed_stack_001reading
+23	178	187	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	187		mov __TextOutArgs.Location.Y, __signed_stack_002reading
+23	178	190	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	190		set __TextOutArgs.Options, 0
+23	178	193	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	193		mov __TextOutArgs.Text, __strbufreading
+23	178	195	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	195		syscall 13, __TextOutArgs
+23	178	198	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	198		mov __D0reading, __TextOutArgs.Result
+23	178	201	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	201		release __TextOutMutex
+23	178	202	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	202	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	202		set __signed_stack_001reading, 10
+23	178	205	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	205	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	205		set __signed_stack_002reading, 16
+23	178	208	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	178	208	#line 178 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	179	208		mov __D0reading, relBearing
+23	180	210	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	210		acquire __TextOutMutex
+23	180	211	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	211		mov __TextOutArgs.Location.X, __signed_stack_001reading
+23	180	214	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	214		mov __TextOutArgs.Location.Y, __signed_stack_002reading
+23	180	217	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	217		set __TextOutArgs.Options, 0
+23	180	220	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	220		numtostr __TextOutArgs.Text, __D0reading
+23	180	223	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	223		syscall 13, __TextOutArgs
+23	180	226	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	226		mov __D0reading, __TextOutArgs.Result
+23	180	229	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	229		release __TextOutMutex
+23	180	230	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	180	230	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	230		mov __signed_stack_001reading, relBearing
+23	180	232	#line 180 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	181	232	#line 181 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	182	232		set __D0reading, 75
+23	181	235	#line 181 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	182	235		cmp 0, __zfreading, __signed_stack_001reading, __D0reading
+23	181	239	#line 181 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	182	239		mov __D0reading, __zfreading
+23	183	242	#line 183 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	184	242		brtst 4, __NXC_Label_700, __zfreading
+23	183	245	#line 183 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	184	245		set __ClearSensor_7qG2_port_7qG2_000_inline_reading, 0
+23	183	248	#line 183 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	3684	248	#line 3684 "NXCDefs.h"
+23	3685	248		setin __constVal0, __ClearSensor_7qG2_port_7qG2_000_inline_reading, 4
+23	3684	252	#line 3684 "NXCDefs.h"
+23	184	252	#line 184 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	184	252	#line 184 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	185	252	#pragma macro 26
+23	185	252		acquire __RLSBmutex0
+23	185	253		mov __RLSReadBuf0, __RLSBbufLSWrite1
+23	185	255		set __RLSBytesCount0, 1
+23	185	258		wait2 NA, __constVal15
+23	185	261		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+23	185	264		index __D0reading, __RLSReadBuf0, 65535
+23	185	268		release __RLSBmutex0
+23	6883	269	#line 6883 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	184	269	#line 184 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	185	269		mov __signed_stack_001reading, __D0reading
+23	185	271	#line 185 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	186	271		set __D0reading, 40
+23	185	274	#line 185 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	186	274		cmp 2, __zfreading, __signed_stack_001reading, __D0reading
+23	185	278	#line 185 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	186	278		mov __D0reading, __zfreading
+23	186	281	#line 186 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	187	281		brtst 4, __NXC_Label_705, __zfreading
+23	186	284	#line 186 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	187	284		set __PlaySound_7qG2_aCode_7qG2_000, 3
+23	186	287	#line 186 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	187	287	#line 187 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	188	287		subcall PlaySound, __PlaySound_return
+23	187	289	#line 187 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	188	289	#line 188 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	189	289	#pragma macro 7
+23	189	289		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+23	6906	312	#line 6906 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	188	312	#line 188 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	189	312	#line 189 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	190	312		subcall moveTowardObj, __moveTowardObj_return
+23	189	314	#line 189 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	190	314		mov __reading_7qG2_grab_7qG2_003, __DU0moveTowardObj
+23	189	316	#line 189 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	190	316	#line 190 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	191	316		mov __DU0reading, __DU0moveTowardObj
+23	191	318	#line 191 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	192	318		tst 5, __zfreading, __DU0reading
+23	191	321	#line 191 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	192	321		brtst 4, __NXC_Label_712, __zfreading
+23	192	324	#line 192 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	193	324		subcall checkandthrow, __checkandthrow_return
+23	192	326	#line 192 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	193	326		mov __reading_7qG2_grab_7qG2_003, __DU0checkandthrow
+23	192	328	#line 192 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	192	328	#line 192 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	194	328	#line 194 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	195	328	#line 195 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	195	328	#line 195 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	196	328		not __DU0reading, __reading_7qG2_grab_7qG2_003
+23	199	331	#line 199 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	200	331		tst 5, __zfreading, __DU0reading
+23	199	334	#line 199 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	200	334		brtst 4, __NXC_Label_717, __zfreading
+23	199	337	#line 199 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	200	337		set __moveBwd_7qG2_moveTime_7qG2_000, 1000
+23	199	340	#line 199 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	201	340	#line 201 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	202	340		subcall moveBwd, __moveBwd_return
+23	201	342	#line 201 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	202	342	#line 202 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	203	342		mov __DU0reading, scanningRight
+23	204	345	#line 204 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	205	345		tst 5, __zfreading, __DU0reading
+23	204	348	#line 204 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	205	348		brtst 4, __NXC_Label_722, __zfreading
+23	205	351	#line 205 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	206	351		subcall backtoOrigin, __backtoOrigin_return
+23	205	353	#line 205 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	205	353	#line 205 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	206	353		set __moveFwd_7qG2_moveTime_7qG2_000, 1000
+23	205	356	#line 205 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	206	356	#line 206 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	207	356		subcall moveFwd, __moveFwd_return
+23	206	358	#line 206 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	209	358	#line 209 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	210	358	#line 210 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	211	358		subcall changeDirection, __changeDirection_return
+23	210	360	#line 210 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	213	360	#line 213 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	214	360	#line 214 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	216	360	#line 216 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	217	360		jmp __NXC_Label_725
+23	217	362	#line 217 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	218	362		mov __DU0reading, scanningRight
+23	219	365	#line 219 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	220	365		tst 5, __zfreading, __DU0reading
+23	219	368	#line 219 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	220	368		brtst 4, __NXC_Label_728, __zfreading
+23	220	371	#line 220 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	221	371		subcall backtoOrigin, __backtoOrigin_return
+23	220	373	#line 220 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	220	373	#line 220 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	221	373		set __moveFwd_7qG2_moveTime_7qG2_000, 1000
+23	220	376	#line 220 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	221	376	#line 221 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	222	376		subcall moveFwd, __moveFwd_return
+23	221	378	#line 221 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	222	378	#line 222 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	224	378	#line 224 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	225	378		subcall changeDirection, __changeDirection_return
+23	224	380	#line 224 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	225	380	#line 225 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	226	380		release moveMutex
+23	225	381	#line 225 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	225	381	#line 225 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	226	381		set __Wait_7qG2_ms_7qG2_000_inline_reading, 1000
+23	225	384	#line 225 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	7921	384	#line 7921 "NXCDefs.h"
+23	7922	384		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_reading
+23	7921	387	#line 7921 "NXCDefs.h"
+23	226	387	#line 226 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	227	387	#line 227 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	228	387		acquire moveMutex
+23	227	388	#line 227 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	229	388	#line 229 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	230	388	#line 230 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	231	388		release moveMutex
+23	230	389	#line 230 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	233	389	#line 233 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	234	389		jmp __NXC_Label_656
+23	233	391	#line 233 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+23	234	391		exit -1, -1
+24	236	0	#line 236 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	237	0		set __D0scanningArenaLeft, 1
+24	237	3	#line 237 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	238	3		tst 5, __zfscanningArenaLeft, __D0scanningArenaLeft
+24	237	6	#line 237 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	238	6		brtst 4, __NXC_Label_734, __zfscanningArenaLeft
+24	237	9	#line 237 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	237	9	#line 237 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	238	9		not __DU0scanningArenaLeft, scanningLeft
+24	238	12	#line 238 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	239	12		tst 5, __zfscanningArenaLeft, __DU0scanningArenaLeft
+24	238	15	#line 238 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	239	15		brtst 4, __NXC_Label_738, __zfscanningArenaLeft
+24	238	18	#line 238 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	238	18	#line 238 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	239	18		jmp __NXC_Label_737
+24	238	20	#line 238 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	240	20	#line 240 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	241	20		acquire moveMutex
+24	240	21	#line 240 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	240	21	#line 240 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	241	21		set __D0scanningArenaLeft, 25
+24	241	24	#line 241 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	242	24	#pragma macro 10
+24	242	24		acquire __OnRevMutex
+24	242	25		neg __OnRev_Tmp, __D0scanningArenaLeft
+24	242	28		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+24	242	51		release __OnRevMutex
+24	7082	52	#line 7082 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	241	52	#line 241 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	241	52	#line 241 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	242	52		set __D0scanningArenaLeft, 25
+24	242	55	#line 242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	243	55	#pragma macro 7
+24	243	55		setout RMotor, 2, __D0scanningArenaLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+24	7089	78	#line 7089 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	242	78	#line 242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	242	78	#line 242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	243	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft, 100
+24	242	81	#line 242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 24	7921	81	#line 7921 "NXCDefs.h"
-24	7922	81		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight
+24	7922	81		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft
 24	7921	84	#line 7921 "NXCDefs.h"
-24	239	84	#line 239 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	240	84	#line 240 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	241	84		release moveMutex
-24	240	85	#line 240 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	243	85	#line 243 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	244	85		jmp __NXC_Label_724
-24	243	87	#line 243 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-24	244	87		exit -1, -1
-25	244	0	#line 244 "C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc"
-25	245	0		subret ____initialize_global_data_return
+24	244	84	#line 244 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	245	84	#line 245 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	246	84		release moveMutex
+24	245	85	#line 245 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	248	85	#line 248 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	249	85		jmp __NXC_Label_733
+24	248	87	#line 248 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	249	87		exit -1, -1
+25	251	0	#line 251 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	252	0		set __D0scanningArenaRight, 1
+25	252	3	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	253	3		tst 5, __zfscanningArenaRight, __D0scanningArenaRight
+25	252	6	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	253	6		brtst 4, __NXC_Label_750, __zfscanningArenaRight
+25	252	9	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	252	9	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	253	9		not __DU0scanningArenaRight, scanningRight
+25	253	12	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	254	12		tst 5, __zfscanningArenaRight, __DU0scanningArenaRight
+25	253	15	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	254	15		brtst 4, __NXC_Label_754, __zfscanningArenaRight
+25	253	18	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	253	18	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	254	18		jmp __NXC_Label_753
+25	253	20	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	255	20	#line 255 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	256	20		acquire moveMutex
+25	255	21	#line 255 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	255	21	#line 255 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	256	21		set __D0scanningArenaRight, 25
+25	256	24	#line 256 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	257	24	#pragma macro 10
+25	257	24		acquire __OnRevMutex
+25	257	25		neg __OnRev_Tmp, __D0scanningArenaRight
+25	257	28		setout RMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+25	257	51		release __OnRevMutex
+25	7150	52	#line 7150 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	256	52	#line 256 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	256	52	#line 256 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	257	52		set __D0scanningArenaRight, 25
+25	257	55	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	258	55	#pragma macro 7
+25	258	55		setout LMotor, 2, __D0scanningArenaRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+25	7157	78	#line 7157 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	257	78	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	257	78	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	258	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight, 100
+25	257	81	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	7921	81	#line 7921 "NXCDefs.h"
+25	7922	81		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight
+25	7921	84	#line 7921 "NXCDefs.h"
+25	259	84	#line 259 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	260	84	#line 260 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	261	84		release moveMutex
+25	260	85	#line 260 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	263	85	#line 263 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	264	85		jmp __NXC_Label_749
+25	263	87	#line 263 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	264	87		exit -1, -1
+26	264	0	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	265	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
+0	main	0	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
 1	__RotateMotor6	7	NXTDefs.h
 2	__RotateMotorVar	176	NXTDefs.h
 3	__ResetSensorSubroutine	220	NXTDefs.h
 4	__ReadLSBytes0	233	NXTDefs.h
-5	__ReadLSBytes1	322	NXTDefs.h
-6	__ReadLSBytes2	407	NXTDefs.h
-7	PlaySound	492	NXCDefs.h
-8	stopRotor	935	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc
-9	close	966	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc
-10	open	1014	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\.\Header.nxc
-11	init	1054	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-12	getDegreeDiff	1241	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-13	backtoOrigin	1273	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-14	throwBall	1354	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-15	getObjColor	1486	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-16	checkandthrow	1511	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-17	moveTowardObj	1585	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-18	changeDirection	1676	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-19	moveFwd	1683	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-20	moveBwd	1742	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-21	reverseDirection	1806	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-22	reading	1937	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-23	scanningArenaLeft	2293	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-24	scanningArenaRight	2383	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
-25	__initialize_global_data	2473	C:\Users\Kawtar\Dropbox\Wall-E\robots\new - Copy\Main.nxc
+5	__ReadLSBytes1	318	NXTDefs.h
+6	__ReadLSBytes2	403	NXTDefs.h
+7	PlaySound	488	NXCDefs.h
+8	stopRotor	931	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc
+9	close	962	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc
+10	open	1010	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\.\Header.nxc
+11	init	1050	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+12	getDegreeDiff	1238	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+13	backtoOrigin	1269	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+14	throwBall	1351	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+15	getObjColor	1483	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+16	isNotField	1509	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+17	checkandthrow	1527	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+18	moveTowardObj	1601	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+19	changeDirection	1751	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+20	moveFwd	1758	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+21	moveBwd	1817	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+22	reverseDirection	1881	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+23	reading	2012	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+24	scanningArenaLeft	2406	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+25	scanningArenaRight	2496	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+26	__initialize_global_data	2586	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
