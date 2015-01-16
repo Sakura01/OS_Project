@@ -196,7 +196,6 @@ task reading(){
                          {
                                 //turn away from the object
                                 moveBwd(1000);
-
                                 if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
                              	  {
                                         //PlaySound(SOUND_DOUBLE_BEEP);
