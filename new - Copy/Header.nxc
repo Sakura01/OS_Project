@@ -57,7 +57,7 @@ sub moveFwd(int moveTime);
 sub moveBwd(int moveTime);
 sub reverseDirection(int moveTime);
 sub turnAway(int moveTime);
-
+sub goToPredefined();
 // Tasks in Main
 
 task init();

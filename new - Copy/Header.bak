@@ -15,8 +15,7 @@
 #define THRESHOLD 7
 #define WALLDIST 40
 
-#define COLORLINE
-#define COLORAREA
+#define COLORWALL 14
 
 // The moving motors
 byte motors[] = {OUT_A,OUT_C};

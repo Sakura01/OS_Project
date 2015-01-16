@@ -21,7 +21,7 @@ task init()
 
      ownGoal = SensorHTCompass(COMPASS);
      Wait(100);  //small delay while setting ownGoal
-
+     goToPredefined();
      Precedes (scanningArenaLeft,reading,scanningArenaRight);
 }
 int getDegreeDiff(int current, int old)
@@ -196,7 +196,6 @@ task reading(){
                          {
                                 //turn away from the object
                                 moveBwd(1000);
-
                                 if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
                              	  {
                                         //PlaySound(SOUND_DOUBLE_BEEP);
@@ -228,6 +227,40 @@ task reading(){
             Release(moveMutex);
      }
 
+}
+sub goToPredefined()
+{
+      RotateMotor(LMotor, -MOVMENT_SPEED, 405);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= 25);
+      Off(motors);
+      RotateMotor(LMotor, MOVMENT_SPEED, 405);
+      Off(motors);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= THRESHOLD);
+      Off(motors);
+      checkandthrow();
+      //Ball on right
+      Off(motors);
+      Wait(500);
+      OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      Wait(8000);
+      Off(motors);
+      //To do change with sensor
+      //until (SensorUS (TOUCH)== 1);
+      RotateMotor(LMotor, MOVMENT_SPEED, 405);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= 25);
+      Off(motors);
+      RotateMotor(RMotor, MOVMENT_SPEED, 405);
+      Off(motors);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= THRESHOLD);
+      Off(motors);
+      checkandthrow();
+      
+      
+      
 }
 task scanningArenaLeft()
 {
