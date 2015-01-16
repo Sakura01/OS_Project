@@ -1,0 +1,69 @@
+#ifndef HEADER_UNITS
+#define HEADER_UNITS
+
+// Definition of the sensors
+#define ULTRASONIC	    S1
+#define COLOR 		      IN_3
+#define COMPASS         IN_2
+#define  TOUCH          IN_4
+
+// Definition of the speeds
+#define SCANNING_SPEED 20
+#define MOVMENT_SPEED 40
+
+// Definition of Threshold
+#define THRESHOLD 7
+#define WALLDIST 40
+
+
+// The moving motors
+byte motors[] = {OUT_A,OUT_C};
+byte RMotor = OUT_A;
+byte LMotor = OUT_C;
+byte GMotor = OUT_B;
+
+//Subs
+sub stopRotor()
+{
+	   Wait (100);
+     Off (GMotor);
+}
+sub close()
+{
+     RotateMotorEx (GMotor, 70, 180, 0, false, true);
+     stopRotor();
+
+}
+sub open()
+{
+      RotateMotor (GMotor, 100, -180);
+      stopRotor();
+
+}
+
+//Functions in Main
+
+bool checkandthrow();
+sub throwBall();
+
+int getDegreeDiff(int current, int old);
+
+sub changeDirection();
+sub backtoOrigin();
+bool moveTowardObj();
+
+sub moveFwd(int moveTime);
+sub moveBwd(int moveTime);
+sub reverseDirection(int moveTime);
+sub turnAway(int moveTime);
+
+// Tasks in Main
+
+task init();
+task reading();
+task scanningArenaLeft();
+task scanningArenaRight();
+task main();
+
+
+#endif
