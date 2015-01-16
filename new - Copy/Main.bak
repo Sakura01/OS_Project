@@ -195,7 +195,7 @@ task reading(){
                          if(!grab)
                          {
                                 //turn away from the object
-                                
+                                Off(motors);
                                 turnAway(500);
                                 Off(motors);
                                 moveBwd(1000);

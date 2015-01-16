@@ -195,9 +195,6 @@ task reading(){
                          if(!grab)
                          {
                                 //turn away from the object
-                                
-                                //turnAway(500);
-                                //Off(motors);
                                 moveBwd(1000);
 
                                 if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
