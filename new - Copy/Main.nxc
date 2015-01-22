@@ -197,7 +197,7 @@ task reading(){
          		     ClearSensor(ULTRASONIC);
                  if(SensorUS (ULTRASONIC) <= WALLDIST)
                  {
-                           PlaySound(SOUND_UP);
+
                            Off(motors);
                            bool grab=moveTowardObj();
                            if(grab)
@@ -207,6 +207,7 @@ task reading(){
                            //if it is not a ball then rotate back and start scanning right
                            if(!grab)
                            {
+                                  PlaySound(SOUND_UP);
                                   //turn away from the object
                                   moveBwd(5000);
                                   if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
@@ -246,7 +247,7 @@ task reading(){
             else
             {
                 moveFwd(4000);
-                PlaySound(SOUND_UP);
+                //PlaySound(SOUND_UP);
                 while(true)
                 {
                         OnRev(LMotor, SCANNING_SPEED);
