@@ -264,7 +264,7 @@ sub containBalls()
 
 }
 
-sub goToPredefined()
+sub goToPredefined1()
 {
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
@@ -288,7 +288,7 @@ sub goToPredefined()
       //Ball on right
       Off(motors);
       Wait(500);
-      moveFwd(2000);
+      moveFwd(4000);
       Off(motors);
       while(true)
       {
@@ -339,6 +339,58 @@ sub goToPredefined()
       throwBall();
       
       
+}
+sub goToPredefined()
+{
+
+      SetSensorLowspeed(ULTRASONIC);
+      ClearSensor(ULTRASONIC);
+
+    RotateMotor(LMotor, -MOVMENT_SPEED, 405);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= 25);
+      Off(motors);
+      RotateMotor(LMotor, MOVMENT_SPEED, 405);
+      Off(motors);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= THRESHOLD);
+      Off(motors);
+
+      close();
+      stopRotor();
+      open(15);
+      stopRotor();
+      open(165);
+      stopRotor();
+      throwBall();
+      
+      //Ball on right
+      Off(motors);
+      Wait(500);
+      OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      Wait(8000);
+      Off(motors);
+      //To do change with sensor
+      //until (SensorUS (TOUCH)== 1);
+      RotateMotor(LMotor, MOVMENT_SPEED, 405);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= 25);
+      Off(motors);
+      RotateMotor(RMotor, MOVMENT_SPEED, 405);
+      Off(motors);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= THRESHOLD);
+      Off(motors);
+
+      close();
+      stopRotor();
+      open(15);
+      stopRotor();
+      open(165);
+      stopRotor();
+      throwBall();
+
+
 }
 task scanningArenaLeft()
 {
