@@ -1,7 +1,7 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
 0	__DU0reading	5	1	0	4	8
-1	__D0reading	6	1	4	4	32
+1	__D0reading	6	1	4	4	41
 2	__DU0reverseDirection	5	1	8	4	2
 3	__D0reverseDirection	6	1	12	4	8
 4	__D0PlaySound	6	1	16	4	48
@@ -24,14 +24,14 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 21	__DU0checkWallBack	5	1	84	4	3
 22	__D0checkandthrow	6	1	88	4	8
 23	__RLSBmutex2	9	0	92	4	2
-24	__RLSBmutex1	9	0	96	4	8
+24	__RLSBmutex1	9	0	96	4	6
 25	__D0backtoOrigin	6	1	100	4	13
 26	__SPTArgsMutex	9	0	104	4	14
 27	__D0isNotField	6	1	108	4	2
 28	__D0init	6	1	112	4	7
 29	__D0moveBwd	6	1	116	4	2
 30	__DU0isNotField	5	1	120	4	2
-31	__D0goToPredefined	6	1	124	4	66
+31	__D0goToPredefined	6	1	124	4	49
 32	__D0getDegreeDiff	6	1	128	4	7
 33	__D0containBalls	6	1	132	4	4
 34	__DU0getObjColor	5	1	136	4	4
@@ -42,15 +42,15 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 39	__Wait_7qG2_ms_7qG2_000_inline_throwBall	5	1	156	4	4
 40	__Wait_7qG2_ms_7qG2_000_inline_init	5	1	160	4	2
 41	__signed_stack_001throwBall	6	1	164	4	4
-42	__signed_stack_001reading	6	1	168	4	16
+42	__signed_stack_001reading	6	1	168	4	18
 43	__signed_stack_003PlaySound	6	1	172	4	14
 44	__unsigned_stack_001reading	5	1	176	4	2
 45	__signed_stack_002reading	6	1	180	4	12
-46	__Wait_7qG2_ms_7qG2_000_inline_goToPredefined	5	1	184	4	6
+46	__Wait_7qG2_ms_7qG2_000_inline_goToPredefined	5	1	184	4	2
 47	__Wait_7qG2_ms_7qG2_000_inline_containBalls	5	1	188	4	4
 48	__Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight	5	1	192	4	2
 49	__Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft	5	1	196	4	2
-50	__Wait_7qG2_ms_7qG2_000_inline_reading	5	1	200	4	2
+50	__Wait_7qG2_ms_7qG2_000_inline_reading	5	1	200	4	4
 51	__Wait_7qG2_ms_7qG2_000_inline_moveFwd	5	1	204	4	2
 52	__Wait_7qG2_ms_7qG2_000_inline_checkandthrow	5	1	208	4	2
 53	__Wait_7qG2_ms_7qG2_000_inline_reverseDirection	5	1	212	4	2
@@ -77,8 +77,8 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 74	__TextOutMutex	9	0	296	4	12
 75	__CLSCSMutex2	9	0	300	4	2
 76	__CLSWMutex2	9	0	304	4	2
-77	__rotateMutex2	9	0	308	4	12
-78	__rotateMutex1	9	0	312	4	12
+77	__rotateMutex2	9	0	308	4	14
+78	__rotateMutex1	9	0	312	4	14
 79	__PointOutMutex	9	0	316	4	2
 80	__RLSBmutex0	9	0	320	4	12
 81	__CLSRMutex1	9	0	324	4	2
@@ -86,20 +86,20 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 83	__CLSWMutex0	9	0	332	4	2
 84	__rotate_theAngle6	5	1	336	4	2
 85	__ResetSensorMutex	9	0	340	4	8
-86	__rotate_angle6	6	1	344	4	10
+86	__rotate_angle6	6	1	344	4	11
 87	__CLSWMutex1	9	0	348	4	2
 88	__CLSRMutex0	9	0	352	4	2
 89	__CLSCSMutex1	9	0	356	4	2
 90	__OnRevMutex	9	0	360	4	18
-91	__rotateMutex0	9	0	364	4	12
-92	relBearing	4	1	368	2	7
-93	currentCompass	4	1	370	2	5
+91	__rotateMutex0	9	0	364	4	14
+92	relBearing	4	1	368	2	6
+93	currentCompass	4	1	370	2	4
 94	__constVal523	4	0	372	2	3
-95	ownGoal	4	1	374	2	5
+95	ownGoal	4	1	374	2	4
 96	__reverseDirection_7qG2_moveTime_7qG2_000	4	1	376	2	2
 97	__getDegreeDiff_7qG2_diff_7qG2_000	4	1	378	2	5
 98	__getDegreeDiff_7qG2_old_7qG2_000	4	1	380	2	2
-99	__moveFwd_7qG2_moveTime_7qG2_000	4	1	382	2	5
+99	__moveFwd_7qG2_moveTime_7qG2_000	4	1	382	2	4
 100	__open_7qG2_angle_7qG2_000	4	1	384	2	9
 101	__moveBwd_7qG2_moveTime_7qG2_000	4	1	386	2	2
 102	__getDegreeDiff_7qG2_current_7qG2_000	4	1	388	2	2
@@ -118,21 +118,21 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 115	__ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined	1	1	410	1	4
 116	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_init	1	1	411	1	8
 117	scanningLeft	1	0	412	1	3
-118	RMotor	1	1	413	1	6
+118	RMotor	1	1	413	1	7
 119	LMotor	1	0	414	1	8
 120	GMotor	1	0	415	1	3
-121	__rotate_stop6	1	1	416	1	7
-122	__rotate_sync6	1	1	417	1	7
+121	__rotate_stop6	1	1	416	1	8
+122	__rotate_sync6	1	1	417	1	8
 123	__PlaySound_return	1	1	418	1	4
 124	__constVal63	2	0	419	1	43
 125	__close_return	1	1	420	1	7
 126	__open_return	1	1	421	1	10
 127	__stopRotor_return	1	1	422	1	13
 128	__rotate_firstPort6	1	1	423	1	5
-129	__constVal96	2	0	424	1	49
+129	__constVal96	2	0	424	1	50
 130	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	425	1	4
 131	__getObjColor_return	1	1	426	1	5
-132	__rotate_power6	1	1	427	1	9
+132	__rotate_power6	1	1	427	1	10
 133	__checkWallBack_return	1	1	428	1	5
 134	__getObjColor_7qG2_output_7qG2_000	1	1	429	1	3
 135	__reading_7qG2_grab_7qG2_004	1	1	430	1	4
@@ -143,7 +143,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 140	__changeDirection_return	1	1	435	1	4
 141	__ClearSensor_7qG2_port_7qG2_000_inline_moveTowardObj	1	1	436	1	2
 142	__moveBwd_return	1	1	437	1	3
-143	__moveFwd_return	1	1	438	1	6
+143	__moveFwd_return	1	1	438	1	5
 144	__checkandthrow_7qG2_output_7qG2_000	1	1	439	1	2
 145	__checkandthrow_return	1	1	440	1	5
 146	__moveTowardObj_7qG2_meetWall_7qG2_000	1	1	441	1	4
@@ -161,12 +161,12 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 158	__goToPredefined_return	1	1	453	1	3
 159	__getDegreeDiff_return	1	1	454	1	4
 160	__reverseDirection_return	1	1	455	1	3
-161	__backtoOrigin_return	1	1	456	1	6
+161	__backtoOrigin_return	1	1	456	1	5
 162	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_goToPredefined	1	1	457	1	2
 163	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_goToPredefined	1	1	458	1	2
 164	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_goToPredefined	1	1	459	1	4
 165	__containBalls_return	1	1	460	1	3
-166	__rotate_turnpct6	2	1	461	1	8
+166	__rotate_turnpct6	2	1	461	1	9
 167	__zfcheckandthrow	1	1	462	1	7
 168	__zfcheckWallBack	1	1	463	1	3
 169	__zfgetDegreeDiff	1	1	464	1	3
@@ -174,19 +174,19 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 171	__constVal7	2	0	466	1	12
 172	__RLSBResult0	2	1	467	1	7
 173	__zfbacktoOrigin	1	1	468	1	3
-174	__zfreading	1	1	469	1	19
+174	__zfreading	1	1	469	1	24
 175	__zfreverseDirection	1	1	470	1	2
 176	__zfscanningArenaLeft	1	1	471	1	4
 177	__zfPlaySound	1	1	472	1	27
-178	__zfgoToPredefined	1	1	473	1	30
+178	__zfgoToPredefined	1	1	473	1	25
 179	__zfisNotField	1	1	474	1	2
 180	__zfmoveTowardObj	1	1	475	1	11
-181	__RLSBytesCount1	1	1	476	1	18
+181	__RLSBytesCount1	1	1	476	1	15
 182	__RLSBIterations1	1	1	477	1	4
 183	____ReadLSBytes2_return	1	1	478	1	3
 184	__RLSBResult1	2	1	479	1	7
 185	__constVal15	2	0	480	1	19
-186	____ReadLSBytes1_return	1	1	481	1	6
+186	____ReadLSBytes1_return	1	1	481	1	5
 187	__RLSBIterations0	1	1	482	1	4
 188	__constVal2	2	0	483	1	12
 189	__constVal100	2	0	484	1	2
@@ -195,25 +195,25 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 192	__RLSBytesCount0	1	1	487	1	12
 193	__RLSBResult2	2	1	488	1	8
 194	__RLSBytesCount2	1	1	489	1	7
-195	__constVal0	2	1	490	1	154
+195	__constVal0	2	1	490	1	157
 196	__constVal50	2	0	491	1	2
-197	__constVal32	2	0	492	1	139
+197	__constVal32	2	0	492	1	140
 198	__constVal1	2	0	493	1	24
 199	____RotateMotor6_return	1	1	494	1	3
 200	__constVal3	2	0	495	1	35
 201	__zfSetSensorLowspeed_inline_init	1	1	496	1	4
 202	____RotateMotor6_sign_tmp	2	1	497	1	4
-203	____RotateMotorVar_return	1	1	498	1	8
+203	____RotateMotorVar_return	1	1	498	1	9
 204	__rotate_theTurnPct6	2	1	499	1	4
 205	__rotate_theRM6	1	1	500	1	4
 206	__rotate_theRS6	1	1	501	1	3
 207	__rotate_theUF6	1	1	502	1	6
 208	__rotate_theOM6	1	1	503	1	7
-209	__rotate_theRVP6	1	1	504	1	7
+209	__rotate_theRVP6	1	1	504	1	8
 210	__rotate_rs6	1	1	505	1	10
 211	__rotate_thePower6	2	1	506	1	4
-212	__rotate_theRVI6	1	1	507	1	7
-213	__rotate_theRVD6	1	1	508	1	7
+212	__rotate_theRVI6	1	1	507	1	8
+213	__rotate_theRVD6	1	1	508	1	8
 214	____ResetSensorSubroutine_return	1	1	509	1	6
 215	__constVal4	2	0	510	1	4
 216	__ResetSensorPort	1	1	511	1	6
@@ -300,7 +300,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 297	__OUT_AC.__OUT_AC_type	1	0	0	1	0
 298	__OUT_AB	7	0	624	4	1
 299	__OUT_AB.__OUT_AB_type	1	0	0	1	0
-300	__rotate_ports6	7	0	626	4	17
+300	__rotate_ports6	7	0	626	4	18
 301	__rotate_ports6.__rotate_ports6_type	1	0	0	1	0
 302	__strbufreading	7	0	628	4	6
 303	__strbufreading.__strbufreading_type	1	0	0	1	0
@@ -310,13 +310,13 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 307	__constStr0010.__constStr0010_type	1	1	0	1	0
 308	__RLSReadBuf2	7	0	634	4	8
 309	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
-310	__RLSBbufLSWrite1	7	0	636	4	11
+310	__RLSBbufLSWrite1	7	0	636	4	10
 311	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
 312	__RLSLastGoodRead0	7	0	638	4	2
 313	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
 314	__OUT_ABC	7	0	640	4	1
 315	__OUT_ABC.__OUT_ABC_type	1	0	0	1	0
-316	__RLSReadBuf1	7	0	642	4	18
+316	__RLSReadBuf1	7	0	642	4	15
 317	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
 318	motors	7	0	644	4	22
 319	motors.motors_type	1	0	0	1	0
@@ -2004,94 +2004,144 @@ Clump	Line	PC	Source
 24	241	407	#line 241 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 24	242	407		jmp __NXC_Label_743
 24	241	409	#line 241 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	242	409		set __moveFwd_7qG2_moveTime_7qG2_000, 2000
+24	242	409		set __moveFwd_7qG2_moveTime_7qG2_000, 4000
 24	241	412	#line 241 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 24	242	412	#line 242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 24	243	412		subcall moveFwd, __moveFwd_return
 24	242	414	#line 242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 24	243	414	#line 243 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	244	414		subcall backtoOrigin, __backtoOrigin_return
-24	243	417	#line 243 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	245	417	#line 245 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	246	417	#line 246 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	247	417		release moveMutex
-24	246	418	#line 246 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	250	418	#line 250 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	251	418		jmp __NXC_Label_663
-24	250	420	#line 250 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-24	251	420		exit -1, -1
-25	252	0	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	253	0		set __signed_stack_001containBalls, 40
-25	252	3	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	252	3	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	253	3		set __D0containBalls, 2
-25	253	6	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	254	6	#pragma macro 7
-25	254	6		setout __OUT_AC, 2, __signed_stack_001containBalls, 1, __constVal7, 8, __constVal2, 7, __D0containBalls, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-25	7707	29	#line 7707 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	253	29	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	253	29	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	254	29		set __Wait_7qG2_ms_7qG2_000_inline_containBalls, 700
-25	253	32	#line 253 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	244	414		set __D0reading, 1
+24	244	417	#line 244 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	245	417		tst 5, __zfreading, __D0reading
+24	244	420	#line 244 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	245	420		brtst 4, __NXC_Label_747, __zfreading
+24	244	423	#line 244 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	245	423		set __D0reading, 25
+24	245	426	#line 245 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	246	426	#pragma macro 10
+24	246	426		acquire __OnRevMutex
+24	246	427		neg __OnRev_Tmp, __D0reading
+24	246	430		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+24	246	453		release __OnRevMutex
+24	7695	454	#line 7695 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	245	454	#line 245 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	245	454	#line 245 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	246	454		set __D0reading, 25
+24	246	457	#line 246 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	247	457	#pragma macro 7
+24	247	457		setout RMotor, 2, __D0reading, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+24	7702	480	#line 7702 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	246	480	#line 246 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	246	480	#line 246 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	247	480		set __Wait_7qG2_ms_7qG2_000_inline_reading, 100
+24	246	483	#line 246 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	7921	483	#line 7921 "NXCDefs.h"
+24	7922	483		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_reading
+24	7921	486	#line 7921 "NXCDefs.h"
+24	247	486	#line 247 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	247	486	#line 247 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	248	486		mov __signed_stack_001reading, relBearing
+24	247	488	#line 247 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	248	488	#line 248 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	249	488		set __D0reading, 4
+24	248	491	#line 248 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	249	491		cmp 2, __zfreading, __signed_stack_001reading, __D0reading
+24	248	495	#line 248 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	249	495		mov __D0reading, __zfreading
+24	249	498	#line 249 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	250	498		brtst 4, __NXC_Label_758, __zfreading
+24	250	501	#line 250 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	251	501		jmp __NXC_Label_747
+24	250	503	#line 250 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	252	503	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	252	503	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	253	503		jmp __NXC_Label_746
+24	252	505	#line 252 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	254	505	#line 254 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	255	505	#pragma macro 7
+24	255	505		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+24	7738	528	#line 7738 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	254	528	#line 254 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	256	528	#line 256 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	257	528	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	258	528		release moveMutex
+24	257	529	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	261	529	#line 261 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	262	529		jmp __NXC_Label_663
+24	261	531	#line 261 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+24	262	531		exit -1, -1
+25	263	0	#line 263 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	264	0		set __signed_stack_001containBalls, 40
+25	263	3	#line 263 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	263	3	#line 263 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	264	3		set __D0containBalls, 2
+25	264	6	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	265	6	#pragma macro 7
+25	265	6		setout __OUT_AC, 2, __signed_stack_001containBalls, 1, __constVal7, 8, __constVal2, 7, __D0containBalls, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+25	7763	29	#line 7763 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	264	29	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	264	29	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	265	29		set __Wait_7qG2_ms_7qG2_000_inline_containBalls, 700
+25	264	32	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 25	7921	32	#line 7921 "NXCDefs.h"
 25	7922	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_containBalls
 25	7921	35	#line 7921 "NXCDefs.h"
-25	254	35	#line 254 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	255	35	#line 255 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	256	35	#pragma macro 7
-25	256	35		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-25	7724	58	#line 7724 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	255	58	#line 255 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	256	58	#line 256 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	257	58		subcall close, __close_return
-25	256	60	#line 256 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	257	60	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	258	60		subcall stopRotor, __stopRotor_return
-25	257	62	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	257	62	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	258	62		set __signed_stack_001containBalls, 40
-25	257	65	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	257	65	#line 257 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	258	65		set __D0containBalls, 2
-25	258	68	#line 258 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	259	68	#pragma macro 10
-25	259	68		acquire __OnRevMutex
-25	259	69		neg __OnRev_Tmp, __signed_stack_001containBalls
-25	259	72		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0containBalls, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-25	259	95		release __OnRevMutex
-25	7743	96	#line 7743 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	258	96	#line 258 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	258	96	#line 258 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	259	96		set __Wait_7qG2_ms_7qG2_000_inline_containBalls, 700
-25	258	99	#line 258 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	265	35	#line 265 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	266	35	#line 266 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	267	35	#pragma macro 7
+25	267	35		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+25	7780	58	#line 7780 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	266	58	#line 266 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	267	58	#line 267 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	268	58		subcall close, __close_return
+25	267	60	#line 267 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	268	60	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	269	60		subcall stopRotor, __stopRotor_return
+25	268	62	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	268	62	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	269	62		set __signed_stack_001containBalls, 40
+25	268	65	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	268	65	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	269	65		set __D0containBalls, 2
+25	269	68	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	270	68	#pragma macro 10
+25	270	68		acquire __OnRevMutex
+25	270	69		neg __OnRev_Tmp, __signed_stack_001containBalls
+25	270	72		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0containBalls, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+25	270	95		release __OnRevMutex
+25	7799	96	#line 7799 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	269	96	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	269	96	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	270	96		set __Wait_7qG2_ms_7qG2_000_inline_containBalls, 700
+25	269	99	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 25	7921	99	#line 7921 "NXCDefs.h"
 25	7922	99		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_containBalls
 25	7921	102	#line 7921 "NXCDefs.h"
-25	259	102	#line 259 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	260	102	#line 260 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	261	102	#pragma macro 7
-25	261	102		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-25	7756	125	#line 7756 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	260	125	#line 260 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	260	125	#line 260 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	261	125		set __open_7qG2_angle_7qG2_000, 180
-25	260	128	#line 260 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	261	128	#line 261 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	262	128		subcall open, __open_return
-25	261	130	#line 261 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	262	130	#line 262 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	263	130		subcall stopRotor, __stopRotor_return
-25	262	132	#line 262 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	264	132	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	265	132		subcall goToPredefined, __goToPredefined_return
-25	264	135	#line 264 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	266	135	#line 266 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-25	267	135		subret __containBalls_return
-26	268	0	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	269	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_goToPredefined, 0
-26	268	3	#line 268 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	269	3	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	270	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_goToPredefined, __constVal1
+25	270	102	#line 270 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	271	102	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	272	102	#pragma macro 7
+25	272	102		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+25	7812	125	#line 7812 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	271	125	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	271	125	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	272	125		set __open_7qG2_angle_7qG2_000, 180
+25	271	128	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	272	128	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	273	128		subcall open, __open_return
+25	272	130	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	273	130	#line 273 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	274	130		subcall stopRotor, __stopRotor_return
+25	273	132	#line 273 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	275	132	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	276	132		subcall goToPredefined, __goToPredefined_return
+25	275	135	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	277	135	#line 277 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+25	278	135		subret __containBalls_return
+26	279	0	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	280	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_goToPredefined, 0
+26	279	3	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	280	3	#line 280 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	281	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_goToPredefined, __constVal1
 26	3758	5	#line 3758 "NXCDefs.h"
 26	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_goToPredefined, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_goToPredefined
 26	3758	7	#line 3758 "NXCDefs.h"
@@ -2132,618 +2182,552 @@ Clump	Line	PC	Source
 26	3695	43		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_goToPredefined
 26	3695	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 26	3695	48		release __ResetSensorMutex
-26	7869	49	#line 7869 "NXCDefs.h"
+26	7925	49	#line 7925 "NXCDefs.h"
 26	3694	49	#line 3694 "NXCDefs.h"
 26	3761	49	#line 3761 "NXCDefs.h"
-26	269	49	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	269	49	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	270	49		set __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 0
-26	269	52	#line 269 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	280	49	#line 280 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	280	49	#line 280 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	281	49		set __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 0
+26	280	52	#line 280 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 26	3684	52	#line 3684 "NXCDefs.h"
 26	3685	52		setin __constVal0, __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 4
 26	3684	56	#line 3684 "NXCDefs.h"
-26	270	56	#line 270 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	270	56	#line 270 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	271	56		mov __signed_stack_001goToPredefined, __constValNeg40
-26	270	58	#line 270 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	270	58	#line 270 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	271	58		set __D0goToPredefined, 405
-26	271	61	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	61	#pragma macro 22
-26	272	61		acquire __rotateMutex0
-26	272	62		acquire __rotateMutex1
-26	272	63		acquire __rotateMutex2
-26	272	64		arrbuild __rotate_ports6, LMotor
-26	272	68		mov __rotate_power6, __signed_stack_001goToPredefined
-26	272	70		mov __rotate_angle6, __D0goToPredefined
-26	272	72		mov __rotate_turnpct6, __constVal0
-26	272	74		mov __rotate_sync6, __constVal0
-26	272	76		mov __rotate_stop6, __constVal1
-26	272	78		mov __rotate_theRVP6, __constVal32
-26	272	80		mov __rotate_theRVI6, __constVal0
-26	272	82		mov __rotate_theRVD6, __constVal96
-26	272	84		subcall __RotateMotorVar, ____RotateMotorVar_return
-26	272	87		release __rotateMutex2
-26	272	88		release __rotateMutex1
-26	272	89		release __rotateMutex0
-26	7898	90	#line 7898 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	271	90	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	271	90	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	90		set __signed_stack_001goToPredefined, 40
-26	271	93	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	271	93	#line 271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	93		set __D0goToPredefined, 2
-26	272	96	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	273	96	#pragma macro 7
-26	273	96		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	7911	119	#line 7911 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	119	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	119	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	273	119	#pragma macro 26
-26	273	119		acquire __RLSBmutex0
-26	273	120		mov __RLSReadBuf0, __RLSBbufLSWrite1
-26	273	122		set __RLSBytesCount0, 1
-26	273	125		wait2 NA, __constVal15
-26	273	128		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-26	273	131		index __D0goToPredefined, __RLSReadBuf0, 65535
-26	273	135		release __RLSBmutex0
-26	7915	136	#line 7915 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	136	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	273	136		mov __signed_stack_001goToPredefined, __D0goToPredefined
-26	272	138	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	273	138		set __D0goToPredefined, 25
-26	272	141	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	273	141		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
-26	272	145	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	272	145	#line 272 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	273	145		not __D0goToPredefined, __zfgoToPredefined
-26	274	148	#line 274 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	148		tst 5, __zfgoToPredefined, __D0goToPredefined
-26	274	151	#line 274 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	151		brtst 4, __NXC_Label_773, __zfgoToPredefined
-26	274	154	#line 274 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	274	154	#line 274 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	154		jmp __NXC_Label_772
-26	274	156	#line 274 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	156	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	276	156	#pragma macro 7
-26	276	156		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	7940	179	#line 7940 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	179	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	179	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	276	179		set __signed_stack_001goToPredefined, 40
-26	275	182	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	275	182	#line 275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	276	182		set __D0goToPredefined, 405
-26	276	185	#line 276 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	277	185	#pragma macro 22
-26	277	185		acquire __rotateMutex0
-26	277	186		acquire __rotateMutex1
-26	277	187		acquire __rotateMutex2
-26	277	188		arrbuild __rotate_ports6, LMotor
-26	277	192		mov __rotate_power6, __signed_stack_001goToPredefined
-26	277	194		mov __rotate_angle6, __D0goToPredefined
-26	277	196		mov __rotate_turnpct6, __constVal0
-26	277	198		mov __rotate_sync6, __constVal0
-26	277	200		mov __rotate_stop6, __constVal1
-26	277	202		mov __rotate_theRVP6, __constVal32
-26	277	204		mov __rotate_theRVI6, __constVal0
-26	277	206		mov __rotate_theRVD6, __constVal96
-26	277	208		subcall __RotateMotorVar, ____RotateMotorVar_return
-26	277	211		release __rotateMutex2
-26	277	212		release __rotateMutex1
-26	277	213		release __rotateMutex0
-26	7953	214	#line 7953 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	276	214	#line 276 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	277	214	#line 277 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	214	#pragma macro 7
-26	278	214		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	7956	237	#line 7956 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	277	237	#line 277 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	277	237	#line 277 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	237		set __signed_stack_001goToPredefined, 40
-26	277	240	#line 277 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	277	240	#line 277 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	240		set __D0goToPredefined, 2
-26	278	243	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	243	#pragma macro 7
-26	279	243		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	7969	266	#line 7969 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	266	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	266	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	266	#pragma macro 26
-26	279	266		acquire __RLSBmutex0
-26	279	267		mov __RLSReadBuf0, __RLSBbufLSWrite1
-26	279	269		set __RLSBytesCount0, 1
-26	279	272		wait2 NA, __constVal15
-26	279	275		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-26	279	278		index __D0goToPredefined, __RLSReadBuf0, 65535
-26	279	282		release __RLSBmutex0
-26	7973	283	#line 7973 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	283	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	283		mov __signed_stack_001goToPredefined, __D0goToPredefined
-26	278	285	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	285		set __D0goToPredefined, 7
-26	278	288	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	288		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
-26	278	292	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	278	292	#line 278 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	292		not __D0goToPredefined, __zfgoToPredefined
-26	279	295	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	280	295		tst 5, __zfgoToPredefined, __D0goToPredefined
-26	279	298	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	280	298		brtst 4, __NXC_Label_787, __zfgoToPredefined
-26	279	301	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	279	301	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	280	301		jmp __NXC_Label_786
-26	279	303	#line 279 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	280	303	#line 280 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	281	303	#pragma macro 7
-26	281	303		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	7998	326	#line 7998 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	280	326	#line 280 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	281	326	#line 281 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	282	326		subcall close, __close_return
-26	281	328	#line 281 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	282	328	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	283	328		subcall stopRotor, __stopRotor_return
-26	282	330	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	282	330	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	283	330		set __open_7qG2_angle_7qG2_000, 15
-26	282	333	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	283	333	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	284	333		subcall open, __open_return
-26	283	335	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	284	335	#line 284 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	285	335		subcall stopRotor, __stopRotor_return
-26	284	337	#line 284 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	284	337	#line 284 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	285	337		set __open_7qG2_angle_7qG2_000, 165
-26	284	340	#line 284 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	285	340	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	286	340		subcall open, __open_return
-26	285	342	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	286	342	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	287	342		subcall stopRotor, __stopRotor_return
-26	286	344	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	288	344	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	289	344		subcall throwBall, __throwBall_return
-26	288	346	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	289	346	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	290	346	#pragma macro 7
-26	290	346		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8034	369	#line 8034 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	289	369	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	289	369	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	290	369		set __Wait_7qG2_ms_7qG2_000_inline_goToPredefined, 500
-26	289	372	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	281	56	#line 281 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	281	56	#line 281 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	282	56		mov __signed_stack_001goToPredefined, __constValNeg40
+26	281	58	#line 281 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	281	58	#line 281 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	282	58		set __D0goToPredefined, 405
+26	282	61	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	61	#pragma macro 22
+26	283	61		acquire __rotateMutex0
+26	283	62		acquire __rotateMutex1
+26	283	63		acquire __rotateMutex2
+26	283	64		arrbuild __rotate_ports6, LMotor
+26	283	68		mov __rotate_power6, __signed_stack_001goToPredefined
+26	283	70		mov __rotate_angle6, __D0goToPredefined
+26	283	72		mov __rotate_turnpct6, __constVal0
+26	283	74		mov __rotate_sync6, __constVal0
+26	283	76		mov __rotate_stop6, __constVal1
+26	283	78		mov __rotate_theRVP6, __constVal32
+26	283	80		mov __rotate_theRVI6, __constVal0
+26	283	82		mov __rotate_theRVD6, __constVal96
+26	283	84		subcall __RotateMotorVar, ____RotateMotorVar_return
+26	283	87		release __rotateMutex2
+26	283	88		release __rotateMutex1
+26	283	89		release __rotateMutex0
+26	7954	90	#line 7954 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	282	90	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	282	90	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	90		set __signed_stack_001goToPredefined, 40
+26	282	93	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	282	93	#line 282 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	93		set __D0goToPredefined, 2
+26	283	96	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	284	96	#pragma macro 7
+26	284	96		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	7967	119	#line 7967 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	119	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	119	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	284	119	#pragma macro 26
+26	284	119		acquire __RLSBmutex0
+26	284	120		mov __RLSReadBuf0, __RLSBbufLSWrite1
+26	284	122		set __RLSBytesCount0, 1
+26	284	125		wait2 NA, __constVal15
+26	284	128		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+26	284	131		index __D0goToPredefined, __RLSReadBuf0, 65535
+26	284	135		release __RLSBmutex0
+26	7971	136	#line 7971 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	136	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	284	136		mov __signed_stack_001goToPredefined, __D0goToPredefined
+26	283	138	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	284	138		set __D0goToPredefined, 25
+26	283	141	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	284	141		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
+26	283	145	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	283	145	#line 283 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	284	145		not __D0goToPredefined, __zfgoToPredefined
+26	285	148	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	148		tst 5, __zfgoToPredefined, __D0goToPredefined
+26	285	151	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	151		brtst 4, __NXC_Label_786, __zfgoToPredefined
+26	285	154	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	285	154	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	154		jmp __NXC_Label_785
+26	285	156	#line 285 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	156	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	287	156	#pragma macro 7
+26	287	156		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	7996	179	#line 7996 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	179	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	179	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	287	179		set __signed_stack_001goToPredefined, 40
+26	286	182	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	286	182	#line 286 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	287	182		set __D0goToPredefined, 405
+26	287	185	#line 287 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	288	185	#pragma macro 22
+26	288	185		acquire __rotateMutex0
+26	288	186		acquire __rotateMutex1
+26	288	187		acquire __rotateMutex2
+26	288	188		arrbuild __rotate_ports6, LMotor
+26	288	192		mov __rotate_power6, __signed_stack_001goToPredefined
+26	288	194		mov __rotate_angle6, __D0goToPredefined
+26	288	196		mov __rotate_turnpct6, __constVal0
+26	288	198		mov __rotate_sync6, __constVal0
+26	288	200		mov __rotate_stop6, __constVal1
+26	288	202		mov __rotate_theRVP6, __constVal32
+26	288	204		mov __rotate_theRVI6, __constVal0
+26	288	206		mov __rotate_theRVD6, __constVal96
+26	288	208		subcall __RotateMotorVar, ____RotateMotorVar_return
+26	288	211		release __rotateMutex2
+26	288	212		release __rotateMutex1
+26	288	213		release __rotateMutex0
+26	8009	214	#line 8009 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	287	214	#line 287 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	288	214	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	214	#pragma macro 7
+26	289	214		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8012	237	#line 8012 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	288	237	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	288	237	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	237		set __signed_stack_001goToPredefined, 40
+26	288	240	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	288	240	#line 288 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	240		set __D0goToPredefined, 2
+26	289	243	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	243	#pragma macro 7
+26	290	243		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8025	266	#line 8025 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	266	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	266	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	266	#pragma macro 26
+26	290	266		acquire __RLSBmutex0
+26	290	267		mov __RLSReadBuf0, __RLSBbufLSWrite1
+26	290	269		set __RLSBytesCount0, 1
+26	290	272		wait2 NA, __constVal15
+26	290	275		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+26	290	278		index __D0goToPredefined, __RLSReadBuf0, 65535
+26	290	282		release __RLSBmutex0
+26	8029	283	#line 8029 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	283	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	283		mov __signed_stack_001goToPredefined, __D0goToPredefined
+26	289	285	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	285		set __D0goToPredefined, 7
+26	289	288	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	288		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
+26	289	292	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	289	292	#line 289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	292		not __D0goToPredefined, __zfgoToPredefined
+26	290	295	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	291	295		tst 5, __zfgoToPredefined, __D0goToPredefined
+26	290	298	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	291	298		brtst 4, __NXC_Label_800, __zfgoToPredefined
+26	290	301	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	290	301	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	291	301		jmp __NXC_Label_799
+26	290	303	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	291	303	#line 291 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	292	303	#pragma macro 7
+26	292	303		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8054	326	#line 8054 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	291	326	#line 291 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	292	326	#line 292 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	293	326		subcall close, __close_return
+26	292	328	#line 292 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	293	328	#line 293 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	294	328		subcall stopRotor, __stopRotor_return
+26	293	330	#line 293 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	293	330	#line 293 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	294	330		set __open_7qG2_angle_7qG2_000, 15
+26	293	333	#line 293 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	294	333	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	295	333		subcall open, __open_return
+26	294	335	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	295	335	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	296	335		subcall stopRotor, __stopRotor_return
+26	295	337	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	295	337	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	296	337		set __open_7qG2_angle_7qG2_000, 165
+26	295	340	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	296	340	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	297	340		subcall open, __open_return
+26	296	342	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	297	342	#line 297 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	298	342		subcall stopRotor, __stopRotor_return
+26	297	344	#line 297 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	299	344	#line 299 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	300	344		subcall throwBall, __throwBall_return
+26	299	346	#line 299 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	300	346	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	301	346	#pragma macro 7
+26	301	346		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8090	369	#line 8090 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	300	369	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	300	369	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	301	369		set __Wait_7qG2_ms_7qG2_000_inline_goToPredefined, 500
+26	300	372	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 26	7921	372	#line 7921 "NXCDefs.h"
 26	7922	372		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_goToPredefined
 26	7921	375	#line 7921 "NXCDefs.h"
-26	290	375	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	290	375	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	291	375		set __moveFwd_7qG2_moveTime_7qG2_000, 4000
-26	290	378	#line 290 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	291	378	#line 291 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	292	378		subcall moveFwd, __moveFwd_return
-26	291	380	#line 291 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	292	380	#line 292 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	293	380	#pragma macro 7
-26	293	380		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8060	403	#line 8060 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	292	403	#line 292 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	293	403	#line 293 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	294	403		set __D0goToPredefined, 1
-26	294	406	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	406		tst 5, __zfgoToPredefined, __D0goToPredefined
-26	294	409	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	409		brtst 4, __NXC_Label_801, __zfgoToPredefined
-26	294	412	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	412	#pragma macro 30
-26	295	412		acquire __RLSBmutex1
-26	295	413		mov __RLSReadBuf1, __RLSBbufLSWrite1
-26	295	415		set __RLSBytesCount1, 2
-26	295	418		subcall __ReadLSBytes1, ____ReadLSBytes1_return
-26	295	421		index __D0goToPredefined, __RLSReadBuf1, 65535
-26	295	425		index __RLSBytesCount1, __RLSReadBuf1, __constVal1
-26	295	429		add __D0goToPredefined, __D0goToPredefined, __D0goToPredefined
-26	295	433		add __D0goToPredefined, __D0goToPredefined, __RLSBytesCount1
-26	295	437		release __RLSBmutex1
-26	8072	438	#line 8072 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	294	438	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	438		mov currentCompass, __D0goToPredefined
-26	294	440	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	294	440	#line 294 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	440	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	440	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	440	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	295	440	#line 295 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	296	440		sub __D0goToPredefined, __D0goToPredefined, ownGoal
-26	296	444	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	297	444		abs relBearing, __D0goToPredefined
-26	296	447	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	296	447	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	296	447	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	297	447		set __Wait_7qG2_ms_7qG2_000_inline_goToPredefined, 100
-26	296	450	#line 296 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	7921	450	#line 7921 "NXCDefs.h"
-26	7922	450		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_goToPredefined
-26	7921	453	#line 7921 "NXCDefs.h"
-26	297	453	#line 297 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	297	453	#line 297 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	298	453		set __D0goToPredefined, 25
-26	298	456	#line 298 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	299	456	#pragma macro 10
-26	299	456		acquire __OnRevMutex
-26	299	457		neg __OnRev_Tmp, __D0goToPredefined
-26	299	460		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	299	483		release __OnRevMutex
-26	8111	484	#line 8111 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	298	484	#line 298 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	298	484	#line 298 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	299	484		set __D0goToPredefined, 25
-26	299	487	#line 299 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	300	487	#pragma macro 7
-26	300	487		setout RMotor, 2, __D0goToPredefined, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8118	510	#line 8118 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	299	510	#line 299 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	299	510	#line 299 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	300	510		set __Wait_7qG2_ms_7qG2_000_inline_goToPredefined, 100
-26	299	513	#line 299 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	7921	513	#line 7921 "NXCDefs.h"
-26	7922	513		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_goToPredefined
-26	7921	516	#line 7921 "NXCDefs.h"
-26	300	516	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	300	516	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	301	516		mov __signed_stack_001goToPredefined, relBearing
-26	300	518	#line 300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	301	518	#line 301 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	302	518		set __D0goToPredefined, 4
-26	301	521	#line 301 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	302	521		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
-26	301	525	#line 301 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	302	525		mov __D0goToPredefined, __zfgoToPredefined
-26	302	528	#line 302 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	303	528		brtst 4, __NXC_Label_820, __zfgoToPredefined
-26	303	531	#line 303 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	304	531		jmp __NXC_Label_801
-26	303	533	#line 303 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	305	533	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	305	533	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	306	533		jmp __NXC_Label_800
-26	305	535	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	306	535	#line 306 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	307	535	#pragma macro 7
-26	307	535		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8154	558	#line 8154 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	306	558	#line 306 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	306	558	#line 306 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	307	558		set __signed_stack_001goToPredefined, 40
-26	306	561	#line 306 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	306	561	#line 306 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	307	561		set __D0goToPredefined, 2
-26	310	564	#line 310 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	311	564	#pragma macro 10
-26	311	564		acquire __OnRevMutex
-26	311	565		neg __OnRev_Tmp, __signed_stack_001goToPredefined
-26	311	568		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	311	591		release __OnRevMutex
-26	8167	592	#line 8167 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	310	592	#line 310 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	311	592	#line 311 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	312	592		set __D0goToPredefined, 1
-26	312	595	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	313	595		tst 5, __zfgoToPredefined, __D0goToPredefined
-26	312	598	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	313	598		brtst 4, __NXC_Label_826, __zfgoToPredefined
-26	312	601	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	313	601		getin __signed_stack_001goToPredefined, __constVal3, 4
-26	312	605	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	313	605	#line 313 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	314	605		set __D0goToPredefined, 1
-26	313	608	#line 313 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	314	608		cmp 4, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
-26	313	612	#line 313 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	314	612		mov __D0goToPredefined, __zfgoToPredefined
-26	314	615	#line 314 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	315	615		brtst 4, __NXC_Label_831, __zfgoToPredefined
-26	314	618	#line 314 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	315	618		set __PlaySound_7qG2_aCode_7qG2_000, 3
-26	314	621	#line 314 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	315	621	#line 315 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	316	621		subcall PlaySound, __PlaySound_return
-26	315	623	#line 315 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	316	623	#line 316 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	317	623		jmp __NXC_Label_826
-26	316	625	#line 316 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	319	625	#line 319 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	319	625	#line 319 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	320	625		jmp __NXC_Label_825
-26	319	627	#line 319 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	321	627	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	322	627	#pragma macro 7
-26	322	627		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8211	650	#line 8211 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	321	650	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	321	650	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	322	650		set __signed_stack_001goToPredefined, 40
-26	321	653	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	321	653	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	322	653		set __D0goToPredefined, 405
-26	322	656	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	323	656	#pragma macro 22
-26	323	656		acquire __rotateMutex0
-26	323	657		acquire __rotateMutex1
-26	323	658		acquire __rotateMutex2
-26	323	659		arrbuild __rotate_ports6, LMotor
-26	323	663		mov __rotate_power6, __signed_stack_001goToPredefined
-26	323	665		mov __rotate_angle6, __D0goToPredefined
-26	323	667		mov __rotate_turnpct6, __constVal0
-26	323	669		mov __rotate_sync6, __constVal0
-26	323	671		mov __rotate_stop6, __constVal1
-26	323	673		mov __rotate_theRVP6, __constVal32
-26	323	675		mov __rotate_theRVI6, __constVal0
-26	323	677		mov __rotate_theRVD6, __constVal96
-26	323	679		subcall __RotateMotorVar, ____RotateMotorVar_return
-26	323	682		release __rotateMutex2
-26	323	683		release __rotateMutex1
-26	323	684		release __rotateMutex0
-26	8224	685	#line 8224 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	322	685	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	322	685	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	323	685		set __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 0
-26	322	688	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	3684	688	#line 3684 "NXCDefs.h"
-26	3685	688		setin __constVal0, __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 4
-26	3684	692	#line 3684 "NXCDefs.h"
-26	323	692	#line 323 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	323	692	#line 323 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	324	692		set __signed_stack_001goToPredefined, 40
-26	323	695	#line 323 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	323	695	#line 323 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	324	695		set __D0goToPredefined, 2
-26	325	698	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	698	#pragma macro 7
-26	326	698		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8247	721	#line 8247 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	325	721	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	325	721	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	721	#pragma macro 26
-26	326	721		acquire __RLSBmutex0
-26	326	722		mov __RLSReadBuf0, __RLSBbufLSWrite1
-26	326	724		set __RLSBytesCount0, 1
-26	326	727		wait2 NA, __constVal15
-26	326	730		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-26	326	733		index __D0goToPredefined, __RLSReadBuf0, 65535
-26	326	737		release __RLSBmutex0
-26	8251	738	#line 8251 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	325	738	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	738		mov __signed_stack_001goToPredefined, __D0goToPredefined
-26	325	740	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	740		set __D0goToPredefined, 25
-26	325	743	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	743		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
-26	325	747	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	325	747	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	747		not __D0goToPredefined, __zfgoToPredefined
-26	326	750	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	750		tst 5, __zfgoToPredefined, __D0goToPredefined
-26	326	753	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	753		brtst 4, __NXC_Label_845, __zfgoToPredefined
-26	326	756	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	326	756	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	756		jmp __NXC_Label_844
-26	326	758	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	758	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	328	758	#pragma macro 7
-26	328	758		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8276	781	#line 8276 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	781	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	781	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	328	781		set __signed_stack_001goToPredefined, 40
-26	327	784	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	327	784	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	328	784		set __D0goToPredefined, 405
-26	328	787	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	329	787	#pragma macro 22
-26	329	787		acquire __rotateMutex0
-26	329	788		acquire __rotateMutex1
-26	329	789		acquire __rotateMutex2
-26	329	790		arrbuild __rotate_ports6, RMotor
-26	329	794		mov __rotate_power6, __signed_stack_001goToPredefined
-26	329	796		mov __rotate_angle6, __D0goToPredefined
-26	329	798		mov __rotate_turnpct6, __constVal0
-26	329	800		mov __rotate_sync6, __constVal0
-26	329	802		mov __rotate_stop6, __constVal1
-26	329	804		mov __rotate_theRVP6, __constVal32
-26	329	806		mov __rotate_theRVI6, __constVal0
-26	329	808		mov __rotate_theRVD6, __constVal96
-26	329	810		subcall __RotateMotorVar, ____RotateMotorVar_return
-26	329	813		release __rotateMutex2
-26	329	814		release __rotateMutex1
-26	329	815		release __rotateMutex0
-26	8289	816	#line 8289 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	328	816	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	329	816	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	816	#pragma macro 7
-26	330	816		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8292	839	#line 8292 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	329	839	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	329	839	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	839		set __signed_stack_001goToPredefined, 40
-26	329	842	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	329	842	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	842		set __D0goToPredefined, 2
-26	330	845	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	845	#pragma macro 7
-26	331	845		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8305	868	#line 8305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	868	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	868	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	868	#pragma macro 26
-26	331	868		acquire __RLSBmutex0
-26	331	869		mov __RLSReadBuf0, __RLSBbufLSWrite1
-26	331	871		set __RLSBytesCount0, 1
-26	331	874		wait2 NA, __constVal15
-26	331	877		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-26	331	880		index __D0goToPredefined, __RLSReadBuf0, 65535
-26	331	884		release __RLSBmutex0
-26	8309	885	#line 8309 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	885	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	885		mov __signed_stack_001goToPredefined, __D0goToPredefined
-26	330	887	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	887		set __D0goToPredefined, 7
-26	330	890	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	890		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
-26	330	894	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	330	894	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	894		not __D0goToPredefined, __zfgoToPredefined
-26	331	897	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	332	897		tst 5, __zfgoToPredefined, __D0goToPredefined
-26	331	900	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	332	900		brtst 4, __NXC_Label_859, __zfgoToPredefined
-26	331	903	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	331	903	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	332	903		jmp __NXC_Label_858
-26	331	905	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	332	905	#line 332 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	333	905	#pragma macro 7
-26	333	905		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-26	8334	928	#line 8334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	332	928	#line 332 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	333	928	#line 333 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	334	928		subcall close, __close_return
-26	333	930	#line 333 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	334	930	#line 334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	335	930		subcall stopRotor, __stopRotor_return
-26	334	932	#line 334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	334	932	#line 334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	335	932		set __open_7qG2_angle_7qG2_000, 15
-26	334	935	#line 334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	335	935	#line 335 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	336	935		subcall open, __open_return
-26	335	937	#line 335 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	336	937	#line 336 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	337	937		subcall stopRotor, __stopRotor_return
-26	336	939	#line 336 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	336	939	#line 336 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	337	939		set __open_7qG2_angle_7qG2_000, 165
-26	336	942	#line 336 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	337	942	#line 337 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	338	942		subcall open, __open_return
-26	337	944	#line 337 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	338	944	#line 338 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	339	944		subcall stopRotor, __stopRotor_return
-26	338	946	#line 338 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	341	946	#line 341 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	342	946		subcall throwBall, __throwBall_return
-26	341	948	#line 341 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	342	948	#line 342 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-26	343	948		subret __goToPredefined_return
-27	397	0	#line 397 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	398	0		set __D0scanningArenaLeft, 1
-27	398	3	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	399	3		tst 5, __zfscanningArenaLeft, __D0scanningArenaLeft
-27	398	6	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	399	6		brtst 4, __NXC_Label_945, __zfscanningArenaLeft
-27	398	9	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	398	9	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	399	9		not __DU0scanningArenaLeft, scanningLeft
-27	399	12	#line 399 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	400	12		tst 5, __zfscanningArenaLeft, __DU0scanningArenaLeft
-27	399	15	#line 399 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	400	15		brtst 4, __NXC_Label_949, __zfscanningArenaLeft
-27	399	18	#line 399 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	399	18	#line 399 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	400	18		jmp __NXC_Label_948
-27	399	20	#line 399 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	401	20	#line 401 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	402	20		acquire moveMutex
-27	401	21	#line 401 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	401	21	#line 401 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	402	21		set __D0scanningArenaLeft, 25
-27	402	24	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	403	24	#pragma macro 10
-27	403	24		acquire __OnRevMutex
-27	403	25		neg __OnRev_Tmp, __D0scanningArenaLeft
-27	403	28		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-27	403	51		release __OnRevMutex
-27	8858	52	#line 8858 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	402	52	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	402	52	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	403	52		set __D0scanningArenaLeft, 25
-27	403	55	#line 403 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	404	55	#pragma macro 7
-27	404	55		setout RMotor, 2, __D0scanningArenaLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-27	8865	78	#line 8865 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	403	78	#line 403 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	403	78	#line 403 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	404	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft, 100
-27	403	81	#line 403 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	303	375	#line 303 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	303	375	#line 303 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	304	375		set __signed_stack_001goToPredefined, 40
+26	303	378	#line 303 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	303	378	#line 303 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	304	378		set __D0goToPredefined, 50
+26	304	381	#line 304 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	305	381	#pragma macro 22
+26	305	381		acquire __rotateMutex0
+26	305	382		acquire __rotateMutex1
+26	305	383		acquire __rotateMutex2
+26	305	384		arrbuild __rotate_ports6, RMotor
+26	305	388		mov __rotate_power6, __signed_stack_001goToPredefined
+26	305	390		mov __rotate_angle6, __D0goToPredefined
+26	305	392		mov __rotate_turnpct6, __constVal0
+26	305	394		mov __rotate_sync6, __constVal0
+26	305	396		mov __rotate_stop6, __constVal1
+26	305	398		mov __rotate_theRVP6, __constVal32
+26	305	400		mov __rotate_theRVI6, __constVal0
+26	305	402		mov __rotate_theRVD6, __constVal96
+26	305	404		subcall __RotateMotorVar, ____RotateMotorVar_return
+26	305	407		release __rotateMutex2
+26	305	408		release __rotateMutex1
+26	305	409		release __rotateMutex0
+26	8117	410	#line 8117 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	304	410	#line 304 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	305	410	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	306	410	#pragma macro 7
+26	306	410		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8120	433	#line 8120 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	305	433	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	305	433	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	306	433		set __signed_stack_001goToPredefined, 40
+26	305	436	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	305	436	#line 305 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	306	436		set __D0goToPredefined, 2
+26	309	439	#line 309 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	310	439	#pragma macro 10
+26	310	439		acquire __OnRevMutex
+26	310	440		neg __OnRev_Tmp, __signed_stack_001goToPredefined
+26	310	443		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	310	466		release __OnRevMutex
+26	8133	467	#line 8133 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	309	467	#line 309 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	310	467	#line 310 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	311	467		set __D0goToPredefined, 1
+26	311	470	#line 311 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	312	470		tst 5, __zfgoToPredefined, __D0goToPredefined
+26	311	473	#line 311 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	312	473		brtst 4, __NXC_Label_820, __zfgoToPredefined
+26	311	476	#line 311 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	312	476		getin __signed_stack_001goToPredefined, __constVal3, 4
+26	311	480	#line 311 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	312	480	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	313	480		set __D0goToPredefined, 1
+26	312	483	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	313	483		cmp 4, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
+26	312	487	#line 312 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	313	487		mov __D0goToPredefined, __zfgoToPredefined
+26	313	490	#line 313 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	314	490		brtst 4, __NXC_Label_825, __zfgoToPredefined
+26	313	493	#line 313 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	314	493		set __PlaySound_7qG2_aCode_7qG2_000, 3
+26	313	496	#line 313 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	314	496	#line 314 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	315	496		subcall PlaySound, __PlaySound_return
+26	314	498	#line 314 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	315	498	#line 315 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	316	498		jmp __NXC_Label_820
+26	315	500	#line 315 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	318	500	#line 318 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	318	500	#line 318 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	319	500		jmp __NXC_Label_819
+26	318	502	#line 318 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	320	502	#line 320 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	321	502	#pragma macro 7
+26	321	502		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8177	525	#line 8177 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	320	525	#line 320 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	320	525	#line 320 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	321	525		set __signed_stack_001goToPredefined, 40
+26	320	528	#line 320 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	320	528	#line 320 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	321	528		set __D0goToPredefined, 405
+26	321	531	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	322	531	#pragma macro 22
+26	322	531		acquire __rotateMutex0
+26	322	532		acquire __rotateMutex1
+26	322	533		acquire __rotateMutex2
+26	322	534		arrbuild __rotate_ports6, LMotor
+26	322	538		mov __rotate_power6, __signed_stack_001goToPredefined
+26	322	540		mov __rotate_angle6, __D0goToPredefined
+26	322	542		mov __rotate_turnpct6, __constVal0
+26	322	544		mov __rotate_sync6, __constVal0
+26	322	546		mov __rotate_stop6, __constVal1
+26	322	548		mov __rotate_theRVP6, __constVal32
+26	322	550		mov __rotate_theRVI6, __constVal0
+26	322	552		mov __rotate_theRVD6, __constVal96
+26	322	554		subcall __RotateMotorVar, ____RotateMotorVar_return
+26	322	557		release __rotateMutex2
+26	322	558		release __rotateMutex1
+26	322	559		release __rotateMutex0
+26	8190	560	#line 8190 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	321	560	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	321	560	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	322	560		set __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 0
+26	321	563	#line 321 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	3684	563	#line 3684 "NXCDefs.h"
+26	3685	563		setin __constVal0, __ClearSensor_7qG2_port_7qG2_000_inline_goToPredefined, 4
+26	3684	567	#line 3684 "NXCDefs.h"
+26	322	567	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	322	567	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	323	567		set __signed_stack_001goToPredefined, 40
+26	322	570	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	322	570	#line 322 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	323	570		set __D0goToPredefined, 2
+26	324	573	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	573	#pragma macro 7
+26	325	573		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8213	596	#line 8213 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	324	596	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	324	596	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	596	#pragma macro 26
+26	325	596		acquire __RLSBmutex0
+26	325	597		mov __RLSReadBuf0, __RLSBbufLSWrite1
+26	325	599		set __RLSBytesCount0, 1
+26	325	602		wait2 NA, __constVal15
+26	325	605		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+26	325	608		index __D0goToPredefined, __RLSReadBuf0, 65535
+26	325	612		release __RLSBmutex0
+26	8217	613	#line 8217 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	324	613	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	613		mov __signed_stack_001goToPredefined, __D0goToPredefined
+26	324	615	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	615		set __D0goToPredefined, 25
+26	324	618	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	618		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
+26	324	622	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	324	622	#line 324 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	622		not __D0goToPredefined, __zfgoToPredefined
+26	325	625	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	625		tst 5, __zfgoToPredefined, __D0goToPredefined
+26	325	628	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	628		brtst 4, __NXC_Label_839, __zfgoToPredefined
+26	325	631	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	325	631	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	631		jmp __NXC_Label_838
+26	325	633	#line 325 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	633	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	327	633	#pragma macro 7
+26	327	633		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8242	656	#line 8242 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	656	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	656	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	327	656		set __signed_stack_001goToPredefined, 40
+26	326	659	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	326	659	#line 326 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	327	659		set __D0goToPredefined, 405
+26	327	662	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	328	662	#pragma macro 22
+26	328	662		acquire __rotateMutex0
+26	328	663		acquire __rotateMutex1
+26	328	664		acquire __rotateMutex2
+26	328	665		arrbuild __rotate_ports6, RMotor
+26	328	669		mov __rotate_power6, __signed_stack_001goToPredefined
+26	328	671		mov __rotate_angle6, __D0goToPredefined
+26	328	673		mov __rotate_turnpct6, __constVal0
+26	328	675		mov __rotate_sync6, __constVal0
+26	328	677		mov __rotate_stop6, __constVal1
+26	328	679		mov __rotate_theRVP6, __constVal32
+26	328	681		mov __rotate_theRVI6, __constVal0
+26	328	683		mov __rotate_theRVD6, __constVal96
+26	328	685		subcall __RotateMotorVar, ____RotateMotorVar_return
+26	328	688		release __rotateMutex2
+26	328	689		release __rotateMutex1
+26	328	690		release __rotateMutex0
+26	8255	691	#line 8255 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	327	691	#line 327 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	328	691	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	691	#pragma macro 7
+26	329	691		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8258	714	#line 8258 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	328	714	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	328	714	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	714		set __signed_stack_001goToPredefined, 40
+26	328	717	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	328	717	#line 328 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	717		set __D0goToPredefined, 2
+26	329	720	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	720	#pragma macro 7
+26	330	720		setout __OUT_AC, 2, __signed_stack_001goToPredefined, 1, __constVal7, 8, __constVal2, 7, __D0goToPredefined, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8271	743	#line 8271 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	743	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	743	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	743	#pragma macro 26
+26	330	743		acquire __RLSBmutex0
+26	330	744		mov __RLSReadBuf0, __RLSBbufLSWrite1
+26	330	746		set __RLSBytesCount0, 1
+26	330	749		wait2 NA, __constVal15
+26	330	752		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+26	330	755		index __D0goToPredefined, __RLSReadBuf0, 65535
+26	330	759		release __RLSBmutex0
+26	8275	760	#line 8275 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	760	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	760		mov __signed_stack_001goToPredefined, __D0goToPredefined
+26	329	762	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	762		set __D0goToPredefined, 7
+26	329	765	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	765		cmp 2, __zfgoToPredefined, __signed_stack_001goToPredefined, __D0goToPredefined
+26	329	769	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	329	769	#line 329 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	769		not __D0goToPredefined, __zfgoToPredefined
+26	330	772	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	331	772		tst 5, __zfgoToPredefined, __D0goToPredefined
+26	330	775	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	331	775		brtst 4, __NXC_Label_853, __zfgoToPredefined
+26	330	778	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	330	778	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	331	778		jmp __NXC_Label_852
+26	330	780	#line 330 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	331	780	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	332	780	#pragma macro 7
+26	332	780		setout motors, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+26	8300	803	#line 8300 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	331	803	#line 331 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	332	803	#line 332 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	333	803		subcall close, __close_return
+26	332	805	#line 332 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	333	805	#line 333 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	334	805		subcall stopRotor, __stopRotor_return
+26	333	807	#line 333 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	333	807	#line 333 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	334	807		set __open_7qG2_angle_7qG2_000, 15
+26	333	810	#line 333 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	334	810	#line 334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	335	810		subcall open, __open_return
+26	334	812	#line 334 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	335	812	#line 335 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	336	812		subcall stopRotor, __stopRotor_return
+26	335	814	#line 335 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	335	814	#line 335 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	336	814		set __open_7qG2_angle_7qG2_000, 165
+26	335	817	#line 335 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	336	817	#line 336 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	337	817		subcall open, __open_return
+26	336	819	#line 336 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	337	819	#line 337 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	338	819		subcall stopRotor, __stopRotor_return
+26	337	821	#line 337 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	340	821	#line 340 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	341	821		subcall throwBall, __throwBall_return
+26	340	823	#line 340 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	341	823	#line 341 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+26	342	823		subret __goToPredefined_return
+27	396	0	#line 396 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	397	0		set __D0scanningArenaLeft, 1
+27	397	3	#line 397 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	398	3		tst 5, __zfscanningArenaLeft, __D0scanningArenaLeft
+27	397	6	#line 397 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	398	6		brtst 4, __NXC_Label_939, __zfscanningArenaLeft
+27	397	9	#line 397 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	397	9	#line 397 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	398	9		not __DU0scanningArenaLeft, scanningLeft
+27	398	12	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	399	12		tst 5, __zfscanningArenaLeft, __DU0scanningArenaLeft
+27	398	15	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	399	15		brtst 4, __NXC_Label_943, __zfscanningArenaLeft
+27	398	18	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	398	18	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	399	18		jmp __NXC_Label_942
+27	398	20	#line 398 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	400	20	#line 400 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	401	20		acquire moveMutex
+27	400	21	#line 400 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	400	21	#line 400 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	401	21		set __D0scanningArenaLeft, 25
+27	401	24	#line 401 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	402	24	#pragma macro 10
+27	402	24		acquire __OnRevMutex
+27	402	25		neg __OnRev_Tmp, __D0scanningArenaLeft
+27	402	28		setout LMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+27	402	51		release __OnRevMutex
+27	8824	52	#line 8824 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	401	52	#line 401 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	401	52	#line 401 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	402	52		set __D0scanningArenaLeft, 25
+27	402	55	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	403	55	#pragma macro 7
+27	403	55		setout RMotor, 2, __D0scanningArenaLeft, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+27	8831	78	#line 8831 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	402	78	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	402	78	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	403	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft, 100
+27	402	81	#line 402 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 27	7921	81	#line 7921 "NXCDefs.h"
 27	7922	81		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scanningArenaLeft
 27	7921	84	#line 7921 "NXCDefs.h"
+27	404	84	#line 404 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 27	405	84	#line 405 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	406	84	#line 406 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	407	84		release moveMutex
-27	406	85	#line 406 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	409	85	#line 409 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	410	85		jmp __NXC_Label_944
-27	409	87	#line 409 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-27	410	87		exit -1, -1
-28	412	0	#line 412 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	413	0		set __D0scanningArenaRight, 1
-28	413	3	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	414	3		tst 5, __zfscanningArenaRight, __D0scanningArenaRight
-28	413	6	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	414	6		brtst 4, __NXC_Label_961, __zfscanningArenaRight
-28	413	9	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	413	9	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	414	9		not __DU0scanningArenaRight, scanningRight
-28	414	12	#line 414 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	415	12		tst 5, __zfscanningArenaRight, __DU0scanningArenaRight
-28	414	15	#line 414 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	415	15		brtst 4, __NXC_Label_965, __zfscanningArenaRight
-28	414	18	#line 414 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	414	18	#line 414 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	415	18		jmp __NXC_Label_964
-28	414	20	#line 414 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	416	20	#line 416 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	417	20		acquire moveMutex
-28	416	21	#line 416 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	416	21	#line 416 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	417	21		set __D0scanningArenaRight, 25
-28	417	24	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	418	24	#pragma macro 10
-28	418	24		acquire __OnRevMutex
-28	418	25		neg __OnRev_Tmp, __D0scanningArenaRight
-28	418	28		setout RMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-28	418	51		release __OnRevMutex
-28	8926	52	#line 8926 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	417	52	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	417	52	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	418	52		set __D0scanningArenaRight, 25
-28	418	55	#line 418 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	419	55	#pragma macro 7
-28	419	55		setout LMotor, 2, __D0scanningArenaRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-28	8933	78	#line 8933 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	418	78	#line 418 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	418	78	#line 418 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	419	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight, 100
-28	418	81	#line 418 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	406	84		release moveMutex
+27	405	85	#line 405 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	408	85	#line 408 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	409	85		jmp __NXC_Label_938
+27	408	87	#line 408 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+27	409	87		exit -1, -1
+28	411	0	#line 411 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	412	0		set __D0scanningArenaRight, 1
+28	412	3	#line 412 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	413	3		tst 5, __zfscanningArenaRight, __D0scanningArenaRight
+28	412	6	#line 412 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	413	6		brtst 4, __NXC_Label_955, __zfscanningArenaRight
+28	412	9	#line 412 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	412	9	#line 412 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	413	9		not __DU0scanningArenaRight, scanningRight
+28	413	12	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	414	12		tst 5, __zfscanningArenaRight, __DU0scanningArenaRight
+28	413	15	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	414	15		brtst 4, __NXC_Label_959, __zfscanningArenaRight
+28	413	18	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	413	18	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	414	18		jmp __NXC_Label_958
+28	413	20	#line 413 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	415	20	#line 415 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	416	20		acquire moveMutex
+28	415	21	#line 415 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	415	21	#line 415 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	416	21		set __D0scanningArenaRight, 25
+28	416	24	#line 416 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	417	24	#pragma macro 10
+28	417	24		acquire __OnRevMutex
+28	417	25		neg __OnRev_Tmp, __D0scanningArenaRight
+28	417	28		setout RMotor, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+28	417	51		release __OnRevMutex
+28	8892	52	#line 8892 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	416	52	#line 416 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	416	52	#line 416 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	417	52		set __D0scanningArenaRight, 25
+28	417	55	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	418	55	#pragma macro 7
+28	418	55		setout LMotor, 2, __D0scanningArenaRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+28	8899	78	#line 8899 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	417	78	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	417	78	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	418	78		set __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight, 100
+28	417	81	#line 417 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 28	7921	81	#line 7921 "NXCDefs.h"
 28	7922	81		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scanningArenaRight
 28	7921	84	#line 7921 "NXCDefs.h"
+28	419	84	#line 419 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
 28	420	84	#line 420 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	421	84	#line 421 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	422	84		release moveMutex
-28	421	85	#line 421 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	424	85	#line 424 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	425	85		jmp __NXC_Label_960
-28	424	87	#line 424 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-28	425	87		exit -1, -1
-29	425	0	#line 425 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
-29	426	0		subret ____initialize_global_data_return
+28	421	84		release moveMutex
+28	420	85	#line 420 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	423	85	#line 423 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	424	85		jmp __NXC_Label_954
+28	423	87	#line 423 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+28	424	87		exit -1, -1
+29	424	0	#line 424 "C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc"
+29	425	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
@@ -2771,8 +2755,8 @@ Clump	Name	Offset	File
 22	reverseDirection	1882	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
 23	checkWallBack	2013	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
 24	reading	2042	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
-25	containBalls	2465	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
-26	goToPredefined	2602	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
-27	scanningArenaLeft	3552	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
-28	scanningArenaRight	3642	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
-29	__initialize_global_data	3732	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+25	containBalls	2576	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+26	goToPredefined	2713	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+27	scanningArenaLeft	3538	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+28	scanningArenaRight	3628	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc
+29	__initialize_global_data	3718	C:\Users\Kawtar\Documents\GitHub\OS_Project\new - Copy\Main.nxc

@@ -239,8 +239,19 @@ task reading(){
             }
             else
             {
-                moveFwd(2000);
-                backtoOrigin();
+                moveFwd(4000);
+                while(true)
+                {
+                        OnRev(LMotor, SCANNING_SPEED);
+                        OnFwd(RMotor, SCANNING_SPEED);
+                        Wait(100);
+                        if(relBearing<=4)
+                        {
+                              break;
+                        }
+                }
+                Off(motors);
+
             }
             //return right to scanning tasks
             Release(moveMutex);
@@ -264,7 +275,7 @@ sub containBalls()
 
 }
 
-sub goToPredefined1()
+sub goToPredefined()
 {
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
@@ -290,19 +301,7 @@ sub goToPredefined1()
       Wait(500);
       moveFwd(4000);
       Off(motors);
-      while(true)
-      {
-              currentCompass = SensorHTCompass(COMPASS);
-              relBearing = abs(currentCompass-ownGoal);
-              Wait(100);
-              OnRev(LMotor, SCANNING_SPEED);
-              OnFwd(RMotor, SCANNING_SPEED);
-              Wait(100);
-              if(relBearing<=4)
-              {
-                    break;
-              }
-      }
+      RotateMotor(RMotor, MOVMENT_SPEED, 50);
       Off(motors);
       OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       //Wait(8000);
@@ -340,13 +339,13 @@ sub goToPredefined1()
       
       
 }
-sub goToPredefined()
+sub goToPredefined1()
 {
 
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
 
-    RotateMotor(LMotor, -MOVMENT_SPEED, 405);
+      RotateMotor(LMotor, -MOVMENT_SPEED, 405);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until (SensorUS (ULTRASONIC) <= 25);
       Off(motors);
