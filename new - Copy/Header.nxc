@@ -26,7 +26,7 @@ byte GMotor = OUT_B;
 //Subs
 sub stopRotor()
 {
-	   Wait (100);
+	   Wait (400);
      Off (GMotor);
 }
 sub close()
@@ -58,6 +58,9 @@ sub moveBwd(int moveTime);
 sub reverseDirection(int moveTime);
 sub turnAway(int moveTime);
 sub goToPredefined();
+sub containBalls();
+bool checkWallBack();
+sub  rotateForOrigin();
 // Tasks in Main
 
 task init();

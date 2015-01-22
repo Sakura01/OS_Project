@@ -16,12 +16,13 @@ task init()
 {
      SetSensorLowspeed(COLOR);
      SetSensorLowspeed(COMPASS);
-     SetSensorLowspeed(ULTRASONIC);
+     //SetSensorLowspeed(ULTRASONIC);
      SetSensorTouch(TOUCH);
-
+     ClearSensor(ULTRASONIC);
      ownGoal = SensorHTCompass(COMPASS);
      Wait(100);  //small delay while setting ownGoal
-     goToPredefined();
+     //goToPredefined();
+     containBalls();
      Off(motors);
      Precedes (scanningArenaLeft,reading,scanningArenaRight);
 }
@@ -161,6 +162,16 @@ sub reverseDirection(int moveTime)
          }
          Wait(moveTime);
 }
+
+//Check corners for backside
+bool checkWallBack()
+{
+    if(Sensor(TOUCH)==1)
+    {
+     return true;
+    }
+    return false;
+}
 task reading(){
      while(true){
             //stop rotating the wheels before chech
@@ -178,79 +189,140 @@ task reading(){
             relBearing = getDegreeDiff(currentCompass,ownGoal);
             TextOut(10,LCD_LINE5,"Relative reading" );
             NumOut(10,LCD_LINE6,relBearing);
-
-            if(relBearing <75)
+            if(checkWallBack()==false)
             {
-            		//if find out something
-       		     ClearSensor(ULTRASONIC);
-               if(SensorUS (ULTRASONIC) <= WALLDIST)
-               {
-                         PlaySound(SOUND_UP);
-                         Off(motors);
-                         bool grab=moveTowardObj();
-                         if(grab)
-                         {
-                              grab=checkandthrow();
-                         }
-                         //if it is not a ball then rotate back and start scanning right
-                         if(!grab)
-                         {
-                                //turn away from the object
-                                moveBwd(1000);
-                                if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
-                             	  {
-                                        //PlaySound(SOUND_DOUBLE_BEEP);
-                                         backtoOrigin();
-                                         moveFwd(1000);
-                                }
+              if(relBearing <75)
+              {
+              		//if find out something
+         		     ClearSensor(ULTRASONIC);
+                 if(SensorUS (ULTRASONIC) <= WALLDIST)
+                 {
+                           PlaySound(SOUND_UP);
+                           Off(motors);
+                           bool grab=moveTowardObj();
+                           if(grab)
+                           {
+                                grab=checkandthrow();
+                           }
+                           //if it is not a ball then rotate back and start scanning right
+                           if(!grab)
+                           {
+                                  //turn away from the object
+                                  moveBwd(1000);
+                                  if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
+                               	  {
+                                          //PlaySound(SOUND_DOUBLE_BEEP);
+                                           backtoOrigin();
+                                           moveFwd(1000);
+                                  }
 
-                                //then change the direction
-                                changeDirection();
-                         }
+                                  //then change the direction
+                                  changeDirection();
+                           }
 
-                }
+                  }
+              }
+              else
+              {
+                  if (scanningRight)
+                  {
+                     //PlaySound(SOUND_DOUBLE_BEEP);
+                     backtoOrigin();
+                     moveFwd(1000);
+                  }
+                  changeDirection();
+
+                  Release(moveMutex);
+                  Wait(1000);
+                  Acquire(moveMutex);
+              }
             }
             else
             {
-                if (scanningRight)
-                {
-                   //PlaySound(SOUND_DOUBLE_BEEP);
-                   backtoOrigin();
-                   moveFwd(1000);
-                }
-                changeDirection();
-
-                Release(moveMutex);
-                Wait(1000);
-                Acquire(moveMutex);
+                moveFwd(2000);
+                backtoOrigin();
             }
             //return right to scanning tasks
             Release(moveMutex);
      }
 
 }
+
+sub containBalls()
+{
+  OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+  Wait(700);
+  Off(motors);
+  close();
+  stopRotor();
+  OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+  Wait(700);
+  Off(motors);
+  open(180);
+  stopRotor();
+  goToPredefined();
+
+}
+
 sub goToPredefined()
 {
+      SetSensorLowspeed(ULTRASONIC);
+      ClearSensor(ULTRASONIC);
       RotateMotor(LMotor, -MOVMENT_SPEED, 405);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until (SensorUS (ULTRASONIC) <= 25);
+      until(SensorUS (ULTRASONIC) <= 25);
+      //Wait(4000);
       Off(motors);
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
       Off(motors);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until (SensorUS (ULTRASONIC) <= THRESHOLD);
       Off(motors);
-      checkandthrow();
+      close();
+      stopRotor();
+      open(15);
+      stopRotor();
+      open(165);
+      stopRotor();
+      throwBall();
       //Ball on right
       Off(motors);
       Wait(500);
-      OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      Wait(8000);
+      moveFwd(4000);
       Off(motors);
+      while(true)
+      {
+              currentCompass = SensorHTCompass(COMPASS);
+              relBearing = abs(currentCompass-ownGoal);
+              Wait(100);
+              OnRev(LMotor, SCANNING_SPEED);
+              OnFwd(RMotor, SCANNING_SPEED);
+              Wait(100);
+              if(relBearing<=4)
+              {
+                    break;
+              }
+      }
+      Off(motors);
+      OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      //Wait(8000);
+      //Off(motors);
       //To do change with sensor
+      while(1)
+      {
+        if(Sensor(TOUCH)== 1)
+        {
+            PlaySound(SOUND_UP);
+            break;
+        }
+      }
       //until (SensorUS (TOUCH)== 1);
+      Off(motors);
+      //start rotation to the other side
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
+      ClearSensor(ULTRASONIC);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      //Wait(7000);
       until (SensorUS (ULTRASONIC) <= 25);
       Off(motors);
       RotateMotor(RMotor, MOVMENT_SPEED, 405);
@@ -258,8 +330,13 @@ sub goToPredefined()
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until (SensorUS (ULTRASONIC) <= THRESHOLD);
       Off(motors);
-      checkandthrow();
-      
+      close();
+      stopRotor();
+      open(15);
+      stopRotor();
+      open(165);
+      stopRotor();
+      throwBall();
       
       
 }
