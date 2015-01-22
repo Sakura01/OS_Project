@@ -208,14 +208,20 @@ task reading(){
                            if(!grab)
                            {
                                   //turn away from the object
-                                  moveBwd(1000);
+                                  moveBwd(5000);
                                   if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
                                	  {
                                           //PlaySound(SOUND_DOUBLE_BEEP);
-                                           backtoOrigin();
-                                           moveFwd(1000);
+                                           //backtoOrigin();
+                                           //moveFwd(1000);
+                                           RotateMotor(RMotor, MOVMENT_SPEED, 810);
+                                           Off(motors);
                                   }
-
+                                  else
+                                  {
+                                        RotateMotor(LMotor, MOVMENT_SPEED, 810);
+                                        Off(motors);
+                                  }
                                   //then change the direction
                                   changeDirection();
                            }
@@ -240,6 +246,7 @@ task reading(){
             else
             {
                 moveFwd(4000);
+                PlaySound(SOUND_UP);
                 while(true)
                 {
                         OnRev(LMotor, SCANNING_SPEED);
@@ -271,12 +278,27 @@ sub containBalls()
   Off(motors);
   open(180);
   stopRotor();
+  Wait(1000);
   goToPredefined();
 
 }
-
+sub checkFrontWall()
+{
+  moveBwd()for a time
+  if(scanningRight)
+  {
+   RightMotor to °
+  }
+  else
+  {
+   Left tp °
+  }
+  
+}
 sub goToPredefined()
 {
+      ClearSensor(ULTRASONIC);
+      Wait(500);
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
       RotateMotor(LMotor, -MOVMENT_SPEED, 405);
@@ -299,8 +321,8 @@ sub goToPredefined()
       //Ball on right
       Off(motors);
       Wait(500);
-      moveFwd(4000);
-      Off(motors);
+      //moveFwd(4000);
+      //Off(motors);
       RotateMotor(RMotor, MOVMENT_SPEED, 50);
       Off(motors);
       OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
@@ -311,7 +333,7 @@ sub goToPredefined()
       {
         if(Sensor(TOUCH)== 1)
         {
-            PlaySound(SOUND_UP);
+            //PlaySound(SOUND_UP);
             break;
         }
       }
@@ -338,58 +360,6 @@ sub goToPredefined()
       throwBall();
       
       
-}
-sub goToPredefined1()
-{
-
-      SetSensorLowspeed(ULTRASONIC);
-      ClearSensor(ULTRASONIC);
-
-      RotateMotor(LMotor, -MOVMENT_SPEED, 405);
-      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until (SensorUS (ULTRASONIC) <= 25);
-      Off(motors);
-      RotateMotor(LMotor, MOVMENT_SPEED, 405);
-      Off(motors);
-      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until (SensorUS (ULTRASONIC) <= THRESHOLD);
-      Off(motors);
-
-      close();
-      stopRotor();
-      open(15);
-      stopRotor();
-      open(165);
-      stopRotor();
-      throwBall();
-      
-      //Ball on right
-      Off(motors);
-      Wait(500);
-      OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      Wait(8000);
-      Off(motors);
-      //To do change with sensor
-      //until (SensorUS (TOUCH)== 1);
-      RotateMotor(LMotor, MOVMENT_SPEED, 405);
-      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until (SensorUS (ULTRASONIC) <= 25);
-      Off(motors);
-      RotateMotor(RMotor, MOVMENT_SPEED, 405);
-      Off(motors);
-      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until (SensorUS (ULTRASONIC) <= THRESHOLD);
-      Off(motors);
-
-      close();
-      stopRotor();
-      open(15);
-      stopRotor();
-      open(165);
-      stopRotor();
-      throwBall();
-
-
 }
 task scanningArenaLeft()
 {
