@@ -15,8 +15,6 @@
 #define THRESHOLD 7
 #define WALLDIST 40
 
-#define COLORWALL 14
-
 // The moving motors
 byte motors[] = {OUT_A,OUT_C};
 byte RMotor = OUT_A;
@@ -29,19 +27,19 @@ sub stopRotor()
 	   Wait (400);
      Off (GMotor);
 }
+
 sub close()
 {
      RotateMotorEx (GMotor, 70, 180, 0, false, true);
      stopRotor();
-
 }
 
 sub open(int angle)
 {
       RotateMotor (GMotor, 100, -angle);
       stopRotor();
-
 }
+
 //Functions in Main
 
 bool checkandthrow();
@@ -61,9 +59,9 @@ sub goToPredefined();
 sub containBalls();
 bool checkWallBack();
 sub  rotateForOrigin();
+
 // Tasks in Main
 
-task init();
 task reading();
 task scanningArenaLeft();
 task scanningArenaRight();

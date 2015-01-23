@@ -2,30 +2,36 @@
 
 bool scanningLeft =true;
 bool scanningRight=false;
-int relBearing=0;
-int ownGoal=0;  //represents heading for direction of team's own goal.
-int currentCompass=0; //current compass value
+int ownGoal=0;         //represents heading for direction of team's own goal.
+int currentCompass=0;  //current compass value
+int relBearing=0;      //difference between the goal and current compass values
 mutex moveMutex;
 
 task main() {
-    ExitTo(init);
-}
-
-// Initialization of the sensors 
-task init() 
-{
+     //Initialize Sensors
      SetSensorLowspeed(COLOR);
      SetSensorLowspeed(COMPASS);
      //SetSensorLowspeed(ULTRASONIC);
      SetSensorTouch(TOUCH);
      ClearSensor(ULTRASONIC);
+
      ownGoal = SensorHTCompass(COMPASS);
      Wait(100);  //small delay while setting ownGoal
-     //goToPredefined();
+     
+     //First we throw the balls in the containers
      containBalls();
+     
+     //Then we go to predefined position to grab 2 balls in our side
+     goToPredefined();
+     
+     //We off motors to make sure the robot stands still now
      Off(motors);
+
+     //Start usual scanning process
      Precedes (scanningArenaLeft,reading,scanningArenaRight);
 }
+
+//return angle-difference (<=180) between 2 angles
 int getDegreeDiff(int current, int old)
 {
     int diff=abs(current-old);
@@ -34,17 +40,20 @@ int getDegreeDiff(int current, int old)
     return diff;
 }
 
+//rotate the robot to goal heading
 sub backtoOrigin()
 {
       while (relBearing>5)
       {
               reverseDirection(100);
               currentCompass = SensorHTCompass(COMPASS);
-
+			  //Difference between the original heading (opponent camp and our new heading)
               relBearing = abs(currentCompass-ownGoal);
        }
        Off(motors);
 }
+
+//rotate 90 degrees from current heading in opposite direction
 sub turnAway(int moveTime)
 {
     if (scanningLeft)
@@ -61,17 +70,27 @@ sub turnAway(int moveTime)
 
 sub throwBall()
 {
+  //move backward
   OnRevSync (motors,MOVMENT_SPEED+20,OUT_REGMODE_SPEED);
   Wait(1200);
   Off(motors);
+  
+  //close grabber
   close();
+  
+  //move forward
   OnFwdSync (motors,100,OUT_REGMODE_SPEED);
   Wait (900);
+  
+  //open grabber
   open(180);
+  
+  //stop motors and rotor
   Off(motors);
   stopRotor();
 }
 
+//return object color read from ColorSensor
 byte getObjColor()
 {
      byte r,g,b;
@@ -81,29 +100,41 @@ byte getObjColor()
      return output;
 }
 
+//return true if detect sth is not ball(2/9) and not field (17/0)
 bool isNotField()
 {
      byte output=getObjColor();
+	 //2=blue,9=red,17=white,0=black
+	 //It's automatically either the enemy or the wall
      return ((output!=2) && (output!=9) && (output!=17) &&(output!=0));
 }
 
+//stabilize the robot before throwing and throw
 bool checkandthrow()
 {
      byte output=getObjColor();
      if(output==9||output==2)
      {
+                 //grab ball
                  close();
+                 
+                 //adjust heading
                  backtoOrigin();
+                 
+                 //open grabber
                  open(15);
         				 Wait(800);
         				 open(165);
+        				 
+        				 //throw ball
                  throwBall();
                  return true;
       }
       return false;
 }
 
-
+//move toward object until too close
+//or facing sth different from the field or balls
 bool moveTowardObj()
 {
     OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SPEED);
@@ -130,6 +161,7 @@ bool moveTowardObj()
 
 }
 
+//change scanning direction
 sub changeDirection()
 {
 	scanningLeft=scanningRight;
@@ -148,6 +180,8 @@ sub moveBwd(int moveTime)
      Wait(moveTime);
      Off(motors);
 }
+
+//reverse direction when scanning right or left
 sub reverseDirection(int moveTime)
 {
          if (scanningRight)
@@ -163,7 +197,7 @@ sub reverseDirection(int moveTime)
          Wait(moveTime);
 }
 
-//Check corners for backside
+//check corners for backside
 bool checkWallBack()
 {
     if(Sensor(TOUCH)==1)
@@ -172,9 +206,10 @@ bool checkWallBack()
     }
     return false;
 }
+//Scan fields start Left then right looking for balls
 task reading(){
      while(true){
-            //stop rotating the wheels before chech
+            //stop rotating the wheels before check
             Acquire(moveMutex);
 
             currentCompass = SensorHTCompass(COMPASS);
@@ -189,32 +224,37 @@ task reading(){
             relBearing = getDegreeDiff(currentCompass,ownGoal);
             TextOut(10,LCD_LINE5,"Relative reading" );
             NumOut(10,LCD_LINE6,relBearing);
+
+            //if we are not bumping to anything in the back
             if(checkWallBack()==false)
             {
               if(relBearing <75)
               {
-              		//if find out something
          		     ClearSensor(ULTRASONIC);
+
+                //if find out something
                  if(SensorUS (ULTRASONIC) <= WALLDIST)
                  {
-
                            Off(motors);
+                           
+                           //move towards that thing
                            bool grab=moveTowardObj();
+                           
+                           //if we can approach it then try to throw it
                            if(grab)
                            {
                                 grab=checkandthrow();
                            }
+
                            //if it is not a ball then rotate back and start scanning right
                            if(!grab)
                            {
-                                  PlaySound(SOUND_UP);
-                                  //turn away from the object
+                                  //move away from the object
                                   moveBwd(5000);
-                                  if(scanningRight)  //we are scanning Left from right then we just need to go back and move forward
+                                  
+                                  //rotate 180 degree from it
+                                  if(scanningRight)
                                	  {
-                                          //PlaySound(SOUND_DOUBLE_BEEP);
-                                           //backtoOrigin();
-                                           //moveFwd(1000);
                                            RotateMotor(RMotor, MOVMENT_SPEED, 810);
                                            Off(motors);
                                   }
@@ -223,41 +263,37 @@ task reading(){
                                         RotateMotor(LMotor, MOVMENT_SPEED, 810);
                                         Off(motors);
                                   }
+                                  
                                   //then change the direction
                                   changeDirection();
                            }
 
                   }
               }
-              else
+              else //we pass the maximum scanning degree
               {
                   if (scanningRight)
                   {
-                     //PlaySound(SOUND_DOUBLE_BEEP);
                      backtoOrigin();
                      moveFwd(1000);
                   }
                   changeDirection();
 
+                  //leave some time for the direction to change
                   Release(moveMutex);
                   Wait(1000);
                   Acquire(moveMutex);
               }
             }
+            //case we are bumping to sth in the back
             else
             {
+                //move forward for a while
                 moveFwd(4000);
-                //PlaySound(SOUND_UP);
-                while(true)
-                {
-                        OnRev(LMotor, SCANNING_SPEED);
-                        OnFwd(RMotor, SCANNING_SPEED);
-                        Wait(100);
-                        if(relBearing<=4)
-                        {
-                              break;
-                        }
-                }
+
+                //adjust heading towards goal
+                backtoOrigin();
+                
                 Off(motors);
 
             }
@@ -269,43 +305,54 @@ task reading(){
 
 sub containBalls()
 {
+  //turn left a little
   RotateMotor(RMotor, MOVMENT_SPEED, 50);
-  //OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-  //Wait(700);
   Off(motors);
+
+  //throw 2 balls
   close();
   stopRotor();
-  //OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-  //Wait(700);
-  //Off(motors);
+  
+  //turn right a little
   RotateMotor(LMotor, MOVMENT_SPEED, 50);
   Off(motors);
+  
+  //get grabber ready
   open(180);
   stopRotor();
   Wait(1000);
-  OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-  Wait(200);
-  Off(motors);
-  goToPredefined();
 
+  //stay back a little
+  moveBwd(200);
 }
+
 sub goToPredefined()
 {
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
+
+      //rotate 90 degree to the left
       RotateMotor(LMotor, -MOVMENT_SPEED, 405);
-	  Off(motors);
-	  ClearSensor(ULTRASONIC);
-	  Wait(500);
+	    Off(motors);
+
+      ClearSensor(ULTRASONIC);
+	    Wait(500);
+	    
+	    //move forward till we face the wall at 25 cm
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until(SensorUS (ULTRASONIC) <= 25);
-      //Wait(4000);
       Off(motors);
+      
+      //rotate 90 degree to the right
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
       Off(motors);
+      
+      //move forward till we see the ball
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until (SensorUS (ULTRASONIC) <= THRESHOLD);
       Off(motors);
+      
+      //throw 1st ball
       close();
       stopRotor();
       open(15);
@@ -313,41 +360,43 @@ sub goToPredefined()
       open(165);
       stopRotor();
       throwBall();
-      //Ball on right
+
+      //adjust the direction
       Off(motors);
       Wait(500);
-      //moveFwd(4000);
-      //Off(motors);
+
       RotateMotor(RMotor, MOVMENT_SPEED, 50);
       Off(motors);
+      
+      //go backwards till meet wall
       OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      //Wait(8000);
-      //Off(motors);
-      //To do change with sensor
       while(1)
       {
         if(Sensor(TOUCH)== 1)
         {
-            //PlaySound(SOUND_UP);
             break;
         }
       }
-      //until (SensorUS (TOUCH)== 1);
       Off(motors);
-      //start rotation to the other side
+      
+      //repeat for ball on the right
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
       Off(motors);
-	  ClearSensor(ULTRASONIC);
-	  Wait(500);
+
+	    ClearSensor(ULTRASONIC);
+      Wait(500);
+	  
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      //Wait(7000);
       until (SensorUS (ULTRASONIC) <= 25);
       Off(motors);
+
       RotateMotor(RMotor, MOVMENT_SPEED, 405);
       Off(motors);
+
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until (SensorUS (ULTRASONIC) <= THRESHOLD);
       Off(motors);
+
       close();
       stopRotor();
       open(15);
@@ -355,9 +404,10 @@ sub goToPredefined()
       open(165);
       stopRotor();
       throwBall();
-      
+      Off(motors);
       
 }
+//scan to the left, rotation
 task scanningArenaLeft()
 {
  while(true)
@@ -372,7 +422,7 @@ task scanningArenaLeft()
            Release(moveMutex);
  }
 }
-
+//scan to the right, rotation
 task scanningArenaRight()
 {
  while(true)
