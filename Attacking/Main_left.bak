@@ -84,7 +84,7 @@ byte getObjColor()
 bool isNotField()
 {
      byte output=getObjColor();
-     return ((output==COLORWALL) || ((output!=2) && (output!=9) && (output!=17) &&(output!=0)));
+     return ((output!=2) && (output!=9) && (output!=17) &&(output!=0));
 }
 
 bool checkandthrow()
@@ -283,6 +283,9 @@ sub containBalls()
   open(180);
   stopRotor();
   Wait(1000);
+  OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+  Wait(200);
+  Off(motors);
   goToPredefined();
 
 }
@@ -290,7 +293,32 @@ sub goToPredefined()
 {
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
-	  RotateMotor(RMotor, MOVMENT_SPEED, 50);
+      RotateMotor(LMotor, -MOVMENT_SPEED, 405);
+	  Off(motors);
+	  ClearSensor(ULTRASONIC);
+	  Wait(500);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until(SensorUS (ULTRASONIC) <= 25);
+      //Wait(4000);
+      Off(motors);
+      RotateMotor(LMotor, MOVMENT_SPEED, 405);
+      Off(motors);
+      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+      until (SensorUS (ULTRASONIC) <= THRESHOLD);
+      Off(motors);
+      close();
+      stopRotor();
+      open(15);
+      stopRotor();
+      open(165);
+      stopRotor();
+      throwBall();
+      //Ball on right
+      Off(motors);
+      Wait(500);
+      //moveFwd(4000);
+      //Off(motors);
+      RotateMotor(RMotor, MOVMENT_SPEED, 50);
       Off(motors);
       OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       //Wait(8000);
@@ -313,7 +341,7 @@ sub goToPredefined()
 	  Wait(500);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       //Wait(7000);
-      until (SensorUS (ULTRASONIC) <= 20);
+      until (SensorUS (ULTRASONIC) <= 25);
       Off(motors);
       RotateMotor(RMotor, MOVMENT_SPEED, 405);
       Off(motors);
@@ -327,38 +355,6 @@ sub goToPredefined()
       open(165);
       stopRotor();
       throwBall();
-	  //ball on left
-      RotateMotor(LMotor, -MOVMENT_SPEED, 405);
-	  Off(motors);
-	  ClearSensor(ULTRASONIC);
-	  Wait(500);
-      int distance= 50 ;
-	  while (distance > 20)
-	 {
-		distance = SensorUS(ULTRASONIC);
-		OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-	 }
-      //until(SensorUS (ULTRASONIC) <= 25);
-      //Wait(4000);
-      Off(motors);
-      RotateMotor(LMotor, MOVMENT_SPEED, 405);
-      Off(motors);
-      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until (SensorUS (ULTRASONIC) <= THRESHOLD);
-      Off(motors);
-      close();
-      stopRotor();
-      open(15);
-      stopRotor();
-      open(165);
-      stopRotor();
-      throwBall();
-      //Ball on right
-      Off(motors);
-      Wait(500);
-      //moveFwd(4000);
-      //Off(motors);
-      
       
       
 }
