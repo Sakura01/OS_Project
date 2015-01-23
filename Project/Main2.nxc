@@ -288,14 +288,19 @@ sub containBalls()
 }
 sub goToPredefined()
 {
-      ClearSensor(ULTRASONIC);
-      Wait(500);
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
       RotateMotor(LMotor, -MOVMENT_SPEED, 405);
 	  Off(motors);
-      OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-      until(SensorUS (ULTRASONIC) <= 25);
+	  ClearSensor(ULTRASONIC);
+	  Wait(500);
+    int distance= 50 ;
+        while (distance > 20)
+        {
+         distance = SensorUS(ULTRASONIC);
+         OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+         }
+      //until(SensorUS (ULTRASONIC) <= 25);
       //Wait(4000);
       Off(motors);
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
@@ -333,10 +338,12 @@ sub goToPredefined()
       Off(motors);
       //start rotation to the other side
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
-      ClearSensor(ULTRASONIC);
+      Off(motors);
+	  ClearSensor(ULTRASONIC);
+	  Wait(500);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       //Wait(7000);
-      until (SensorUS (ULTRASONIC) <= 25);
+      until (SensorUS (ULTRASONIC) <= 20);
       Off(motors);
       RotateMotor(RMotor, MOVMENT_SPEED, 405);
       Off(motors);

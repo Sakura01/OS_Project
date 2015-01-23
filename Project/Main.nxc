@@ -84,7 +84,7 @@ byte getObjColor()
 bool isNotField()
 {
      byte output=getObjColor();
-     return (output==COLORWALL);
+     return ((output==COLORWALL) || ((output!=2) && (output!=9) && (output!=17) &&(output!=0)));
 }
 
 bool checkandthrow()
@@ -269,13 +269,16 @@ task reading(){
 
 sub containBalls()
 {
-  OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-  Wait(700);
+  RotateMotor(RMotor, MOVMENT_SPEED, 50);
+  //OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+  //Wait(700);
   Off(motors);
   close();
   stopRotor();
-  OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
-  Wait(700);
+  //OnRevSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
+  //Wait(700);
+  //Off(motors);
+  RotateMotor(LMotor, MOVMENT_SPEED, 50);
   Off(motors);
   open(180);
   stopRotor();
@@ -290,6 +293,8 @@ sub goToPredefined()
       SetSensorLowspeed(ULTRASONIC);
       ClearSensor(ULTRASONIC);
       RotateMotor(LMotor, -MOVMENT_SPEED, 405);
+	  ClearSensor(ULTRASONIC);
+	  Off(motors);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       until(SensorUS (ULTRASONIC) <= 25);
       //Wait(4000);
@@ -330,6 +335,7 @@ sub goToPredefined()
       //start rotation to the other side
       RotateMotor(LMotor, MOVMENT_SPEED, 405);
       ClearSensor(ULTRASONIC);
+	  Off(motors);
       OnFwdSync(OUT_AC,MOVMENT_SPEED,OUT_REGMODE_SYNC);
       //Wait(7000);
       until (SensorUS (ULTRASONIC) <= 25);

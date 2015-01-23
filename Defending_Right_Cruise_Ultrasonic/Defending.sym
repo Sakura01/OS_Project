@@ -1,0 +1,1080 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0RotateRight	6	1	0	4	4
+1	__D0SetSensorLowspeed_inline_main	6	1	4	4	6
+2	__DU0SetSensorLowspeed_inline_main	5	1	8	4	4
+3	__CLSWMutex0	9	0	12	4	2
+4	__D0open	6	1	16	4	2
+5	__CLSCSMutex0	9	0	20	4	2
+6	__signed_stack_001close	6	1	24	4	2
+7	__signed_stack_001goCruise	6	1	28	4	14
+8	__signed_stack_002goCruise	6	1	32	4	4
+9	__unsigned_stack_001goCruise	5	1	36	4	4
+10	__signed_stack_002close	6	1	40	4	2
+11	__signed_stack_003close	6	1	44	4	2
+12	__signed_stack_004close	6	1	48	4	2
+13	__D0goCruise	6	1	52	4	31
+14	__TextOutMutex	9	0	56	4	4
+15	__CLSRMutex2	9	0	60	4	2
+16	__RLSBmutex2	9	0	64	4	2
+17	__RLSBmutex0	9	0	68	4	6
+18	__D0close	6	1	72	4	2
+19	__DU0goCruise	5	1	76	4	4
+20	__D0MoveBackward	6	1	80	4	2
+21	__CLSRMutex0	9	0	84	4	2
+22	__D0MoveForward	6	1	88	4	33
+23	__CLSWMutex2	9	0	92	4	2
+24	__D0main	6	1	96	4	14
+25	__CLSCSMutex2	9	0	100	4	2
+26	__Wait_7qG2_ms_7qG2_000_inline_goCruise	5	1	104	4	4
+27	__OnRevMutex	9	0	108	4	6
+28	__signed_stack_004open	6	1	112	4	2
+29	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	116	4	4
+30	__Wait_7qG2_ms_7qG2_000_inline_RotateRight	5	1	120	4	2
+31	__Wait_7qG2_ms_7qG2_000_inline_MoveBackward	5	1	124	4	2
+32	__rotate_angle1	6	1	128	4	6
+33	__rotateMutex1	9	0	132	4	4
+34	__Wait_7qG2_ms_7qG2_000_inline_MoveForward	5	1	136	4	2
+35	__rotate_theAngle1	5	1	140	4	2
+36	__signed_stack_002MoveForward	6	1	144	4	6
+37	__signed_stack_001MoveForward	6	1	148	4	8
+38	__signed_stack_001main	6	1	152	4	6
+39	__signed_stack_002main	6	1	156	4	2
+40	__signed_stack_002open	6	1	160	4	2
+41	__signed_stack_003open	6	1	164	4	2
+42	__signed_stack_001open	6	1	168	4	2
+43	__unsigned_stack_001MoveForward	5	1	172	4	4
+44	__goCruise_7qG2_i_7qG2_002	4	1	176	2	5
+45	__ArrHelper__goCruise_73_0	4	1	178	2	2
+46	ind	4	1	180	2	10
+47	throw	4	1	182	2	3
+48	first	4	1	184	2	2
+49	__RotateRight_7qG2_time_7qG2_000	4	1	186	2	3
+50	__goCruise_7qG2_temp_7qG2_000	4	1	188	2	3
+51	__goCruise_7qG2_flag_7qG2_000	4	1	190	2	5
+52	__MoveForward_7qG2_distance_7qG2_000	4	1	192	2	4
+53	__rotate_RotCount1	4	1	194	2	4
+54	__rotate_OldRotCount1	4	1	196	2	2
+55	__constValNeg120	2	0	198	1	1
+56	__ThrowObstacles_return	1	1	199	1	3
+57	__open_return	1	1	200	1	3
+58	__constVal96	2	0	201	1	13
+59	__RotateRight_return	1	1	202	1	4
+60	__rotate_theUF1	1	1	203	1	6
+61	__constVal63	2	0	204	1	11
+62	__rotate_theOM1	1	1	205	1	7
+63	__close_return	1	1	206	1	3
+64	__rotate_rs1	1	1	207	1	2
+65	__rotate_theRVD1	1	1	208	1	3
+66	__rotate_theTurnPct1	2	1	209	1	4
+67	__rotate_thePower1	2	1	210	1	4
+68	__rotate_theRS1	1	1	211	1	3
+69	__rotate_theRM1	1	1	212	1	4
+70	__rotate_theRVI1	1	1	213	1	3
+71	__rotate_theRVP1	1	1	214	1	3
+72	__MoveForward_return	1	1	215	1	3
+73	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	216	1	4
+74	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	217	1	4
+75	____initialize_global_data_return	1	1	218	1	3
+76	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	219	1	10
+77	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	220	1	4
+78	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	221	1	2
+79	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	222	1	4
+80	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	223	1	4
+81	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	224	1	4
+82	__OnRev_Tmp	2	1	225	1	6
+83	__rotate_stop1	1	1	226	1	3
+84	__MoveBackward_return	1	1	227	1	3
+85	__MoveForward_7qG2_output_7qG2_000	1	1	228	1	4
+86	__rotate_turnpct1	2	1	229	1	4
+87	__rotate_sync1	1	1	230	1	3
+88	__rotate_firstPort1	1	1	231	1	5
+89	__rotate_power1	1	1	232	1	5
+90	__goCruise_return	1	1	233	1	3
+91	__goCruise_7qG2_distance_7qG2_000	1	1	234	1	5
+92	__PFTmp	1	1	235	1	1
+93	__constVal2	2	0	236	1	1
+94	__RLSBIterations2	1	1	237	1	4
+95	____ReadLSBytes0_return	1	1	238	1	5
+96	__zfMoveForward	1	1	239	1	21
+97	__zfmain	1	1	240	1	8
+98	__zfgoCruise	1	1	241	1	21
+99	__RLSBIterations0	1	1	242	1	4
+100	__RLSBytesCount0	1	1	243	1	9
+101	__RLSBResult0	2	1	244	1	7
+102	__constVal15	2	0	245	1	8
+103	__RLSBytesCount2	1	1	246	1	7
+104	__RLSBResult2	2	1	247	1	8
+105	____ReadLSBytes2_return	1	1	248	1	3
+106	__ResetSensorPort	1	1	249	1	5
+107	__ResetSensorTmp	1	1	250	1	2
+108	__constVal1	2	0	251	1	14
+109	__zfSetSensorLowspeed_inline_main	1	1	252	1	4
+110	__constVal50	2	0	253	1	1
+111	__constVal32	2	0	254	1	39
+112	__constVal5	2	0	255	1	2
+113	__constVal3	2	0	256	1	12
+114	____RotateMotor1_sign_tmp	2	1	257	1	4
+115	____ResetSensorSubroutine_return	1	1	258	1	5
+116	____RotateMotor1_return	1	1	259	1	4
+117	__constVal0	2	1	260	1	45
+118	__CLSRArgs0	8	0	4	12	5
+119	__CLSRArgs0.Result	2	1	264	1	5
+120	__CLSRArgs0.Port	1	1	265	1	5
+121	__CLSRArgs0.Buffer	7	0	266	4	5
+122	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+123	__CLSRArgs0.BufferLen	1	1	268	1	5
+124	__CLSCSArgs0	8	0	3	4	4
+125	__CLSCSArgs0.Result	2	1	272	1	4
+126	__CLSCSArgs0.Port	1	1	273	1	4
+127	__CLSCSArgs0.BytesReady	1	1	274	1	4
+128	__CLSWArgs0	8	0	4	12	5
+129	__CLSWArgs0.Result	2	1	276	1	5
+130	__CLSWArgs0.Port	1	1	277	1	5
+131	__CLSWArgs0.Buffer	7	0	278	4	5
+132	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+133	__CLSWArgs0.ReturnLen	1	1	280	1	5
+134	__CLSCSArgs2	8	0	3	4	4
+135	__CLSCSArgs2.Result	2	1	284	1	4
+136	__CLSCSArgs2.Port	1	1	285	1	4
+137	__CLSCSArgs2.BytesReady	1	1	286	1	4
+138	__TextOutArgs	8	0	4	16	12
+139	__TextOutArgs.Result	2	1	288	1	12
+140	__TextOutArgs.Location	8	0	2	4	12
+141	__TextOutArgs.Location.X	4	1	292	2	12
+142	__TextOutArgs.Location.Y	4	1	294	2	12
+143	__TextOutArgs.Text	7	0	296	4	12
+144	__TextOutArgs.Text.Text_type	1	0	0	1	0
+145	__TextOutArgs.Options	5	1	300	4	12
+146	__CLSRArgs2	8	0	4	12	5
+147	__CLSRArgs2.Result	2	1	304	1	5
+148	__CLSRArgs2.Port	1	1	305	1	5
+149	__CLSRArgs2.Buffer	7	0	306	4	5
+150	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+151	__CLSRArgs2.BufferLen	1	1	308	1	5
+152	__CLSWArgs2	8	0	4	12	5
+153	__CLSWArgs2.Result	2	1	312	1	5
+154	__CLSWArgs2.Port	1	1	313	1	5
+155	__CLSWArgs2.Buffer	7	0	314	4	5
+156	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+157	__CLSWArgs2.ReturnLen	1	1	316	1	5
+158	__RLSReadBuf0	7	0	318	4	12
+159	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+160	__constStr0009	7	0	320	4	1
+161	__constStr0009.__constStr0009_type	1	1	0	1	0
+162	__OUT_AC	7	0	322	4	8
+163	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+164	distanceGlobal	7	0	324	4	5
+165	distanceGlobal.distanceGlobal_type	4	0	0	2	0
+166	__RLSBbufLSWrite1	7	0	326	4	4
+167	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+168	__strbufmain	7	0	328	4	2
+169	__strbufmain.__strbufmain_type	1	0	0	1	0
+170	__RLSReadBuf2	7	0	330	4	8
+171	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+172	__RLSLastGoodRead0	7	0	332	4	2
+173	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+174	__RLSLastGoodRead2	7	0	334	4	2
+175	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+176	__rotate_ports1	7	0	336	4	7
+177	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	134	0	#line 134 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	135	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	134	2	#line 134 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	134	2	#line 134 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	135	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 0
+0	134	5	#line 134 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	135	5	#line 135 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	136	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	7	#line 3758 "NXCDefs.h"
+0	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3759	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	11	#line 3758 "NXCDefs.h"
+0	3759	11		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		jmp __004__NXC_Label_37
+0	3758	22	#line 3758 "NXCDefs.h"
+0	3759	22		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3761	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	42	#line 3760 "NXCDefs.h"
+0	3694	42	#line 3694 "NXCDefs.h"
+0	3695	42	#pragma macro 4
+0	3695	42		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5528	46	#line 5528 "NXCDefs.h"
+0	3694	46	#line 3694 "NXCDefs.h"
+0	3761	46	#line 3761 "NXCDefs.h"
+0	135	46	#line 135 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	135	46	#line 135 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	136	46		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 2
+0	135	49	#line 135 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	136	49	#line 136 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	137	49		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	51	#line 3758 "NXCDefs.h"
+0	3759	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	53	#line 3758 "NXCDefs.h"
+0	3758	53	#line 3758 "NXCDefs.h"
+0	3759	53		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	55	#line 3758 "NXCDefs.h"
+0	3759	55		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	58	#line 3758 "NXCDefs.h"
+0	3759	58		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	61	#line 3758 "NXCDefs.h"
+0	3759	61		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	64	#line 3758 "NXCDefs.h"
+0	3759	64		jmp __005__NXC_Label_37
+0	3758	66	#line 3758 "NXCDefs.h"
+0	3759	66		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	69	#line 3758 "NXCDefs.h"
+0	3759	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	71	#line 3663 "NXCDefs.h"
+0	3664	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	75	#line 3663 "NXCDefs.h"
+0	3759	75	#line 3759 "NXCDefs.h"
+0	3759	75	#line 3759 "NXCDefs.h"
+0	3760	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	77	#line 3759 "NXCDefs.h"
+0	3759	77	#line 3759 "NXCDefs.h"
+0	3760	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	80	#line 3759 "NXCDefs.h"
+0	3676	80	#line 3676 "NXCDefs.h"
+0	3677	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	84	#line 3676 "NXCDefs.h"
+0	3760	84	#line 3760 "NXCDefs.h"
+0	3760	84	#line 3760 "NXCDefs.h"
+0	3761	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3760	86	#line 3760 "NXCDefs.h"
+0	3694	86	#line 3694 "NXCDefs.h"
+0	3695	86	#pragma macro 4
+0	3695	86		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5595	90	#line 5595 "NXCDefs.h"
+0	3694	90	#line 3694 "NXCDefs.h"
+0	3761	90	#line 3761 "NXCDefs.h"
+0	136	90	#line 136 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	136	90	#line 136 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	137	90		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 3
+0	136	93	#line 136 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	3718	93	#line 3718 "NXCDefs.h"
+0	3719	93	#pragma macro 6
+0	3719	93		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	3719	97		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	3719	101		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	3719	103		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5610	105	#line 5610 "NXCDefs.h"
+0	3718	105	#line 3718 "NXCDefs.h"
+0	139	105	#line 139 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	146	105	#line 146 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	146	105	#line 146 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	149	105	#line 149 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	149	105	#line 149 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	150	105	#line 150 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	150	105	#line 150 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	152	105	#line 152 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	152	105	#line 152 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	152	105	#line 152 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	153	105	#pragma macro 26
+0	153	105		acquire __RLSBmutex0
+0	153	106		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	153	108		set __RLSBytesCount0, 1
+0	153	111		wait2 NA, __constVal15
+0	153	114		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	153	116		index __D0main, __RLSReadBuf0, 65535
+0	153	120		release __RLSBmutex0
+0	5670	121	#line 5670 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	152	121	#line 152 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	152	121	#line 152 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	152	121	#line 152 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	157	121	#line 157 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	157	121	#line 157 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	158	121	#line 158 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	158	121	#line 158 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	159	121	#line 159 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	160	121	#pragma macro 7
+0	160	121		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5702	144	#line 5702 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	159	144	#line 159 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	161	144	#line 161 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	162	144		set __D0main, 1
+0	162	147	#line 162 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	163	147		tst 5, __zfmain, __D0main
+0	162	150	#line 162 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	163	150		brtst 4, __NXC_Label_640, __zfmain
+0	162	153	#line 162 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	163	153		set __RotateRight_7qG2_time_7qG2_000, 180
+0	162	156	#line 162 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	163	156	#line 163 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	164	156		subcall RotateRight, __RotateRight_return
+0	163	158	#line 163 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	163	158	#line 163 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	164	158		mov __signed_stack_001main, first
+0	163	160	#line 163 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	164	160	#line 164 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	165	160		set __D0main, 0
+0	164	163	#line 164 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	165	163		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	164	167	#line 164 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	165	167		mov __D0main, __zfmain
+0	165	169	#line 165 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	166	169		brtst 4, __NXC_Label_647, __zfmain
+0	166	172	#line 166 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	167	172		set first, 1
+0	166	175	#line 166 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	166	175	#line 166 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	166	175	#line 166 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	167	175		set __D0main, 60
+0	167	178	#line 167 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	168	178	#pragma macro 7
+0	168	178		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5764	201	#line 5764 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	167	201	#line 167 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	167	201	#line 167 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	168	201		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	167	204	#line 167 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	7921	204	#line 7921 "NXCDefs.h"
+0	7922	204		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	207	#line 7921 "NXCDefs.h"
+0	168	207	#line 168 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	169	207	#line 169 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	170	207	#line 170 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	171	207		subcall MoveForward, __MoveForward_return
+0	170	209	#line 170 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	171	209	#line 171 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	172	209		subcall MoveBackward, __MoveBackward_return
+0	171	211	#line 171 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	171	211	#line 171 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	172	211		set __RotateRight_7qG2_time_7qG2_000, 800
+0	171	214	#line 171 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	172	214	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	173	214		subcall RotateRight, __RotateRight_return
+0	172	216	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	172	216	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	173	216		set __signed_stack_001main, 0
+0	172	219	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	172	219	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	173	219		set __signed_stack_002main, 48
+0	172	222	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	172	222	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	173	222		strcat __strbufmain, __constStr0009
+0	172	226	#line 172 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	173	226		set __D0main, 1
+0	173	229	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	229		acquire __TextOutMutex
+0	173	230	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	230		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	173	232	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	232		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	173	234	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	234		mov __TextOutArgs.Options, __D0main
+0	173	236	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	236		mov __TextOutArgs.Text, __strbufmain
+0	173	238	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	238		syscall 13, __TextOutArgs
+0	173	241	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	241		mov __D0main, __TextOutArgs.Result
+0	173	243	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	243		release __TextOutMutex
+0	173	244	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	173	244	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	244		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	173	247	#line 173 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	7921	247	#line 7921 "NXCDefs.h"
+0	7922	247		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	250	#line 7921 "NXCDefs.h"
+0	174	250	#line 174 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	174	250	#line 174 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	175	250		mov __signed_stack_001main, throw
+0	174	252	#line 174 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	175	252	#line 175 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	176	252		set __D0main, 1
+0	175	255	#line 175 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	176	255		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	175	259	#line 175 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	176	259		mov __D0main, __zfmain
+0	176	261	#line 176 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	177	261		brtst 4, __NXC_Label_666, __zfmain
+0	177	264	#line 177 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	178	264		subcall open, __open_return
+0	177	266	#line 177 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	178	266	#line 178 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	179	266		subcall goCruise, __goCruise_return
+0	178	268	#line 178 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	179	268	#line 179 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	180	268		jmp __NXC_Label_640
+0	179	270	#line 179 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	183	270	#line 183 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	186	270	#line 186 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	187	270		jmp __NXC_Label_639
+0	186	272	#line 186 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+0	187	272		exit -1, -1
+1	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
+1	4530	3		set ____RotateMotor1_sign_tmp, 0
+1	4530	6		brtst EQ, __sign_1, __rotate_angle1
+1	4530	9		set ____RotateMotor1_sign_tmp, -1
+1	4530	12		brtst LT, __sign_1, __rotate_angle1
+1	4530	15		set ____RotateMotor1_sign_tmp, 1
+1	4530	18	__sign_1:	mov __rotate_thePower1, ____RotateMotor1_sign_tmp
+1	4531	20		abs __rotate_theAngle1, __rotate_angle1
+1	4532	23		mul __rotate_thePower1, __rotate_thePower1, __rotate_power1
+1	4534	27		set __rotate_theUF1, 23
+1	4535	30		brtst 4, __rotate_NoSync1, __rotate_sync1
+1	4536	33		set __rotate_theOM1, 7
+1	4537	36		set __rotate_theRM1, 2
+1	4538	39		mov __rotate_theTurnPct1, __rotate_turnpct1
+1	4539	41		brtst 4, __rotate_Start1, __rotate_theTurnPct1
+1	4540	44		add __rotate_theUF1, __rotate_theUF1, __constVal32
+1	4541	48		jmp __rotate_Start1
+1	4543	50		set __rotate_theOM1, 3
+1	4544	53		set __rotate_theRM1, 0
+1	4545	56		set __rotate_theTurnPct1, 0
+1	4547	59		set __rotate_theRS1, 32
+1	4548	62		setout __rotate_ports1, 1, __rotate_theOM1, 8, __rotate_theRM1, 5, __rotate_theAngle1, 6, __rotate_theRS1, 10, __rotate_theRVP1, 11, __rotate_theRVI1, 12, __rotate_theRVD1, 2, __rotate_thePower1, 7, __rotate_turnpct1, 0, __rotate_theUF1
+1	4551	85		index __rotate_firstPort1, __rotate_ports1, 65535
+1	4553	89		getout __rotate_power1, __rotate_firstPort1, 2
+1	4554	93		brtst 4, __rotate_doneRunning1, __rotate_power1
+1	4555	96		getout __rotate_rs1, __rotate_firstPort1, 6
+1	4556	100		brcmp 4, __rotate_Running1, __rotate_rs1, __constVal32
+1	4558	104		brtst 4, __rotate_Reset1, __rotate_stop1
+1	4560	107		set __rotate_theOM1, 7
+1	4561	110		set __rotate_theUF1, 7
+1	4562	113		setout __rotate_ports1, 1, __rotate_theOM1, 8, __constVal1, 6, __rotate_theRS1, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF1
+1	4564	128		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	4566	132		mov __rotate_OldRotCount1, __rotate_RotCount1
+1	4567	134		wait2 NA, __constVal50
+1	4569	137		getout __rotate_RotCount1, __rotate_firstPort1, 14
+1	4570	141		brcmp 5, __rotate_Stabilize1, __rotate_OldRotCount1, __rotate_RotCount1
+1	4571	145		set __rotate_theOM1, 4
+1	4572	148		setout __rotate_ports1, 8, __rotate_theRM1, 6, __constVal0, 1, __rotate_theOM1, 0, __constVal1
+1	4575	159		brtst 4, __rotate_Done1, __rotate_theTurnPct1
+1	4576	162		setout __rotate_ports1, 0, __constVal32
+1	4578	167		subret ____RotateMotor1_return
+2	4885	0		setin __constVal1, __ResetSensorPort, 5
+2	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+2	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+2	4889	11		subret ____ResetSensorSubroutine_return
+3	5672	0	#pragma macro 25
+3	5672	0		acquire __CLSWMutex0
+3	5672	1		set __CLSWArgs0.Port, 0
+3	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+3	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+3	5672	8		syscall 21, __CLSWArgs0
+3	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+3	5672	13		release __CLSWMutex0
+3	5673	14	#line 5673 "NXTDefs.h"
+3	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+3	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+3	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+3	5677	24		set __RLSBIterations0, 4
+3	5679	27	#pragma macro 23
+3	5679	27		acquire __CLSCSMutex0
+3	5679	28		set __CLSCSArgs0.Port, 0
+3	5679	31		syscall 23, __CLSCSArgs0
+3	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+3	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+3	5679	38		release __CLSCSMutex0
+3	5679	39	#line 5679 "NXTDefs.h"
+3	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+3	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+3	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+3	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+3	5685	52		wait2 NA, __constVal15
+3	5686	55		jmp __RLSBDoCheckStatus0
+3	5689	57	#pragma macro 25
+3	5689	57		acquire __CLSRMutex0
+3	5689	58		set __CLSRArgs0.Port, 0
+3	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+3	5689	63		syscall 22, __CLSRArgs0
+3	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+3	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+3	5689	70		release __CLSRMutex0
+3	5689	71	#line 5689 "NXTDefs.h"
+3	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+3	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+3	5692	76		jmp __RLSBDone0
+3	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+3	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+3	5698	83		subret ____ReadLSBytes0_return
+4	5747	0	#pragma macro 25
+4	5747	0		acquire __CLSWMutex2
+4	5747	1		set __CLSWArgs2.Port, 2
+4	5747	4		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+4	5747	6		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+4	5747	8		syscall 21, __CLSWArgs2
+4	5747	11		mov __RLSBResult2, __CLSWArgs2.Result
+4	5747	13		release __CLSWMutex2
+4	5747	14	#line 5747 "NXTDefs.h"
+4	5748	14		brtst 4, __RLSBReturn2, __RLSBytesCount2
+4	5749	17		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+4	5750	21		brtst 5, __RLSBError2, __RLSBResult2
+4	5751	24		set __RLSBIterations2, 4
+4	5753	27	#pragma macro 23
+4	5753	27		acquire __CLSCSMutex2
+4	5753	28		set __CLSCSArgs2.Port, 2
+4	5753	31		syscall 23, __CLSCSArgs2
+4	5753	34		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+4	5753	36		mov __RLSBResult2, __CLSCSArgs2.Result
+4	5753	38		release __CLSCSMutex2
+4	5753	39	#line 5753 "NXTDefs.h"
+4	5754	39		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+4	5755	43		brtst 2, __RLSBError2, __RLSBIterations2
+4	5756	46		brtst 0, __RLSBError2, __RLSBResult2
+4	5757	49		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+4	5759	52		wait2 NA, __constVal15
+4	5760	55		jmp __RLSBDoCheckStatus2
+4	5763	57	#pragma macro 25
+4	5763	57		acquire __CLSRMutex2
+4	5763	58		set __CLSRArgs2.Port, 2
+4	5763	61		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+4	5763	63		syscall 22, __CLSRArgs2
+4	5763	66		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+4	5763	68		mov __RLSBResult2, __CLSRArgs2.Result
+4	5763	70		release __CLSRMutex2
+4	5763	71	#line 5763 "NXTDefs.h"
+4	5764	71		brtst 5, __RLSBError2, __RLSBResult2
+4	5765	74		mov __RLSLastGoodRead2, __RLSReadBuf2
+4	5766	76		jmp __RLSBDone2
+4	5768	78		mov __RLSReadBuf2, __RLSLastGoodRead2
+4	5770	80		arrsize __RLSBytesCount2, __RLSReadBuf2
+4	5772	83		subret ____ReadLSBytes2_return
+5	15	0	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	16	0		set __signed_stack_001close, 50
+5	15	3	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	15	3	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	16	3		set __signed_stack_002close, 120
+5	15	6	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	15	6	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	16	6		set __signed_stack_003close, 0
+5	15	9	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	15	9	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	16	9		set __signed_stack_004close, 0
+5	15	12	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	15	12	#line 15 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	16	12		set __D0close, 1
+5	16	15	#line 16 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	17	15	#pragma macro 33
+5	17	15		acquire __rotateMutex1
+5	17	16		arrbuild __rotate_ports1, __constVal1
+5	17	20		mov __rotate_power1, __signed_stack_001close
+5	17	22		mov __rotate_angle1, __signed_stack_002close
+5	17	24		mov __rotate_turnpct1, __signed_stack_003close
+5	17	26		mov __rotate_sync1, __signed_stack_004close
+5	17	28		mov __rotate_stop1, __D0close
+5	17	30		mov __rotate_theRVP1, __constVal32
+5	17	32		mov __rotate_theRVI1, __constVal0
+5	17	34		mov __rotate_theRVD1, __constVal96
+5	17	36		subcall __RotateMotor1, ____RotateMotor1_return
+5	17	38		release __rotateMutex1
+5	4717	39	#line 4717 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	16	39	#line 16 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	17	39	#line 17 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+5	18	39		subret __close_return
+6	19	0	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	20	0		set __signed_stack_001open, 40
+6	19	3	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	19	3	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	20	3		mov __signed_stack_002open, __constValNeg120
+6	19	5	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	19	5	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	20	5		set __signed_stack_003open, 0
+6	19	8	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	19	8	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	20	8		set __signed_stack_004open, 0
+6	19	11	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	19	11	#line 19 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	20	11		set __D0open, 1
+6	21	14	#line 21 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	22	14	#pragma macro 33
+6	22	14		acquire __rotateMutex1
+6	22	15		arrbuild __rotate_ports1, __constVal1
+6	22	19		mov __rotate_power1, __signed_stack_001open
+6	22	21		mov __rotate_angle1, __signed_stack_002open
+6	22	23		mov __rotate_turnpct1, __signed_stack_003open
+6	22	25		mov __rotate_sync1, __signed_stack_004open
+6	22	27		mov __rotate_stop1, __D0open
+6	22	29		mov __rotate_theRVP1, __constVal32
+6	22	31		mov __rotate_theRVI1, __constVal0
+6	22	33		mov __rotate_theRVD1, __constVal96
+6	22	35		subcall __RotateMotor1, ____RotateMotor1_return
+6	22	37		release __rotateMutex1
+6	4753	38	#line 4753 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	21	38	#line 21 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	22	38	#line 22 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+6	23	38		subret __open_return
+7	25	0	#line 25 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+7	26	0		subcall close, __close_return
+7	25	2	#line 25 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+7	26	2	#line 26 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+7	27	2		subret __ThrowObstacles_return
+8	35	0	#line 35 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	36	0		set __D0RotateRight, 40
+8	36	3	#line 36 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	37	3	#pragma macro 10
+8	37	3		acquire __OnRevMutex
+8	37	4		neg __OnRev_Tmp, __D0RotateRight
+8	37	7		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	37	30		release __OnRevMutex
+8	4817	31	#line 4817 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	36	31	#line 36 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	36	31	#line 36 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	37	31		set __D0RotateRight, 40
+8	37	34	#line 37 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	38	34	#pragma macro 7
+8	38	34		setout __constVal2, 2, __D0RotateRight, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4824	57	#line 4824 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	37	57	#line 37 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	37	57	#line 37 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	38	57		mov __Wait_7qG2_ms_7qG2_000_inline_RotateRight, __RotateRight_7qG2_time_7qG2_000
+8	37	59	#line 37 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	7921	59	#line 7921 "NXCDefs.h"
+8	7922	59		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_RotateRight
+8	7921	62	#line 7921 "NXCDefs.h"
+8	38	62	#line 38 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	39	62	#line 39 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	40	62	#pragma macro 7
+8	40	62		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4841	85	#line 4841 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	39	85	#line 39 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	40	85	#line 40 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+8	41	85		subret __RotateRight_return
+9	44	0	#line 44 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	45	0		set __MoveForward_7qG2_output_7qG2_000, 0
+9	44	3	#line 44 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	46	3	#line 46 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	47	3		set __D0MoveForward, 1
+9	47	6	#line 47 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	48	6		tst 5, __zfMoveForward, __D0MoveForward
+9	47	9	#line 47 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	48	9		brtst 4, __NXC_Label_524, __zfMoveForward
+9	47	12	#line 47 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	48	12	#pragma macro 26
+9	48	12		acquire __RLSBmutex0
+9	48	13		mov __RLSReadBuf0, __RLSBbufLSWrite1
+9	48	15		set __RLSBytesCount0, 1
+9	48	18		wait2 NA, __constVal15
+9	48	21		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+9	48	23		index __D0MoveForward, __RLSReadBuf0, 65535
+9	48	27		release __RLSBmutex0
+9	4884	28	#line 4884 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	47	28	#line 47 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	48	28		mov __MoveForward_7qG2_distance_7qG2_000, __D0MoveForward
+9	47	30	#line 47 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	47	30	#line 47 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	49	30	#line 49 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	49	30	#line 49 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	50	30	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	50	30	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	51	30		mod ind, ind, __constVal5
+9	50	34	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	50	34	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	50	34	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	51	34		mov __D0MoveForward, ind
+9	50	36	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	51	36		add ind, ind, __constVal1
+9	50	40	#line 50 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	51	40		mov __signed_stack_001MoveForward, __D0MoveForward
+9	52	42	#line 52 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	42		mov __D0MoveForward, __MoveForward_7qG2_distance_7qG2_000
+9	52	44	#line 52 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	44		replace distanceGlobal, distanceGlobal, __signed_stack_001MoveForward, __D0MoveForward
+9	52	49	#line 52 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	52	49	#line 52 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	49	#pragma macro 32
+9	53	49		acquire __RLSBmutex2
+9	53	50		mov __RLSReadBuf2, __RLSBbufLSWrite1
+9	53	52		set __RLSBytesCount2, 4
+9	53	55		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+9	53	57		tst 4, __D0MoveForward, __RLSBResult2
+9	53	60		index __MoveForward_7qG2_output_7qG2_000, __RLSReadBuf2, 65535
+9	53	64		release __RLSBmutex2
+9	4920	65	#line 4920 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	52	65	#line 52 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	52	65	#line 52 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	65	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	65		mov __unsigned_stack_001MoveForward, __MoveForward_7qG2_output_7qG2_000
+9	53	67	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	67	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	67		set __D0MoveForward, 0
+9	53	70	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	70		cmp 4, __zfMoveForward, __unsigned_stack_001MoveForward, __D0MoveForward
+9	53	74	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	74		mov __D0MoveForward, __zfMoveForward
+9	53	76	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	76		brtst 5, __NXC_Label_537, __zfMoveForward
+9	53	79	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	79		mov __signed_stack_001MoveForward, __D0MoveForward
+9	53	81	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	81		mov __signed_stack_002MoveForward, __MoveForward_7qG2_distance_7qG2_000
+9	53	83	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	83	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	83		set __D0MoveForward, 50
+9	53	86	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	86		cmp 0, __zfMoveForward, __signed_stack_002MoveForward, __D0MoveForward
+9	53	90	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	53	90	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	90		or __D0MoveForward, __signed_stack_001MoveForward, __zfMoveForward
+9	53	94	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	94		tst 5, __zfMoveForward, __D0MoveForward
+9	53	97	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	97		mov __D0MoveForward, __zfMoveForward
+9	53	99	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	99		brtst 4, __NXC_Label_536, __zfMoveForward
+9	53	102	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	102		mov __signed_stack_001MoveForward, __D0MoveForward
+9	53	104	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	104		mov __signed_stack_002MoveForward, throw
+9	53	106	#line 53 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	106	#line 54 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	55	106		set __D0MoveForward, 0
+9	54	109	#line 54 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	55	109		cmp 4, __zfMoveForward, __signed_stack_002MoveForward, __D0MoveForward
+9	54	113	#line 54 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	54	113	#line 54 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	55	113		and __D0MoveForward, __signed_stack_001MoveForward, __zfMoveForward
+9	55	117	#line 55 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	56	117		tst 5, __zfMoveForward, __D0MoveForward
+9	55	120	#line 55 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	56	120		brtst 4, __NXC_Label_540, __zfMoveForward
+9	56	123	#line 56 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	57	123		subcall ThrowObstacles, __ThrowObstacles_return
+9	56	125	#line 56 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	57	125	#line 57 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	58	125		set throw, 1
+9	57	128	#line 57 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	57	128	#line 57 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	58	128	#line 58 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	59	128	#pragma macro 7
+9	59	128		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4989	151	#line 4989 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	58	151	#line 58 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	59	151	#line 59 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	60	151		jmp __NXC_Label_524
+9	59	153	#line 59 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	60	153	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	60	153	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	153		mov __unsigned_stack_001MoveForward, __MoveForward_7qG2_output_7qG2_000
+9	60	155	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	60	155	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	155		set __D0MoveForward, 0
+9	60	158	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	158		cmp 4, __zfMoveForward, __unsigned_stack_001MoveForward, __D0MoveForward
+9	60	162	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	162		mov __D0MoveForward, __zfMoveForward
+9	60	164	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	164		brtst 5, __NXC_Label_543, __zfMoveForward
+9	60	167	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	167		mov __signed_stack_001MoveForward, __D0MoveForward
+9	60	169	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	169		mov __signed_stack_002MoveForward, __MoveForward_7qG2_distance_7qG2_000
+9	60	171	#line 60 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	171	#line 61 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	62	171		set __D0MoveForward, 10
+9	61	174	#line 61 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	62	174		cmp 0, __zfMoveForward, __signed_stack_002MoveForward, __D0MoveForward
+9	61	178	#line 61 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	61	178	#line 61 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	62	178		or __D0MoveForward, __signed_stack_001MoveForward, __zfMoveForward
+9	62	182	#line 62 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	63	182		tst 5, __zfMoveForward, __D0MoveForward
+9	62	185	#line 62 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	63	185		brtst 4, __NXC_Label_546, __zfMoveForward
+9	63	188	#line 63 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	64	188	#pragma macro 7
+9	64	188		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	5030	211	#line 5030 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	63	211	#line 63 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	64	211	#line 64 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	65	211		jmp __NXC_Label_524
+9	64	213	#line 64 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	65	213	#line 65 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	65	213	#line 65 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	66	213		set __D0MoveForward, 60
+9	66	216	#line 66 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	67	216	#pragma macro 7
+9	67	216		setout __OUT_AC, 2, __D0MoveForward, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	5042	239	#line 5042 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	66	239	#line 66 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	66	239	#line 66 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	67	239		set __Wait_7qG2_ms_7qG2_000_inline_MoveForward, 100
+9	66	242	#line 66 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	7921	242	#line 7921 "NXCDefs.h"
+9	7922	242		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_MoveForward
+9	7921	245	#line 7921 "NXCDefs.h"
+9	67	245	#line 67 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	69	245	#line 69 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	70	245		jmp __NXC_Label_523
+9	69	247	#line 69 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	69	247	#line 69 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+9	70	247		subret __MoveForward_return
+10	71	0	#line 71 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	72	0		set __D0MoveBackward, 60
+10	72	3	#line 72 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	73	3	#pragma macro 10
+10	73	3		acquire __OnRevMutex
+10	73	4		neg __OnRev_Tmp, __D0MoveBackward
+10	73	7		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	73	30		release __OnRevMutex
+10	5072	31	#line 5072 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	72	31	#line 72 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	72	31	#line 72 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	73	31		set __Wait_7qG2_ms_7qG2_000_inline_MoveBackward, 3000
+10	72	34	#line 72 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	7921	34	#line 7921 "NXCDefs.h"
+10	7922	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_MoveBackward
+10	7921	37	#line 7921 "NXCDefs.h"
+10	73	37	#line 73 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	75	37	#line 75 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+10	76	37		subret __MoveBackward_return
+11	90	0	#line 90 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	91	0		set __goCruise_7qG2_flag_7qG2_000, 1
+11	90	3	#line 90 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	93	3	#line 93 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	94	3		set __D0goCruise, 1
+11	95	6	#line 95 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	96	6		tst 5, __zfgoCruise, __D0goCruise
+11	95	9	#line 95 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	96	9		brtst 4, __NXC_Label_562, __zfgoCruise
+11	96	12	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	97	12		set __goCruise_7qG2_temp_7qG2_000, 0
+11	96	15	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	96	15	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	96	15	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	97	15	#pragma macro 26
+11	97	15		acquire __RLSBmutex0
+11	97	16		mov __RLSReadBuf0, __RLSBbufLSWrite1
+11	97	18		set __RLSBytesCount0, 1
+11	97	21		wait2 NA, __constVal15
+11	97	24		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+11	97	26		index __D0goCruise, __RLSReadBuf0, 65535
+11	97	30		release __RLSBmutex0
+11	5166	31	#line 5166 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	96	31	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	97	31		mov __goCruise_7qG2_distance_7qG2_000, __D0goCruise
+11	96	33	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	96	33	#line 96 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	97	33	#line 97 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	98	33		set __signed_stack_001goCruise, 0
+11	97	36	#line 97 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	97	36	#line 97 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	98	36		set __signed_stack_002goCruise, 0
+11	97	39	#line 97 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	97	39	#line 97 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	98	39		mov __DU0goCruise, __goCruise_7qG2_distance_7qG2_000
+11	99	41	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	41		acquire __TextOutMutex
+11	99	42	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	42		mov __TextOutArgs.Location.X, __signed_stack_001goCruise
+11	99	45	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	45		mov __TextOutArgs.Location.Y, __signed_stack_002goCruise
+11	99	48	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	48		set __TextOutArgs.Options, 0
+11	99	51	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	51		numtostr __TextOutArgs.Text, __DU0goCruise
+11	99	54	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	54		syscall 13, __TextOutArgs
+11	99	57	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	57		mov __D0goCruise, __TextOutArgs.Result
+11	99	59	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	100	59		release __TextOutMutex
+11	99	60	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	99	60	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	99	60	#line 99 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	101	60	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	101	60	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	60		mod ind, ind, __constVal5
+11	101	64	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	101	64	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	101	64	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	64		mov __D0goCruise, ind
+11	101	66	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	66		add ind, ind, __constVal1
+11	101	70	#line 101 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	70		mov __signed_stack_001goCruise, __D0goCruise
+11	102	72	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	72		mov __DU0goCruise, __goCruise_7qG2_distance_7qG2_000
+11	102	74	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	74		replace distanceGlobal, distanceGlobal, __signed_stack_001goCruise, __DU0goCruise
+11	102	79	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	79	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	79		set __goCruise_7qG2_i_7qG2_002, 0
+11	102	82	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	82	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	82		mov __signed_stack_001goCruise, __goCruise_7qG2_i_7qG2_002
+11	102	84	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	102	84	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	84		set __D0goCruise, 5
+11	102	87	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	87		cmp 0, __zfgoCruise, __signed_stack_001goCruise, __D0goCruise
+11	102	91	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	91		mov __D0goCruise, __zfgoCruise
+11	102	93	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	93		brtst 4, __NXC_Label_582, __zfgoCruise
+11	102	96	#line 102 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	103	96		jmp __NXC_Label_583
+11	103	98	#line 103 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	104	98		add __goCruise_7qG2_i_7qG2_002, __goCruise_7qG2_i_7qG2_002, __constVal1
+11	104	102	#line 104 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	105	102		jmp __NXC_Label_581
+11	104	104	#line 104 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	105	104		mov __signed_stack_001goCruise, __goCruise_7qG2_i_7qG2_002
+11	104	106	#line 104 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	104	106	#line 104 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	105	106		index __ArrHelper__goCruise_73_0, distanceGlobal, __signed_stack_001goCruise
+11	104	110	#line 104 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	105	110	#line 105 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	106	110		add __goCruise_7qG2_temp_7qG2_000, __goCruise_7qG2_temp_7qG2_000, __ArrHelper__goCruise_73_0
+11	105	114	#line 105 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	108	114	#line 108 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	109	114		jmp __NXC_Label_584
+11	108	116	#line 108 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	108	116	#line 108 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	109	116		mov __unsigned_stack_001goCruise, __goCruise_7qG2_distance_7qG2_000
+11	108	118	#line 108 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	109	118	#line 109 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	110	118		set __D0goCruise, 25
+11	109	121	#line 109 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	110	121		cmp 0, __zfgoCruise, __unsigned_stack_001goCruise, __D0goCruise
+11	109	125	#line 109 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	110	125		mov __D0goCruise, __zfgoCruise
+11	110	127	#line 110 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	111	127		brtst 4, __NXC_Label_595, __zfgoCruise
+11	111	130	#line 111 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	112	130		set __goCruise_7qG2_flag_7qG2_000, 1
+11	111	133	#line 111 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	111	133	#line 111 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	112	133	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	112	133	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	133		mov __unsigned_stack_001goCruise, __goCruise_7qG2_distance_7qG2_000
+11	112	135	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	112	135	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	135		set __D0goCruise, 95
+11	112	138	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	138		cmp 1, __zfgoCruise, __unsigned_stack_001goCruise, __D0goCruise
+11	112	142	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	142		mov __D0goCruise, __zfgoCruise
+11	112	144	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	144		brtst 5, __NXC_Label_598, __zfgoCruise
+11	112	147	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	147		mov __signed_stack_001goCruise, __D0goCruise
+11	112	149	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	149		getin __signed_stack_002goCruise, __constVal3, 4
+11	112	153	#line 112 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	153	#line 113 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	114	153		set __D0goCruise, 1
+11	113	156	#line 113 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	114	156		cmp 4, __zfgoCruise, __signed_stack_002goCruise, __D0goCruise
+11	113	160	#line 113 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	113	160	#line 113 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	114	160		or __D0goCruise, __signed_stack_001goCruise, __zfgoCruise
+11	114	164	#line 114 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	115	164		tst 5, __zfgoCruise, __D0goCruise
+11	114	167	#line 114 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	115	167		brtst 4, __NXC_Label_601, __zfgoCruise
+11	115	170	#line 115 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	116	170		set __goCruise_7qG2_flag_7qG2_000, 0
+11	115	173	#line 115 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	115	173	#line 115 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	116	173	#line 116 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	116	173	#line 116 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	117	173		mov __signed_stack_001goCruise, __goCruise_7qG2_flag_7qG2_000
+11	116	175	#line 116 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	117	175	#line 117 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	118	175		set __D0goCruise, 1
+11	117	178	#line 117 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	118	178		cmp 4, __zfgoCruise, __signed_stack_001goCruise, __D0goCruise
+11	117	182	#line 117 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	118	182		mov __D0goCruise, __zfgoCruise
+11	118	184	#line 118 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	119	184		brtst 4, __NXC_Label_606, __zfgoCruise
+11	118	187	#line 118 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	119	187		set __D0goCruise, 60
+11	119	190	#line 119 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	120	190	#pragma macro 10
+11	120	190		acquire __OnRevMutex
+11	120	191		neg __OnRev_Tmp, __D0goCruise
+11	120	194		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	120	217		release __OnRevMutex
+11	5370	218	#line 5370 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	119	218	#line 119 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	119	218	#line 119 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	120	218		set __Wait_7qG2_ms_7qG2_000_inline_goCruise, 200
+11	119	221	#line 119 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	7921	221	#line 7921 "NXCDefs.h"
+11	7922	221		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_goCruise
+11	7921	224	#line 7921 "NXCDefs.h"
+11	120	224	#line 120 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	121	224	#line 121 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	122	224		jmp __NXC_Label_611
+11	121	226	#line 121 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	122	226		mov __signed_stack_001goCruise, __goCruise_7qG2_flag_7qG2_000
+11	121	228	#line 121 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	122	228	#line 122 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	123	228		set __D0goCruise, 0
+11	122	231	#line 122 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	123	231		cmp 4, __zfgoCruise, __signed_stack_001goCruise, __D0goCruise
+11	122	235	#line 122 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	123	235		mov __D0goCruise, __zfgoCruise
+11	123	237	#line 123 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	124	237		brtst 4, __NXC_Label_614, __zfgoCruise
+11	123	240	#line 123 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	124	240		set __D0goCruise, 60
+11	124	243	#line 124 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	125	243	#pragma macro 7
+11	125	243		setout __OUT_AC, 2, __D0goCruise, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5408	266	#line 5408 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	124	266	#line 124 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	124	266	#line 124 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	125	266		set __Wait_7qG2_ms_7qG2_000_inline_goCruise, 200
+11	124	269	#line 124 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	7921	269	#line 7921 "NXCDefs.h"
+11	7922	269		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_goCruise
+11	7921	272	#line 7921 "NXCDefs.h"
+11	125	272	#line 125 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	127	272	#line 127 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	127	272	#line 127 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	130	272	#line 130 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	131	272		jmp __NXC_Label_561
+11	130	274	#line 130 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	130	274	#line 130 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+11	131	274		subret __goCruise_return
+12	187	0	#line 187 "D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc"
+12	188	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+1	__RotateMotor1	275	NXTDefs.h
+2	__ResetSensorSubroutine	444	NXTDefs.h
+3	__ReadLSBytes0	457	NXTDefs.h
+4	__ReadLSBytes2	542	NXTDefs.h
+5	close	627	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+6	open	668	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+7	ThrowObstacles	708	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+8	RotateRight	712	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+9	MoveForward	799	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+10	MoveBackward	1048	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+11	goCruise	1087	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
+12	__initialize_global_data	1363	D:\Studying\EURECOM\Semester 1\Operating System\ROBOT COMPETITION\Defending_Right_Cruise_Ultrasonic\Defending.nxc
