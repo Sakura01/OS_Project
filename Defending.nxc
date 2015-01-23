@@ -1,0 +1,172 @@
+#include "NXCDefs.h"
+#define ROTATION_SPEED 40
+#define SPEED 60
+#define COMPASS S2
+#define COLOR S3
+#define ULTRASONIC S1
+#define TOUCH S4
+
+int first =0;
+int throw =0;
+int ind =0;
+
+// close the graber
+sub close()
+{
+     RotateMotorEx (OUT_B, 50, 120, 0, false, true);
+}
+// open the graber
+sub open()
+{
+      RotateMotorEx (OUT_B, 40, -120, 0, false, true);
+}
+
+// throw the obstacles
+sub ThrowObstacles()
+{
+    close();
+}
+
+// Rotate Left according to amount of time
+sub RotateLeft(int time)
+{
+    OnRev(OUT_C, ROTATION_SPEED);
+    OnFwd(OUT_A, ROTATION_SPEED);
+    Wait(time);
+    Off(OUT_AC);
+}
+
+// Rotate Right according to amount of time
+sub RotateRight(int time)
+{
+    OnRev(OUT_A, ROTATION_SPEED);
+    OnFwd(OUT_C, ROTATION_SPEED);
+    Wait(time);
+    Off(OUT_AC);
+}
+
+// Move forward to throw the obstacles and for walking cruise
+sub MoveForward()
+{
+    byte r,g,b;
+    byte output=0;
+    int distance ;
+    while(true)
+    {
+               // get distance between robot and the front objects through Ultrasonic sensor
+               distance = SensorUS(ULTRASONIC);
+
+               // get the color that the Color sensor points to.
+               ReadSensorHTColor(COLOR,output,r,g,b);
+               
+               // throw obstacles if touch the black line or far 50 cm from the wall and definitely the first time
+               // we just throw obstacles 1 time
+               if((output == 0 || distance < 50) && throw == 0)
+               {
+                         ThrowObstacles();
+                         throw = 1;
+                         Off(OUT_AC);
+                         break;
+               }
+               
+               // Move forward
+               OnFwd(OUT_AC, SPEED);
+               Wait(100);
+    }
+}
+
+// After moving forward to throw obstacle, the robot moves backward near to the square
+sub MoveBackward()
+{
+    OnRev(OUT_AC,SPEED);
+    Wait(3000);
+}
+
+// Move forward and backward according to horizontal direction
+sub goCruise()
+{
+    byte distance;
+    int flag = 1;
+    int temp;
+    int j;
+    while(true)
+    {
+
+         temp = 0;
+         // Ultrasonic value
+         distance = SensorUS(ULTRASONIC);
+
+         // nearly touch the wall in front of the robot
+         if(distance < 25)
+         {
+           flag = 1;
+         }
+         // nearly touch the wall behind the robot by ultrasonic value or touch sensor
+         if(distance > 95 || Sensor(S4) == 1)
+         {
+           flag = 0;
+         }
+         
+         // Move backward when the head touches the wall
+         if(flag == 1)
+         {
+             OnRev(OUT_AC,SPEED);
+             Wait(200);
+         }
+         
+         // Move forward when the back touches the wall
+         else if(flag == 0)
+         {
+              OnFwd(OUT_AC,SPEED);
+              Wait(200);
+         }
+    }
+}
+
+// Initialization of the sensors
+task main()
+{
+
+     // Setup all sensors
+    SetSensorLowspeed(ULTRASONIC);
+    SetSensorLowspeed(COLOR);
+    SetSensorTouch(S4);
+    
+    byte output;
+    byte r,g,b;
+    while(true){
+                // Rotate right in 180 ms ( 15 degrees)
+                RotateRight(180);
+
+                // cross the black square first
+                if (first == 0)
+                {
+                   first = 1;
+                   OnFwd(OUT_AC,60);
+                   Wait(2000);
+                }
+                
+                // Move forward for throwing obstacles
+                MoveForward();
+
+                // Return to the original position
+                MoveBackward();
+                
+                // Rotate Right for getting the robot along the horizontal direction
+                RotateRight(800);
+                
+                // If the robot threw obstacles
+                if(throw == 1)
+                {
+                     // open the graber to prevent the ultrasonic from the error
+                     open();
+                     // walking along the horizontal direction for stopping balls
+                     goCruise();
+                     break;
+                }
+
+     }
+
+}
+
+
